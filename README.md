@@ -5,8 +5,6 @@ O seguinte trabalho consiste em um desenvolvimento de um jogo de Batalha Naval, 
 
 ## Visão geral do código:
 
-### Estrutura: 
-
 ### Funcionamento do programa:
 
 ## Principais dificuldades encontradas:
