@@ -92,7 +92,7 @@ void Screens::TitleScreen::buildBackgroundImage() {
 }
 
 void Screens::TitleScreen::buildTitle() {
-    const std::string TITLE_FIRST_TEXT = "Briguinha";
+    const std::string TITLE_FIRST_TEXT = "Batalha";
     const std::string TITLE_SECOND_PART = "Naval";
     const float TITLE_FONT_SIZE = percentOf(9, getDisplayHeight());
 
