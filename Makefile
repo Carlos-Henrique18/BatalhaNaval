@@ -1,5 +1,5 @@
 # Define configurações do projeto
-PROJECT_NAME = BriguinhaNaval
+PROJECT_NAME = BatalhaNaval
 
 # Define pastas do projeto
 EXTERNAL_LIBS_FOLDER = ./include/libs
