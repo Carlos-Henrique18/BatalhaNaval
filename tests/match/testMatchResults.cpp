@@ -1,42 +1,42 @@
 #include "doctest.hpp"
 #include <stdexcept>
 
-#include "Player.hpp"
-#include "Constants.hpp"
+#include "MatchResults.hpp"
 
-TEST_CASE("Constructing a player with empty string") {
-    CHECK_THROWS_AS(Player(""), std::invalid_argument);
+bool compareResults(Score a, Score b){
+    if (a.getDestroyedTroops() != b.getDestroyedTroops()) return false;
+    if (a.getHitShoots() != b.getHitShoots()) return false;
+    if (a.getLostTroops() != b.getLostTroops()) return false;
+    if (a.getRemainingTroops() != b.getRemainingTroops()) return false;
+    if (a.getTotalAmountShoots() != b.getTotalAmountShoots()) return false;
+    return true;
 }
 
-TEST_CASE("Trying to set a player name to empty string") {
-    Player a;
-    CHECK_THROWS_AS(a.setName(""), std::invalid_argument);
+TEST_CASE("Creating a default MatchResults") {
+    MatchResults a;
+    CHECK(a.getPlayer1Name() == "");
+    CHECK(a.getPlayer2Name() == "");
+    CHECK(a.getId() == "");
 }
 
-TEST_CASE("Constructing a player with set name") {
-    Player a("teste");
-    CHECK(a.getName() == "teste");
+TEST_CASE("Trying to make or set a MatchResults with empty id") {
+    CHECK_THROWS_AS(MatchResults a("teste", Score(), "teste2", Score(), ""), std::invalid_argument);
+    MatchResults a("teste", Score(), "teste2", Score(), "a");
+    CHECK_THROWS_AS(a.setId(""), std::invalid_argument);
 }
 
-TEST_CASE("Construct player with default name") {
-    Player a;
-    CHECK(a.getName() == "Player");
+TEST_CASE("Trying to construct or set a MatchResults with id with spaces") {
+    CHECK_THROWS_AS(MatchResults a("teste", Score(), "teste2", Score(), "a a"), std::invalid_argument);
+    MatchResults a("teste", Score(), "teste2", Score(), "a");
+    CHECK_THROWS_AS(a.setId("aaaa a"), std::invalid_argument);
 }
 
-TEST_CASE("Construct player and check if board has default values") {
-    Player a;
-    std::shared_ptr<Board> pointer = a.getBoard();
-    CHECK(pointer->getWidth() == DEFAULT_BOARD_AMOUNT_HORIZONTAL_CELLS);
-    CHECK(pointer->getHeight() == DEFAULT_BOARD_AMOUNT_VERTICAL_CELLS);
-}
-
-TEST_CASE("Construct player and check that score has no values") {
-    Player a;
-    std::shared_ptr<Score> pointer = a.getScore();
-
-    CHECK(pointer->getDestroyedTroops() == 0);
-    CHECK(pointer->getHitShoots() == 0);
-    CHECK(pointer->getLostTroops() == 0);
-    CHECK(pointer->getRemainingTroops() == 0);
-    CHECK(pointer->getTotalAmountShoots() == 0);
+TEST_CASE("Trying to construct MatchResults and getting attributes"){
+    Score score1, score2(1,2,3,5,4);
+    MatchResults match("player1", score1, "player2", score2, "id");
+    CHECK(compareResults(score1, match.getPlayer1Score()));
+    CHECK(compareResults(score2, match.getPlayer2Score()));
+    CHECK("id" == match.getId());
+    CHECK("player1" == match.getPlayer1Name());
+    CHECK("player2" == match.getPlayer2Name());
 }
