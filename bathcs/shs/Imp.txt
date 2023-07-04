@@ -1,0 +1,2 @@
+Caso queira usar esses arquivos .sh, execute este comando:
+chmod +x Build.sh Clean.sh Run.sh
