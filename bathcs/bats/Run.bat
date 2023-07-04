@@ -1,2 +1,2 @@
 cd ../../
-.\BriguinhaNaval.exe
+.\BatalhaNaval.exe
