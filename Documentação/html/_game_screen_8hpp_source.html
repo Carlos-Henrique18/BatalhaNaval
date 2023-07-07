@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Batalha Naval - Documentação: Código-Fonte de Faculdade/2023-1/Prog2/BatalhaNaval/include/screen/game/GameScreen.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Batalha Naval - Documentação<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bb75f6ccd9c841ccbcc87ee631ee1cf8.html">Faculdade</a></li><li class="navelem"><a class="el" href="dir_34921b01d83bfae507fa016aa2696f18.html">2023-1</a></li><li class="navelem"><a class="el" href="dir_66a3f915e7756a6ded3a5ab53105a1fe.html">Prog2</a></li><li class="navelem"><a class="el" href="dir_ef9cc14589066c222358a81ffd580e27.html">BatalhaNaval</a></li><li class="navelem"><a class="el" href="dir_8649854c9289a8d6819dfd27e24ff103.html">include</a></li><li class="navelem"><a class="el" href="dir_a36fc79ae3405311521cb057c3350e44.html">screen</a></li><li class="navelem"><a class="el" href="dir_72a65e56e632d206434b6b2d798ad16a.html">game</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">GameScreen.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_game_screen_8hpp.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef GAME_SCREEN_HPP</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define GAME_SCREEN_HPP</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="_screen_8hpp.html">Screen.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="_text_8hpp.html">Text.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_button_text_icon_8hpp.html">ButtonTextIcon.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_position_display_8hpp.html">PositionDisplay.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="_game_board_display_8hpp.html">GameBoardDisplay.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="_game_score_display_8hpp.html">GameScoreDisplay.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="_match_8hpp.html">Match.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_screens.html">Screens</a> {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_screens_1_1_game_screen.html">   19</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_screens_1_1_game_screen.html">GameScreen</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_screens_1_1_screen.html">Screen</a> {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            std::unique_ptr&lt;Components::Text&gt; player1Name = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            std::unique_ptr&lt;Views::GameBoardDisplay&gt; player1Board = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            std::unique_ptr&lt;Components::ButtonTextIcon&gt; player1RevealTroopsButton = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            std::unique_ptr&lt;Views::GameScoreDisplay&gt; player1ScoreDisplay = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            std::unique_ptr&lt;Components::Text&gt; player2Name = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            std::unique_ptr&lt;Views::GameBoardDisplay&gt; player2Board = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            std::unique_ptr&lt;Components::ButtonTextIcon&gt; player2RevealTroopsButton = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            std::unique_ptr&lt;Views::GameScoreDisplay&gt; player2ScoreDisplay = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            std::shared_ptr&lt;Match&gt; match = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <a class="code hl_struct" href="struct_rectangle.html">Rectangle</a> divisionLine;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <a class="code hl_struct" href="struct_rectangle.html">Rectangle</a> background;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <a class="code hl_struct" href="struct_rectangle.html">Rectangle</a> foreground;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <span class="keywordtype">bool</span> isTroopsRevealed = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <a class="code hl_class" href="class_screens_1_1_game_screen.html">GameScreen</a>(std::shared_ptr&lt;Match&gt; match);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="keyword">virtual</span> <a class="code hl_function" href="class_screens_1_1_game_screen.html#a422176e15c8c22de780b5afe7721c63f">~GameScreen</a>();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <a class="code hl_class" href="class_match.html">Match</a> <a class="code hl_function" href="class_screens_1_1_game_screen.html#acde74b947fcb455bd42aaea32e3fb6b3">getActualMatch</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_screens_1_1_game_screen.html#a75e5f3bbfaa3e1a9a6ab604a3365aff0">renderScreen</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_screens_1_1_game_screen.html#a070cd7e7d9329bb5e09f3efdf660ca66">handleEvents</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="keywordtype">void</span> verifyPlayerBoardClick(<span class="keyword">const</span> std::unique_ptr&lt;Views::GameBoardDisplay&gt;&amp; board);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            <span class="keywordtype">void</span> verifyPlayerRevealTroopsClick(<span class="keyword">const</span> std::unique_ptr&lt;Components::ButtonTextIcon&gt;&amp; playerRevealTroopsButton, <span class="keyword">const</span> std::unique_ptr&lt;Views::GameBoardDisplay&gt;&amp; board);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            <span class="keywordtype">void</span> checkTroopHit(<a class="code hl_class" href="class_views_1_1_position_display.html">Views::PositionDisplay</a>&amp; target);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            <span class="keywordtype">void</span> incrementPlayerShots();</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            <span class="keywordtype">void</span> passTurn();</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <span class="keywordtype">void</span> startPlayer1Turn();</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            <span class="keywordtype">void</span> startPlayer2Turn();</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            <span class="keywordtype">void</span> buildBackground();</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            <span class="keywordtype">void</span> renderBackground();</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            <span class="keywordtype">void</span> buildPlayer1Name();</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            <span class="keywordtype">void</span> buildPlayer1Board();</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>            <span class="keywordtype">void</span> buildPlayer1RevealTroopsButton();</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            <span class="keywordtype">void</span> buildPlayer1ScoreDisplay();</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            <span class="keywordtype">void</span> buildDivisionLine();</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>            <span class="keywordtype">void</span> renderDivisionLine();</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>            <span class="keywordtype">void</span> buildPlayer2Name();</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            <span class="keywordtype">void</span> buildPlayer2Board();</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>            <span class="keywordtype">void</span> buildPlayer2RevealTroopsButton();</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>            <span class="keywordtype">void</span> buildPlayer2ScoreDisplay();</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>            <span class="keywordtype">float</span> getPlayerNameMarginTop() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>            <span class="keywordtype">float</span> getBoardMarginTop() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>            <span class="keywordtype">float</span> getRevealButtonIconHeight() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>            <span class="keywordtype">float</span> getRevealButtonIconWidth() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>            <span class="keywordtype">float</span> getRevealButtonFontSize() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>            <span class="keywordtype">float</span> getRevealButtonWidth() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>            <span class="keywordtype">float</span> getRevealButtonHeight() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>            <span class="keywordtype">float</span> getRevealButtonYOffset() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>            <span class="keywordtype">float</span> getPlayerScoreDisplayMarginTop() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>            std::string buildPlayerTurnMark(<span class="keyword">const</span> std::string playerName) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>            <span class="keywordtype">void</span> setActualMatch(<span class="keyword">const</span> std::shared_ptr&lt;Match&gt; match);</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    };</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>}</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_button_text_icon_8hpp_html"><div class="ttname"><a href="_button_text_icon_8hpp.html">ButtonTextIcon.hpp</a></div></div>
+<div class="ttc" id="a_game_board_display_8hpp_html"><div class="ttname"><a href="_game_board_display_8hpp.html">GameBoardDisplay.hpp</a></div></div>
+<div class="ttc" id="a_game_score_display_8hpp_html"><div class="ttname"><a href="_game_score_display_8hpp.html">GameScoreDisplay.hpp</a></div></div>
+<div class="ttc" id="a_match_8hpp_html"><div class="ttname"><a href="_match_8hpp.html">Match.hpp</a></div></div>
+<div class="ttc" id="a_position_display_8hpp_html"><div class="ttname"><a href="_position_display_8hpp.html">PositionDisplay.hpp</a></div></div>
+<div class="ttc" id="a_screen_8hpp_html"><div class="ttname"><a href="_screen_8hpp.html">Screen.hpp</a></div></div>
+<div class="ttc" id="a_text_8hpp_html"><div class="ttname"><a href="_text_8hpp.html">Text.hpp</a></div></div>
+<div class="ttc" id="aclass_match_html"><div class="ttname"><a href="class_match.html">Match</a></div><div class="ttdef"><b>Definição</b> Match.hpp:10</div></div>
+<div class="ttc" id="aclass_screens_1_1_game_screen_html"><div class="ttname"><a href="class_screens_1_1_game_screen.html">Screens::GameScreen</a></div><div class="ttdef"><b>Definição</b> GameScreen.hpp:19</div></div>
+<div class="ttc" id="aclass_screens_1_1_game_screen_html_a070cd7e7d9329bb5e09f3efdf660ca66"><div class="ttname"><a href="class_screens_1_1_game_screen.html#a070cd7e7d9329bb5e09f3efdf660ca66">Screens::GameScreen::handleEvents</a></div><div class="ttdeci">virtual void handleEvents() override</div><div class="ttdoc">Handle any event that can be trigged in the interface.</div><div class="ttdef"><b>Definição</b> GameScreen.cpp:71</div></div>
+<div class="ttc" id="aclass_screens_1_1_game_screen_html_a422176e15c8c22de780b5afe7721c63f"><div class="ttname"><a href="class_screens_1_1_game_screen.html#a422176e15c8c22de780b5afe7721c63f">Screens::GameScreen::~GameScreen</a></div><div class="ttdeci">virtual ~GameScreen()</div><div class="ttdoc">Destroy the Game Screen.</div><div class="ttdef"><b>Definição</b> GameScreen.cpp:53</div></div>
+<div class="ttc" id="aclass_screens_1_1_game_screen_html_a75e5f3bbfaa3e1a9a6ab604a3365aff0"><div class="ttname"><a href="class_screens_1_1_game_screen.html#a75e5f3bbfaa3e1a9a6ab604a3365aff0">Screens::GameScreen::renderScreen</a></div><div class="ttdeci">virtual void renderScreen() override</div><div class="ttdoc">Render the window in the interface.</div><div class="ttdef"><b>Definição</b> GameScreen.cpp:55</div></div>
+<div class="ttc" id="aclass_screens_1_1_game_screen_html_acde74b947fcb455bd42aaea32e3fb6b3"><div class="ttname"><a href="class_screens_1_1_game_screen.html#acde74b947fcb455bd42aaea32e3fb6b3">Screens::GameScreen::getActualMatch</a></div><div class="ttdeci">Match getActualMatch() const</div><div class="ttdoc">Get the actual match attribute.</div><div class="ttdef"><b>Definição</b> GameScreen.cpp:368</div></div>
+<div class="ttc" id="aclass_screens_1_1_screen_html"><div class="ttname"><a href="class_screens_1_1_screen.html">Screens::Screen</a></div><div class="ttdef"><b>Definição</b> Screen.hpp:5</div></div>
+<div class="ttc" id="aclass_views_1_1_position_display_html"><div class="ttname"><a href="class_views_1_1_position_display.html">Views::PositionDisplay</a></div><div class="ttdef"><b>Definição</b> PositionDisplay.hpp:17</div></div>
+<div class="ttc" id="anamespace_screens_html"><div class="ttname"><a href="namespace_screens.html">Screens</a></div><div class="ttdef"><b>Definição</b> EndGameScreen.hpp:19</div></div>
+<div class="ttc" id="astruct_rectangle_html"><div class="ttname"><a href="struct_rectangle.html">Rectangle</a></div><div class="ttdef"><b>Definição</b> raylib.h:228</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['label_5fnavios_5fdestruidos_0',['LABEL_NAVIOS_DESTRUIDOS',['../_game_score_display_8cpp.html#acca5265ae39b1a450eec08421351e7bf',1,'GameScoreDisplay.cpp']]],
+  ['label_5fnavios_5fperdidos_1',['LABEL_NAVIOS_PERDIDOS',['../_game_score_display_8cpp.html#a04703bd6a84ff513dfec330eb546fe2f',1,'GameScoreDisplay.cpp']]],
+  ['label_5fnavios_5frestantes_2',['LABEL_NAVIOS_RESTANTES',['../_game_score_display_8cpp.html#a9e2975f50e2955e9bdd9778c953ad073',1,'GameScoreDisplay.cpp']]],
+  ['last_3',['last',['../structdoctest_1_1_context_options.html#a5aaf1b28f6a46d8acb40898a502b6bef',1,'doctest::ContextOptions']]],
+  ['layout_4',['layout',['../struct_n_patch_info.html#a6968e2fac2952449d8e1fa82f5030202',1,'NPatchInfo']]],
+  ['left_5',['left',['../struct_n_patch_info.html#ae35958605bf1d43bae2c836427171a31',1,'NPatchInfo']]],
+  ['left_5farrow_5fblack_6',['LEFT_ARROW_BLACK',['../namespace_icons.html#a744d117a7384d50f969731d076dde211',1,'Icons']]],
+  ['leftlenscenter_7',['leftLensCenter',['../struct_vr_stereo_config.html#a40b1f1838de3f521032cc1003fa2d725',1,'VrStereoConfig']]],
+  ['leftscreencenter_8',['leftScreenCenter',['../struct_vr_stereo_config.html#a09665d95aaa7c13e3db561c77d56cb24',1,'VrStereoConfig']]],
+  ['lensdistortionvalues_9',['lensDistortionValues',['../struct_vr_device_info.html#a1ebdb4e386035e6b15fe68ead0c5c54b',1,'VrDeviceInfo']]],
+  ['lensseparationdistance_10',['lensSeparationDistance',['../struct_vr_device_info.html#a6b3b7c1118716621d26a4d2b81ec76b3',1,'VrDeviceInfo']]],
+  ['lhs_11',['lhs',['../structdoctest_1_1detail_1_1_expression__lhs.html#ab9a46f4dcddaea288b56f8247d9d9886',1,'doctest::detail::Expression_lhs']]],
+  ['light_5fgray_12',['LIGHT_GRAY',['../_colors_8hpp.html#a183e77843a0d7995bede58a5a853bc89',1,'Colors.hpp']]],
+  ['light_5fpurple_13',['LIGHT_PURPLE',['../_colors_8hpp.html#a71baa267b3fd25b4ca27f805b3ed3959',1,'Colors.hpp']]],
+  ['list_5freporters_14',['list_reporters',['../structdoctest_1_1_context_options.html#ad3daf077ac3182db5175f8baff49fce0',1,'doctest::ContextOptions']]],
+  ['list_5ftest_5fcases_15',['list_test_cases',['../structdoctest_1_1_context_options.html#a813e1543c358ab8a7a432b4ad2b32e56',1,'doctest::ContextOptions']]],
+  ['list_5ftest_5fsuites_16',['list_test_suites',['../structdoctest_1_1_context_options.html#a579399a66b278cbf96b6183d337f486b',1,'doctest::ContextOptions']]],
+  ['locs_17',['locs',['../struct_shader.html#aa0f1b98dca84be23dd6430686cafdee4',1,'Shader']]],
+  ['logged_18',['logged',['../structdoctest_1_1detail_1_1_message_builder.html#ab99f0292c65f7a4311a6ecd94f313bf3',1,'doctest::detail::MessageBuilder']]],
+  ['logicboard_19',['logicBoard',['../class_views_1_1_board_display.html#adc5835899de99ab910c0165be0fbc566',1,'Views::BoardDisplay']]],
+  ['logo_20',['LOGO',['../namespace_icons.html#a365b61d003b28dad7991597973caaded',1,'Icons']]],
+  ['looping_21',['looping',['../struct_music.html#adc2254919c3d4d6ed6e1ec1878c5ac9b',1,'Music']]]
+];

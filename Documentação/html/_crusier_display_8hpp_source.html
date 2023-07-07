@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Batalha Naval - Documentação: Código-Fonte de Faculdade/2023-1/Prog2/BatalhaNaval/include/screen/positioning/CrusierDisplay.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Batalha Naval - Documentação<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bb75f6ccd9c841ccbcc87ee631ee1cf8.html">Faculdade</a></li><li class="navelem"><a class="el" href="dir_34921b01d83bfae507fa016aa2696f18.html">2023-1</a></li><li class="navelem"><a class="el" href="dir_66a3f915e7756a6ded3a5ab53105a1fe.html">Prog2</a></li><li class="navelem"><a class="el" href="dir_ef9cc14589066c222358a81ffd580e27.html">BatalhaNaval</a></li><li class="navelem"><a class="el" href="dir_8649854c9289a8d6819dfd27e24ff103.html">include</a></li><li class="navelem"><a class="el" href="dir_a36fc79ae3405311521cb057c3350e44.html">screen</a></li><li class="navelem"><a class="el" href="dir_6a4ef60047058b7cfd4768e8bc97fd19.html">positioning</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">CrusierDisplay.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_crusier_display_8hpp.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef CRUSIER_DISPLAY_HPP</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define CRUSIER_DISPLAY_HPP</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="_troop_display_8hpp.html">TroopDisplay.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="_troop_8hpp.html">Troop.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_views.html">Views</a> {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_views_1_1_crusier_display.html">   11</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_views_1_1_crusier_display.html">CrusierDisplay</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_views_1_1_troop_display.html">TroopDisplay</a> {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            <a class="code hl_class" href="class_views_1_1_crusier_display.html">CrusierDisplay</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> amount);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            <span class="keyword">virtual</span> <a class="code hl_function" href="class_views_1_1_crusier_display.html#a3dcc9360483cba6377f2c6d049d3d138">~CrusierDisplay</a>();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <span class="keyword">virtual</span> std::shared_ptr&lt;Troop&gt; <a class="code hl_function" href="class_views_1_1_crusier_display.html#ab553e3a5646542e8bff6672d4e1adbbb">getTroopInstance</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <span class="keyword">virtual</span> std::string <a class="code hl_function" href="class_views_1_1_crusier_display.html#a1b971adc2e7f632325a5bdf3c202c6e3">getTroopClassName</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    };</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_troop_8hpp_html"><div class="ttname"><a href="_troop_8hpp.html">Troop.hpp</a></div></div>
+<div class="ttc" id="a_troop_display_8hpp_html"><div class="ttname"><a href="_troop_display_8hpp.html">TroopDisplay.hpp</a></div></div>
+<div class="ttc" id="aclass_views_1_1_crusier_display_html"><div class="ttname"><a href="class_views_1_1_crusier_display.html">Views::CrusierDisplay</a></div><div class="ttdef"><b>Definição</b> CrusierDisplay.hpp:11</div></div>
+<div class="ttc" id="aclass_views_1_1_crusier_display_html_a1b971adc2e7f632325a5bdf3c202c6e3"><div class="ttname"><a href="class_views_1_1_crusier_display.html#a1b971adc2e7f632325a5bdf3c202c6e3">Views::CrusierDisplay::getTroopClassName</a></div><div class="ttdeci">virtual std::string getTroopClassName() const override</div><div class="ttdoc">Get the troop class name.</div><div class="ttdef"><b>Definição</b> CrusierDisplay.cpp:26</div></div>
+<div class="ttc" id="aclass_views_1_1_crusier_display_html_a3dcc9360483cba6377f2c6d049d3d138"><div class="ttname"><a href="class_views_1_1_crusier_display.html#a3dcc9360483cba6377f2c6d049d3d138">Views::CrusierDisplay::~CrusierDisplay</a></div><div class="ttdeci">virtual ~CrusierDisplay()</div><div class="ttdoc">Destroy the Crusier Display view.</div><div class="ttdef"><b>Definição</b> CrusierDisplay.cpp:18</div></div>
+<div class="ttc" id="aclass_views_1_1_crusier_display_html_ab553e3a5646542e8bff6672d4e1adbbb"><div class="ttname"><a href="class_views_1_1_crusier_display.html#ab553e3a5646542e8bff6672d4e1adbbb">Views::CrusierDisplay::getTroopInstance</a></div><div class="ttdeci">virtual std::shared_ptr&lt; Troop &gt; getTroopInstance() const override</div><div class="ttdoc">Get a Crusier instantiated object.</div><div class="ttdef"><b>Definição</b> CrusierDisplay.cpp:22</div></div>
+<div class="ttc" id="aclass_views_1_1_troop_display_html"><div class="ttname"><a href="class_views_1_1_troop_display.html">Views::TroopDisplay</a></div><div class="ttdef"><b>Definição</b> TroopDisplay.hpp:16</div></div>
+<div class="ttc" id="anamespace_views_html"><div class="ttname"><a href="namespace_views.html">Views</a></div><div class="ttdef"><b>Definição</b> View.hpp:8</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

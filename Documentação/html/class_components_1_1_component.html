@@ -1,0 +1,701 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Batalha Naval - Documentação: Referência da Classe Components::Component</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Batalha Naval - Documentação<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_components.html">Components</a></li><li class="navelem"><a class="el" href="class_components_1_1_component.html">Component</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Membros Públicos</a> &#124;
+<a href="#pub-static-attribs">Atributos Públicos Estáticos</a> &#124;
+<a href="#pro-attribs">Atributos Protegidos</a> &#124;
+<a href="class_components_1_1_component-members.html">Lista de todos os Membros</a>  </div>
+  <div class="headertitle"><div class="title">Referência da Classe Components::Component<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_component_8hpp_source.html">Component.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de hierarquia da classe Components::Component:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_components_1_1_component.png" usemap="#Components::Component_map" alt=""/>
+  <map id="Components::Component_map" name="Components::Component_map">
+<area href="class_components_1_1_resizable_component.html" alt="Components::ResizableComponent" shape="rect" coords="0,56,204,80"/>
+<area href="class_components_1_1_text.html" alt="Components::Text" shape="rect" coords="214,56,418,80"/>
+<area href="class_views_1_1_view.html" alt="Views::View" shape="rect" coords="428,56,632,80"/>
+<area href="class_components_1_1_button.html" alt="Components::Button" shape="rect" coords="214,112,418,136"/>
+<area href="class_components_1_1_image.html" alt="Components::Image" shape="rect" coords="214,168,418,192"/>
+<area href="class_components_1_1_text_icon.html" alt="Components::TextIcon" shape="rect" coords="642,112,846,136"/>
+<area href="class_views_1_1_board_display.html" alt="Views::BoardDisplay" shape="rect" coords="642,168,846,192"/>
+<area href="class_views_1_1_end_game_score_display.html" alt="Views::EndGameScoreDisplay" shape="rect" coords="642,224,846,248"/>
+<area href="class_views_1_1_game_score_display.html" alt="Views::GameScoreDisplay" shape="rect" coords="642,280,846,304"/>
+<area href="class_views_1_1_match_result_display.html" alt="Views::MatchResultDisplay" shape="rect" coords="642,336,846,360"/>
+<area href="class_views_1_1_player_registred_score.html" alt="Views::PlayerRegistredScore" shape="rect" coords="642,392,846,416"/>
+<area href="class_views_1_1_position_display.html" alt="Views::PositionDisplay" shape="rect" coords="642,448,846,472"/>
+<area href="class_views_1_1_troop_display.html" alt="Views::TroopDisplay" shape="rect" coords="642,504,846,528"/>
+<area href="class_views_1_1_troop_positioning_option.html" alt="Views::TroopPositioningOption" shape="rect" coords="642,560,846,584"/>
+<area href="class_views_1_1_warning_pop_up.html" alt="Views::WarningPopUp" shape="rect" coords="642,616,846,640"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Membros Públicos</h2></td></tr>
+<tr class="memitem:a0337d5ba723272ef9236ca790175d33b"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_components_1_1_component.html#a0337d5ba723272ef9236ca790175d33b">~Component</a> ()</td></tr>
+<tr class="memdesc:a0337d5ba723272ef9236ca790175d33b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the <a class="el" href="class_components_1_1_component.html">Component</a>.  <br /></td></tr>
+<tr class="separator:a0337d5ba723272ef9236ca790175d33b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a653736326200366ea3eaee5856fe98ca"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_components_1_1_component.html#a653736326200366ea3eaee5856fe98ca">render</a> ()=0</td></tr>
+<tr class="memdesc:a653736326200366ea3eaee5856fe98ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the render contract of components.  <br /></td></tr>
+<tr class="separator:a653736326200366ea3eaee5856fe98ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04ccefcc7eee43b1a647375db1ca4442"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_components_1_1_component.html#a04ccefcc7eee43b1a647375db1ca4442">getWidth</a> () const</td></tr>
+<tr class="memdesc:a04ccefcc7eee43b1a647375db1ca4442"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the width attribute.  <br /></td></tr>
+<tr class="separator:a04ccefcc7eee43b1a647375db1ca4442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e67d296ac0ffd456743b28526499e29"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_components_1_1_component.html#a5e67d296ac0ffd456743b28526499e29">getHeight</a> () const</td></tr>
+<tr class="memdesc:a5e67d296ac0ffd456743b28526499e29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the height attribute.  <br /></td></tr>
+<tr class="separator:a5e67d296ac0ffd456743b28526499e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68f31358a71f94ac8bfb500bf7fc829b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_components_1_1_component.html#a68f31358a71f94ac8bfb500bf7fc829b">setXPosition</a> (const float xPosition)</td></tr>
+<tr class="memdesc:a68f31358a71f94ac8bfb500bf7fc829b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the x position attribute.  <br /></td></tr>
+<tr class="separator:a68f31358a71f94ac8bfb500bf7fc829b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acad390f4aa49b2c676085ca1130121a0"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_components_1_1_component.html#acad390f4aa49b2c676085ca1130121a0">getXPosition</a> () const</td></tr>
+<tr class="memdesc:acad390f4aa49b2c676085ca1130121a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the X position attribute.  <br /></td></tr>
+<tr class="separator:acad390f4aa49b2c676085ca1130121a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63c5f14c41f2bf2063615c968c4275f2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_components_1_1_component.html#a63c5f14c41f2bf2063615c968c4275f2">setYPosition</a> (const float yPosition)</td></tr>
+<tr class="memdesc:a63c5f14c41f2bf2063615c968c4275f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the y position attribute.  <br /></td></tr>
+<tr class="separator:a63c5f14c41f2bf2063615c968c4275f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a605595c8cd1a563578255271e2b52b42"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_components_1_1_component.html#a605595c8cd1a563578255271e2b52b42">getYPosition</a> () const</td></tr>
+<tr class="memdesc:a605595c8cd1a563578255271e2b52b42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Y position attribute.  <br /></td></tr>
+<tr class="separator:a605595c8cd1a563578255271e2b52b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a040ec5adce93c3e7d177525dabe3ab0a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_components_1_1_component.html#a040ec5adce93c3e7d177525dabe3ab0a">setPosition</a> (const float xPosition, const float yPosition)</td></tr>
+<tr class="memdesc:a040ec5adce93c3e7d177525dabe3ab0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the x position attribute.  <br /></td></tr>
+<tr class="separator:a040ec5adce93c3e7d177525dabe3ab0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10c496804708ba93a3bc860d95592e1e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_components_1_1_component.html#a10c496804708ba93a3bc860d95592e1e">setPosition</a> (const <a class="el" href="struct_vector2.html">Vector2</a> <a class="el" href="class_components_1_1_component.html#a08a5ebb3225d0e7a5ff62e25f339e4b2">position</a>)</td></tr>
+<tr class="memdesc:a10c496804708ba93a3bc860d95592e1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the position attribute.  <br /></td></tr>
+<tr class="separator:a10c496804708ba93a3bc860d95592e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ccad4acd85d65acdaaf47af4c2bf618"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_components_1_1_component.html#a4ccad4acd85d65acdaaf47af4c2bf618">getPosition</a> () const</td></tr>
+<tr class="memdesc:a4ccad4acd85d65acdaaf47af4c2bf618"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the position attribute.  <br /></td></tr>
+<tr class="separator:a4ccad4acd85d65acdaaf47af4c2bf618"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Atributos Públicos Estáticos</h2></td></tr>
+<tr class="memitem:abc678fa15db51cfe24de74f6fb139536"><td class="memItemLeft" align="right" valign="top">static const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_components_1_1_component.html#abc678fa15db51cfe24de74f6fb139536">DEFAUT_INITIAL_WIDTH</a> = 1</td></tr>
+<tr class="separator:abc678fa15db51cfe24de74f6fb139536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc3214c3b90394afa78a8b62287e0549"><td class="memItemLeft" align="right" valign="top">static const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_components_1_1_component.html#abc3214c3b90394afa78a8b62287e0549">DEFAUT_INITIAL_HEIGHT</a> = 1</td></tr>
+<tr class="separator:abc3214c3b90394afa78a8b62287e0549"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a113ac841f7d0dd2b516953849acfb099"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="struct_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_components_1_1_component.html#a113ac841f7d0dd2b516953849acfb099">DEFAULT_INITIAL_POSITION</a> = { 0, 0 }</td></tr>
+<tr class="separator:a113ac841f7d0dd2b516953849acfb099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Atributos Protegidos</h2></td></tr>
+<tr class="memitem:a81ed41ce45220624606213f8a2e68922"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_components_1_1_component.html#a81ed41ce45220624606213f8a2e68922">width</a> = <a class="el" href="class_components_1_1_component.html#abc678fa15db51cfe24de74f6fb139536">DEFAUT_INITIAL_WIDTH</a></td></tr>
+<tr class="separator:a81ed41ce45220624606213f8a2e68922"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb116d54ce2251bd7e49eebd106c7158"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_components_1_1_component.html#acb116d54ce2251bd7e49eebd106c7158">height</a> = <a class="el" href="class_components_1_1_component.html#abc3214c3b90394afa78a8b62287e0549">DEFAUT_INITIAL_HEIGHT</a></td></tr>
+<tr class="separator:acb116d54ce2251bd7e49eebd106c7158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08a5ebb3225d0e7a5ff62e25f339e4b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_components_1_1_component.html#a08a5ebb3225d0e7a5ff62e25f339e4b2">position</a> = <a class="el" href="class_components_1_1_component.html#a113ac841f7d0dd2b516953849acfb099">DEFAULT_INITIAL_POSITION</a></td></tr>
+<tr class="separator:a08a5ebb3225d0e7a5ff62e25f339e4b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Construtores e Destrutores</h2>
+<a id="a0337d5ba723272ef9236ca790175d33b" name="a0337d5ba723272ef9236ca790175d33b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0337d5ba723272ef9236ca790175d33b">&#9670;&#160;</a></span>~Component()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Components::Component::~Component </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destroy the <a class="el" href="class_components_1_1_component.html">Component</a>. </p>
+<div class="fragment"><div class="line"><span class="lineno">    9</span>{}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="a5e67d296ac0ffd456743b28526499e29" name="a5e67d296ac0ffd456743b28526499e29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e67d296ac0ffd456743b28526499e29">&#9670;&#160;</a></span>getHeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Components::Component::getHeight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the height attribute. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Height attribute value. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   17</span>                                           {</div>
+<div class="line"><span class="lineno">   18</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_components_1_1_component.html#acb116d54ce2251bd7e49eebd106c7158">height</a>;</div>
+<div class="line"><span class="lineno">   19</span>}</div>
+<div class="ttc" id="aclass_components_1_1_component_html_acb116d54ce2251bd7e49eebd106c7158"><div class="ttname"><a href="class_components_1_1_component.html#acb116d54ce2251bd7e49eebd106c7158">Components::Component::height</a></div><div class="ttdeci">float height</div><div class="ttdef"><b>Definição</b> Component.hpp:15</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4ccad4acd85d65acdaaf47af4c2bf618" name="a4ccad4acd85d65acdaaf47af4c2bf618"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ccad4acd85d65acdaaf47af4c2bf618">&#9670;&#160;</a></span>getPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector2.html">Vector2</a> Components::Component::getPosition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the position attribute. </p>
+<dl class="section return"><dt>Retorna</dt><dd>position attribute value. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   51</span>                                               {</div>
+<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_components_1_1_component.html#a08a5ebb3225d0e7a5ff62e25f339e4b2">position</a>;</div>
+<div class="line"><span class="lineno">   53</span>}</div>
+<div class="ttc" id="aclass_components_1_1_component_html_a08a5ebb3225d0e7a5ff62e25f339e4b2"><div class="ttname"><a href="class_components_1_1_component.html#a08a5ebb3225d0e7a5ff62e25f339e4b2">Components::Component::position</a></div><div class="ttdeci">Vector2 position</div><div class="ttdef"><b>Definição</b> Component.hpp:16</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a04ccefcc7eee43b1a647375db1ca4442" name="a04ccefcc7eee43b1a647375db1ca4442"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04ccefcc7eee43b1a647375db1ca4442">&#9670;&#160;</a></span>getWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Components::Component::getWidth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the width attribute. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Width attribute value. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   13</span>                                          {</div>
+<div class="line"><span class="lineno">   14</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_components_1_1_component.html#a81ed41ce45220624606213f8a2e68922">width</a>;</div>
+<div class="line"><span class="lineno">   15</span>}</div>
+<div class="ttc" id="aclass_components_1_1_component_html_a81ed41ce45220624606213f8a2e68922"><div class="ttname"><a href="class_components_1_1_component.html#a81ed41ce45220624606213f8a2e68922">Components::Component::width</a></div><div class="ttdeci">float width</div><div class="ttdef"><b>Definição</b> Component.hpp:14</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="acad390f4aa49b2c676085ca1130121a0" name="acad390f4aa49b2c676085ca1130121a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acad390f4aa49b2c676085ca1130121a0">&#9670;&#160;</a></span>getXPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Components::Component::getXPosition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the X position attribute. </p>
+<dl class="section return"><dt>Retorna</dt><dd>X position attribute value. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   26</span>                                              {</div>
+<div class="line"><span class="lineno">   27</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_components_1_1_component.html#a08a5ebb3225d0e7a5ff62e25f339e4b2">position</a>.<a class="code hl_variable" href="struct_vector2.html#a046bb8d17a876acc49415128dc0502f2">x</a>;</div>
+<div class="line"><span class="lineno">   28</span>}</div>
+<div class="ttc" id="astruct_vector2_html_a046bb8d17a876acc49415128dc0502f2"><div class="ttname"><a href="struct_vector2.html#a046bb8d17a876acc49415128dc0502f2">Vector2::x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definição</b> raylib.h:189</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a605595c8cd1a563578255271e2b52b42" name="a605595c8cd1a563578255271e2b52b42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a605595c8cd1a563578255271e2b52b42">&#9670;&#160;</a></span>getYPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Components::Component::getYPosition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the Y position attribute. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Y position attribute value. </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   35</span>                                              {</div>
+<div class="line"><span class="lineno">   36</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_components_1_1_component.html#a08a5ebb3225d0e7a5ff62e25f339e4b2">position</a>.<a class="code hl_variable" href="struct_vector2.html#a0e07bad05f01ed811b909a2eef97f9e2">y</a>;</div>
+<div class="line"><span class="lineno">   37</span>}</div>
+<div class="ttc" id="astruct_vector2_html_a0e07bad05f01ed811b909a2eef97f9e2"><div class="ttname"><a href="struct_vector2.html#a0e07bad05f01ed811b909a2eef97f9e2">Vector2::y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definição</b> raylib.h:190</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a653736326200366ea3eaee5856fe98ca" name="a653736326200366ea3eaee5856fe98ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a653736326200366ea3eaee5856fe98ca">&#9670;&#160;</a></span>render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Components::Component::render </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Define the render contract of components. </p>
+
+<p>Implementado por <a class="el" href="class_components_1_1_image.html#ac65b410a1271e4075c08974ac32cb373">Components::Image</a>, <a class="el" href="class_components_1_1_button.html#a7674e8db2d280a194240a67cb5f28dc1">Components::Button</a>, <a class="el" href="class_components_1_1_button_icon.html#a194b7544fc2fcd087651bd33915923f9">Components::ButtonIcon</a>, <a class="el" href="class_components_1_1_button_text.html#ad2fcc6876155b956b555f1f13ddc9100">Components::ButtonText</a>, <a class="el" href="class_components_1_1_button_text_icon.html#a742242c2c38b800557f2a2c5b5aaff96">Components::ButtonTextIcon</a>, <a class="el" href="class_components_1_1_text.html#a4af36d57784c613541756d9486cd9e37">Components::Text</a>, <a class="el" href="class_components_1_1_text_icon.html#ab87f81b462765ebd18bbcb43203c13ac">Components::TextIcon</a>, <a class="el" href="class_views_1_1_end_game_score_display.html#a13737c4f7942a61525d96d21b16fb90e">Views::EndGameScoreDisplay</a>, <a class="el" href="class_views_1_1_game_position_display.html#a43aa5ef9ac73a1d340e146e181f77982">Views::GamePositionDisplay</a>, <a class="el" href="class_views_1_1_game_score_display.html#aacf019d37ad93d44d4efe73bade7a3b7">Views::GameScoreDisplay</a>, <a class="el" href="class_views_1_1_positioning_position_display.html#af35ea49a072943f8b505cfb7859ce8be">Views::PositioningPositionDisplay</a>, <a class="el" href="class_views_1_1_troop_display.html#a4b2b0b2d702ae6c925427a3d52eb61aa">Views::TroopDisplay</a>, <a class="el" href="class_views_1_1_troop_positioning_option.html#a23981edc97ad73b4fdfba2eb1b54c65b">Views::TroopPositioningOption</a>, <a class="el" href="class_views_1_1_warning_pop_up.html#aad01ff36ee5f73e5ac6315abcc045187">Views::WarningPopUp</a>, <a class="el" href="class_views_1_1_match_result_display.html#a864f9951ec13b29987f96ab7e3c89f0e">Views::MatchResultDisplay</a>, <a class="el" href="class_views_1_1_player_registred_score.html#ac972a9dc79722bc32ade961575aaf823">Views::PlayerRegistredScore</a>, <a class="el" href="class_views_1_1_board_display.html#a577651c9682ce36ccf540a81b9805080">Views::BoardDisplay</a> e <a class="el" href="class_views_1_1_position_display.html#a0d97488fa89cde40964a51088a68db57">Views::PositionDisplay</a>.</p>
+
+</div>
+</div>
+<a id="a040ec5adce93c3e7d177525dabe3ab0a" name="a040ec5adce93c3e7d177525dabe3ab0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a040ec5adce93c3e7d177525dabe3ab0a">&#9670;&#160;</a></span>setPosition() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Components::Component::setPosition </td>
+          <td>(</td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>xPosition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>yPosition</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the x position attribute. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xPosition</td><td>is the new value to x axis in the position. </td></tr>
+    <tr><td class="paramname">yPosition</td><td>is the new value to y axis in the position. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplementado por <a class="el" href="class_components_1_1_button_text_icon.html#a32eb8b07e7c634311d0e3e82aec3c201">Components::ButtonTextIcon</a> e <a class="el" href="class_views_1_1_view.html#a3777c2b391aac6d48ee49ab24f1818c4">Views::View</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   39</span>                                                                                  {</div>
+<div class="line"><span class="lineno">   40</span>    <a class="code hl_function" href="class_components_1_1_component.html#a68f31358a71f94ac8bfb500bf7fc829b">setXPosition</a>(xPosition);</div>
+<div class="line"><span class="lineno">   41</span>    <a class="code hl_function" href="class_components_1_1_component.html#a63c5f14c41f2bf2063615c968c4275f2">setYPosition</a>(yPosition);</div>
+<div class="line"><span class="lineno">   42</span> </div>
+<div class="line"><span class="lineno">   43</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   44</span>}</div>
+<div class="ttc" id="aclass_components_1_1_component_html_a63c5f14c41f2bf2063615c968c4275f2"><div class="ttname"><a href="class_components_1_1_component.html#a63c5f14c41f2bf2063615c968c4275f2">Components::Component::setYPosition</a></div><div class="ttdeci">virtual void setYPosition(const float yPosition)</div><div class="ttdoc">Set the y position attribute.</div><div class="ttdef"><b>Definição</b> Component.cpp:30</div></div>
+<div class="ttc" id="aclass_components_1_1_component_html_a68f31358a71f94ac8bfb500bf7fc829b"><div class="ttname"><a href="class_components_1_1_component.html#a68f31358a71f94ac8bfb500bf7fc829b">Components::Component::setXPosition</a></div><div class="ttdeci">virtual void setXPosition(const float xPosition)</div><div class="ttdoc">Set the x position attribute.</div><div class="ttdef"><b>Definição</b> Component.cpp:21</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a10c496804708ba93a3bc860d95592e1e" name="a10c496804708ba93a3bc860d95592e1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10c496804708ba93a3bc860d95592e1e">&#9670;&#160;</a></span>setPosition() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Components::Component::setPosition </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_vector2.html">Vector2</a>&#160;</td>
+          <td class="paramname"><em>position</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the position attribute. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">position</td><td>is the new value to the position. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplementado por <a class="el" href="class_components_1_1_button_text_icon.html#aab12d63e287db4b9f798c8368c7fc5fe">Components::ButtonTextIcon</a> e <a class="el" href="class_views_1_1_view.html#a7311752a2406ff5591c363ef8cbcab7b">Views::View</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   46</span>                                                            {</div>
+<div class="line"><span class="lineno">   47</span>    this-&gt;position = <a class="code hl_variable" href="class_components_1_1_component.html#a08a5ebb3225d0e7a5ff62e25f339e4b2">position</a>;</div>
+<div class="line"><span class="lineno">   48</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   49</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a68f31358a71f94ac8bfb500bf7fc829b" name="a68f31358a71f94ac8bfb500bf7fc829b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68f31358a71f94ac8bfb500bf7fc829b">&#9670;&#160;</a></span>setXPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Components::Component::setXPosition </td>
+          <td>(</td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>xPosition</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the x position attribute. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xPosition</td><td>is the new value to x axis in the position. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplementado por <a class="el" href="class_components_1_1_button_text_icon.html#ab7e970f8da261f8aa65acebc7afc0956">Components::ButtonTextIcon</a> e <a class="el" href="class_views_1_1_view.html#af2d3281fdd6d89357ef477a44dbfba6d">Views::View</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   21</span>                                                            {</div>
+<div class="line"><span class="lineno">   22</span>    this-&gt;<a class="code hl_variable" href="class_components_1_1_component.html#a08a5ebb3225d0e7a5ff62e25f339e4b2">position</a>.<a class="code hl_variable" href="struct_vector2.html#a046bb8d17a876acc49415128dc0502f2">x</a> = xPosition;</div>
+<div class="line"><span class="lineno">   23</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   24</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a63c5f14c41f2bf2063615c968c4275f2" name="a63c5f14c41f2bf2063615c968c4275f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63c5f14c41f2bf2063615c968c4275f2">&#9670;&#160;</a></span>setYPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Components::Component::setYPosition </td>
+          <td>(</td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>yPosition</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the y position attribute. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">yPosition</td><td>is the new value to y axis in the position. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplementado por <a class="el" href="class_components_1_1_button_text_icon.html#ae7156331ff06f604e4e81c7fa908f745">Components::ButtonTextIcon</a> e <a class="el" href="class_views_1_1_view.html#a5e59f866a0ac40b0bcf7f612cf51acdd">Views::View</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   30</span>                                                            {</div>
+<div class="line"><span class="lineno">   31</span>    this-&gt;<a class="code hl_variable" href="class_components_1_1_component.html#a08a5ebb3225d0e7a5ff62e25f339e4b2">position</a>.<a class="code hl_variable" href="struct_vector2.html#a0e07bad05f01ed811b909a2eef97f9e2">y</a> = yPosition;</div>
+<div class="line"><span class="lineno">   32</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   33</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Atributos</h2>
+<a id="a113ac841f7d0dd2b516953849acfb099" name="a113ac841f7d0dd2b516953849acfb099"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a113ac841f7d0dd2b516953849acfb099">&#9670;&#160;</a></span>DEFAULT_INITIAL_POSITION</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_vector2.html">Vector2</a> Components::Component::DEFAULT_INITIAL_POSITION = { 0, 0 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abc3214c3b90394afa78a8b62287e0549" name="abc3214c3b90394afa78a8b62287e0549"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc3214c3b90394afa78a8b62287e0549">&#9670;&#160;</a></span>DEFAUT_INITIAL_HEIGHT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float Components::Component::DEFAUT_INITIAL_HEIGHT = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abc678fa15db51cfe24de74f6fb139536" name="abc678fa15db51cfe24de74f6fb139536"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc678fa15db51cfe24de74f6fb139536">&#9670;&#160;</a></span>DEFAUT_INITIAL_WIDTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float Components::Component::DEFAUT_INITIAL_WIDTH = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb116d54ce2251bd7e49eebd106c7158" name="acb116d54ce2251bd7e49eebd106c7158"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb116d54ce2251bd7e49eebd106c7158">&#9670;&#160;</a></span>height</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Components::Component::height = <a class="el" href="class_components_1_1_component.html#abc3214c3b90394afa78a8b62287e0549">DEFAUT_INITIAL_HEIGHT</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a08a5ebb3225d0e7a5ff62e25f339e4b2" name="a08a5ebb3225d0e7a5ff62e25f339e4b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08a5ebb3225d0e7a5ff62e25f339e4b2">&#9670;&#160;</a></span>position</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector2.html">Vector2</a> Components::Component::position = <a class="el" href="class_components_1_1_component.html#a113ac841f7d0dd2b516953849acfb099">DEFAULT_INITIAL_POSITION</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a81ed41ce45220624606213f8a2e68922" name="a81ed41ce45220624606213f8a2e68922"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81ed41ce45220624606213f8a2e68922">&#9670;&#160;</a></span>width</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Components::Component::width = <a class="el" href="class_components_1_1_component.html#abc678fa15db51cfe24de74f6fb139536">DEFAUT_INITIAL_WIDTH</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>A documentação para essa classe foi gerada a partir dos seguintes arquivos:<ul>
+<li>Faculdade/2023-1/Prog2/BatalhaNaval/include/screen/components/component/<a class="el" href="_component_8hpp_source.html">Component.hpp</a></li>
+<li>Faculdade/2023-1/Prog2/BatalhaNaval/src/screens/components/component/<a class="el" href="_component_8cpp.html">Component.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

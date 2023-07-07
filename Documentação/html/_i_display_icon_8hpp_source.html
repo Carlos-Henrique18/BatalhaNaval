@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Batalha Naval - Documentação: Código-Fonte de Faculdade/2023-1/Prog2/BatalhaNaval/include/screen/components/component/IDisplayIcon.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Batalha Naval - Documentação<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bb75f6ccd9c841ccbcc87ee631ee1cf8.html">Faculdade</a></li><li class="navelem"><a class="el" href="dir_34921b01d83bfae507fa016aa2696f18.html">2023-1</a></li><li class="navelem"><a class="el" href="dir_66a3f915e7756a6ded3a5ab53105a1fe.html">Prog2</a></li><li class="navelem"><a class="el" href="dir_ef9cc14589066c222358a81ffd580e27.html">BatalhaNaval</a></li><li class="navelem"><a class="el" href="dir_8649854c9289a8d6819dfd27e24ff103.html">include</a></li><li class="navelem"><a class="el" href="dir_a36fc79ae3405311521cb057c3350e44.html">screen</a></li><li class="navelem"><a class="el" href="dir_eb957a9e080c555900b692d8faa726f8.html">components</a></li><li class="navelem"><a class="el" href="dir_8825c33232523250ac65dac5bad78874.html">component</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">IDisplayIcon.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_i_display_icon_8hpp.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef IDISPLAY_ICON_HPP</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define IDISPLAY_ICON_HPP</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="raylib_8h.html">raylib.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_components.html">Components</a> {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_components_1_1_i_display_icon.html">    8</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_components_1_1_i_display_icon.html">IDisplayIcon</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_components_1_1_i_display_icon.html#a5d8d932ccc0d7205096248e45c805a7c">   15</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_components_1_1_i_display_icon.html#a5d8d932ccc0d7205096248e45c805a7c">setIconPath</a>(<span class="keyword">const</span> std::string path) = 0;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_components_1_1_i_display_icon.html#afa71088561716d69dee759efa8f66c7e">   22</a></span>            <span class="keyword">virtual</span> std::string <a class="code hl_function" href="class_components_1_1_i_display_icon.html#afa71088561716d69dee759efa8f66c7e">getIconPath</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_components_1_1_i_display_icon.html#a6b8ea4b94d9aebf125a7908506e225ef">   29</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_components_1_1_i_display_icon.html#a6b8ea4b94d9aebf125a7908506e225ef">setIconHeight</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> height) = 0;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_components_1_1_i_display_icon.html#a3cc7077ad7c52e9f8b8688afc81ce3fb">   36</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">float</span> <a class="code hl_function" href="class_components_1_1_i_display_icon.html#a3cc7077ad7c52e9f8b8688afc81ce3fb">getIconHeight</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_components_1_1_i_display_icon.html#ae3d7577868f0952a0ce57f45c7002a49">   43</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_components_1_1_i_display_icon.html#ae3d7577868f0952a0ce57f45c7002a49">setIconWidth</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> width) = 0;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_components_1_1_i_display_icon.html#a217236b716b4b5478e782d44d3d69b62">   50</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">float</span> <a class="code hl_function" href="class_components_1_1_i_display_icon.html#a217236b716b4b5478e782d44d3d69b62">getIconWidth</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    };</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_components_1_1_i_display_icon_html"><div class="ttname"><a href="class_components_1_1_i_display_icon.html">Components::IDisplayIcon</a></div><div class="ttdef"><b>Definição</b> IDisplayIcon.hpp:8</div></div>
+<div class="ttc" id="aclass_components_1_1_i_display_icon_html_a217236b716b4b5478e782d44d3d69b62"><div class="ttname"><a href="class_components_1_1_i_display_icon.html#a217236b716b4b5478e782d44d3d69b62">Components::IDisplayIcon::getIconWidth</a></div><div class="ttdeci">virtual float getIconWidth() const =0</div><div class="ttdoc">Get the icon width attribute.</div></div>
+<div class="ttc" id="aclass_components_1_1_i_display_icon_html_a3cc7077ad7c52e9f8b8688afc81ce3fb"><div class="ttname"><a href="class_components_1_1_i_display_icon.html#a3cc7077ad7c52e9f8b8688afc81ce3fb">Components::IDisplayIcon::getIconHeight</a></div><div class="ttdeci">virtual float getIconHeight() const =0</div><div class="ttdoc">Get the icon height attribute.</div></div>
+<div class="ttc" id="aclass_components_1_1_i_display_icon_html_a5d8d932ccc0d7205096248e45c805a7c"><div class="ttname"><a href="class_components_1_1_i_display_icon.html#a5d8d932ccc0d7205096248e45c805a7c">Components::IDisplayIcon::setIconPath</a></div><div class="ttdeci">virtual void setIconPath(const std::string path)=0</div><div class="ttdoc">Set the path attribute.</div></div>
+<div class="ttc" id="aclass_components_1_1_i_display_icon_html_a6b8ea4b94d9aebf125a7908506e225ef"><div class="ttname"><a href="class_components_1_1_i_display_icon.html#a6b8ea4b94d9aebf125a7908506e225ef">Components::IDisplayIcon::setIconHeight</a></div><div class="ttdeci">virtual void setIconHeight(const float height)=0</div><div class="ttdoc">Set the Icon Height attribute.</div></div>
+<div class="ttc" id="aclass_components_1_1_i_display_icon_html_ae3d7577868f0952a0ce57f45c7002a49"><div class="ttname"><a href="class_components_1_1_i_display_icon.html#ae3d7577868f0952a0ce57f45c7002a49">Components::IDisplayIcon::setIconWidth</a></div><div class="ttdeci">virtual void setIconWidth(const float width)=0</div><div class="ttdoc">Set the Icon Width attribute.</div></div>
+<div class="ttc" id="aclass_components_1_1_i_display_icon_html_afa71088561716d69dee759efa8f66c7e"><div class="ttname"><a href="class_components_1_1_i_display_icon.html#afa71088561716d69dee759efa8f66c7e">Components::IDisplayIcon::getIconPath</a></div><div class="ttdeci">virtual std::string getIconPath() const =0</div><div class="ttdoc">Get the default image path attribute.</div></div>
+<div class="ttc" id="anamespace_components_html"><div class="ttname"><a href="namespace_components.html">Components</a></div><div class="ttdef"><b>Definição</b> Button.hpp:10</div></div>
+<div class="ttc" id="araylib_8h_html"><div class="ttname"><a href="raylib_8h.html">raylib.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

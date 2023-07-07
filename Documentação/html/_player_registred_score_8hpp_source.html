@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Batalha Naval - Documentação: Código-Fonte de Faculdade/2023-1/Prog2/BatalhaNaval/include/screen/score/PlayerRegistredScore.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Batalha Naval - Documentação<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bb75f6ccd9c841ccbcc87ee631ee1cf8.html">Faculdade</a></li><li class="navelem"><a class="el" href="dir_34921b01d83bfae507fa016aa2696f18.html">2023-1</a></li><li class="navelem"><a class="el" href="dir_66a3f915e7756a6ded3a5ab53105a1fe.html">Prog2</a></li><li class="navelem"><a class="el" href="dir_ef9cc14589066c222358a81ffd580e27.html">BatalhaNaval</a></li><li class="navelem"><a class="el" href="dir_8649854c9289a8d6819dfd27e24ff103.html">include</a></li><li class="navelem"><a class="el" href="dir_a36fc79ae3405311521cb057c3350e44.html">screen</a></li><li class="navelem"><a class="el" href="dir_83c9de75386d880ec348e62ba759579e.html">score</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">PlayerRegistredScore.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_player_registred_score_8hpp.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef PLAYER_REGISTRED_SCORE_HPP</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define PLAYER_REGISTRED_SCORE_HPP</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="raylib_8h.html">raylib.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="_view_8hpp.html">View.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_text_8hpp.html">Text.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="_score_8hpp.html">Score.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_views.html">Views</a> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_views_1_1_player_registred_score.html">   16</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_views_1_1_player_registred_score.html">PlayerRegistredScore</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_views_1_1_view.html">View</a> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            std::unique_ptr&lt;Components::Text&gt; playerNameLabel = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            std::vector&lt;std::unique_ptr&lt;Components::Text&gt;&gt; scoreLabels;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            std::string playerName = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            <a class="code hl_class" href="class_score.html">Score</a> playerScore;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <a class="code hl_function" href="class_views_1_1_player_registred_score.html#ab2f4182af272b7d5eafa031882da1274">PlayerRegistredScore</a>();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <span class="keyword">virtual</span> <a class="code hl_function" href="class_views_1_1_player_registred_score.html#ac75cc370536339a7d2db01bd3e9f8ca9">~PlayerRegistredScore</a>();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_views_1_1_player_registred_score.html#ac972a9dc79722bc32ade961575aaf823">render</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="class_views_1_1_player_registred_score.html#ae394daccf58bc1ae86b337b4277fe8c7">update</a>(<span class="keyword">const</span> std::string playerName, <span class="keyword">const</span> <a class="code hl_class" href="class_score.html">Score</a> playerScore);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            std::string <a class="code hl_function" href="class_views_1_1_player_registred_score.html#a5a2c88540ff6ead517df9519b33b18d2">getPlayerName</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <a class="code hl_class" href="class_score.html">Score</a> <a class="code hl_function" href="class_views_1_1_player_registred_score.html#a71534d00cd80ee916e788d84eec594a3">getPlayerScore</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_views_1_1_player_registred_score.html#a9e7e42115d8f4c1d3c9733d3663cbb72">updateInnerComponentsPositions</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_views_1_1_player_registred_score.html#a3f6e02214483df01dd596ed2b6ff1ccd">findWidth</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_views_1_1_player_registred_score.html#ab03d2385530781535de61b53e8c4f545">findHeight</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            <span class="keywordtype">void</span> positionPlayerNameLabel();</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            <span class="keywordtype">void</span> definePlayerNameTextSize();</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            <span class="keywordtype">void</span> positionPlayerScoreLabels();</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            <span class="keywordtype">void</span> defineScoreLabelsTextSize();</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <span class="keywordtype">float</span> getLabelMarginLeft() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            <span class="keywordtype">void</span> setPlayerName(<span class="keyword">const</span> std::string playerName);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            <span class="keywordtype">void</span> setPlayerScore(<span class="keyword">const</span> <a class="code hl_class" href="class_score.html">Score</a> playerScore);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    };   </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>}</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_score_8hpp_html"><div class="ttname"><a href="_score_8hpp.html">Score.hpp</a></div></div>
+<div class="ttc" id="a_text_8hpp_html"><div class="ttname"><a href="_text_8hpp.html">Text.hpp</a></div></div>
+<div class="ttc" id="a_view_8hpp_html"><div class="ttname"><a href="_view_8hpp.html">View.hpp</a></div></div>
+<div class="ttc" id="aclass_score_html"><div class="ttname"><a href="class_score.html">Score</a></div><div class="ttdef"><b>Definição</b> Score.hpp:4</div></div>
+<div class="ttc" id="aclass_views_1_1_player_registred_score_html"><div class="ttname"><a href="class_views_1_1_player_registred_score.html">Views::PlayerRegistredScore</a></div><div class="ttdef"><b>Definição</b> PlayerRegistredScore.hpp:16</div></div>
+<div class="ttc" id="aclass_views_1_1_player_registred_score_html_a3f6e02214483df01dd596ed2b6ff1ccd"><div class="ttname"><a href="class_views_1_1_player_registred_score.html#a3f6e02214483df01dd596ed2b6ff1ccd">Views::PlayerRegistredScore::findWidth</a></div><div class="ttdeci">virtual void findWidth() override</div><div class="ttdoc">Define the width of the view.</div><div class="ttdef"><b>Definição</b> PlayerRegistredScore.cpp:103</div></div>
+<div class="ttc" id="aclass_views_1_1_player_registred_score_html_a5a2c88540ff6ead517df9519b33b18d2"><div class="ttname"><a href="class_views_1_1_player_registred_score.html#a5a2c88540ff6ead517df9519b33b18d2">Views::PlayerRegistredScore::getPlayerName</a></div><div class="ttdeci">std::string getPlayerName() const</div><div class="ttdoc">Get the player name attribute.</div><div class="ttdef"><b>Definição</b> PlayerRegistredScore.cpp:136</div></div>
+<div class="ttc" id="aclass_views_1_1_player_registred_score_html_a71534d00cd80ee916e788d84eec594a3"><div class="ttname"><a href="class_views_1_1_player_registred_score.html#a71534d00cd80ee916e788d84eec594a3">Views::PlayerRegistredScore::getPlayerScore</a></div><div class="ttdeci">Score getPlayerScore() const</div><div class="ttdoc">Get the player score attribute.</div><div class="ttdef"><b>Definição</b> PlayerRegistredScore.cpp:145</div></div>
+<div class="ttc" id="aclass_views_1_1_player_registred_score_html_a9e7e42115d8f4c1d3c9733d3663cbb72"><div class="ttname"><a href="class_views_1_1_player_registred_score.html#a9e7e42115d8f4c1d3c9733d3663cbb72">Views::PlayerRegistredScore::updateInnerComponentsPositions</a></div><div class="ttdeci">virtual void updateInnerComponentsPositions() override</div><div class="ttdoc">Update all inner components positions.</div><div class="ttdef"><b>Definição</b> PlayerRegistredScore.cpp:61</div></div>
+<div class="ttc" id="aclass_views_1_1_player_registred_score_html_ab03d2385530781535de61b53e8c4f545"><div class="ttname"><a href="class_views_1_1_player_registred_score.html#ab03d2385530781535de61b53e8c4f545">Views::PlayerRegistredScore::findHeight</a></div><div class="ttdeci">virtual void findHeight() override</div><div class="ttdoc">Define the height of the view.</div><div class="ttdef"><b>Definição</b> PlayerRegistredScore.cpp:118</div></div>
+<div class="ttc" id="aclass_views_1_1_player_registred_score_html_ab2f4182af272b7d5eafa031882da1274"><div class="ttname"><a href="class_views_1_1_player_registred_score.html#ab2f4182af272b7d5eafa031882da1274">Views::PlayerRegistredScore::PlayerRegistredScore</a></div><div class="ttdeci">PlayerRegistredScore()</div><div class="ttdoc">Create the section that displays the score of a player in a match.</div><div class="ttdef"><b>Definição</b> PlayerRegistredScore.cpp:14</div></div>
+<div class="ttc" id="aclass_views_1_1_player_registred_score_html_ac75cc370536339a7d2db01bd3e9f8ca9"><div class="ttname"><a href="class_views_1_1_player_registred_score.html#ac75cc370536339a7d2db01bd3e9f8ca9">Views::PlayerRegistredScore::~PlayerRegistredScore</a></div><div class="ttdeci">virtual ~PlayerRegistredScore()</div><div class="ttdoc">Destroy the Player Registred Score view.</div><div class="ttdef"><b>Definição</b> PlayerRegistredScore.cpp:26</div></div>
+<div class="ttc" id="aclass_views_1_1_player_registred_score_html_ac972a9dc79722bc32ade961575aaf823"><div class="ttname"><a href="class_views_1_1_player_registred_score.html#ac972a9dc79722bc32ade961575aaf823">Views::PlayerRegistredScore::render</a></div><div class="ttdeci">virtual void render() override</div><div class="ttdoc">Render the view in the interface.</div><div class="ttdef"><b>Definição</b> PlayerRegistredScore.cpp:28</div></div>
+<div class="ttc" id="aclass_views_1_1_player_registred_score_html_ae394daccf58bc1ae86b337b4277fe8c7"><div class="ttname"><a href="class_views_1_1_player_registred_score.html#ae394daccf58bc1ae86b337b4277fe8c7">Views::PlayerRegistredScore::update</a></div><div class="ttdeci">void update(const std::string playerName, const Score playerScore)</div><div class="ttdoc">Update the view values based on the playerName and playerScore.</div><div class="ttdef"><b>Definição</b> PlayerRegistredScore.cpp:40</div></div>
+<div class="ttc" id="aclass_views_1_1_view_html"><div class="ttname"><a href="class_views_1_1_view.html">Views::View</a></div><div class="ttdef"><b>Definição</b> View.hpp:9</div></div>
+<div class="ttc" id="anamespace_views_html"><div class="ttname"><a href="namespace_views.html">Views</a></div><div class="ttdef"><b>Definição</b> View.hpp:8</div></div>
+<div class="ttc" id="araylib_8h_html"><div class="ttname"><a href="raylib_8h.html">raylib.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['dark_5fpurple_0',['DARK_PURPLE',['../_colors_8hpp.html#aa1bb1f6cfe49aae02d0ed9e52b5fd683',1,'Colors.hpp']]],
+  ['data_1',['data',['../classdoctest_1_1_string.html#a5c77ed634a1b81aea739a73fb01d986a',1,'doctest::String::data'],['../structdoctest_1_1_query_data.html#a8085a29db9a1cd5c7eff22ef44e9a9e8',1,'doctest::QueryData::data'],['../struct_image.html#a2d9eabf3628b454331420e4b377538b9',1,'Image::data'],['../struct_wave.html#a2458d3fdb31625bb0a3d1e885ef8755c',1,'Wave::data']]],
+  ['default_5fbackground_5fcolor_2',['DEFAULT_BACKGROUND_COLOR',['../class_components_1_1_button.html#ad44c4c9d9092f514666afa925e429458',1,'Components::Button']]],
+  ['default_5fbalck_3',['DEFAULT_BALCK',['../_colors_8hpp.html#a8b035c1d91c8954091f11af19e8ed669',1,'Colors.hpp']]],
+  ['default_5fboard_5famount_5fhorizontal_5fcells_4',['DEFAULT_BOARD_AMOUNT_HORIZONTAL_CELLS',['../_constants_8hpp.html#a86c2da8975259dc969fff1ea3381342e',1,'Constants.hpp']]],
+  ['default_5fboard_5famount_5fvertical_5fcells_5',['DEFAULT_BOARD_AMOUNT_VERTICAL_CELLS',['../_constants_8hpp.html#adccd7cda5cacb391f7c3423f12ee48a3',1,'Constants.hpp']]],
+  ['default_5fcolor_6',['DEFAULT_COLOR',['../class_components_1_1_text.html#a0929154b57a1a65d342ec0e2157668b0',1,'Components::Text']]],
+  ['default_5ffont_5fspacing_7',['DEFAULT_FONT_SPACING',['../class_components_1_1_text.html#a3474d381c0717c9647f134e4c8c3b321',1,'Components::Text']]],
+  ['default_5ffps_8',['DEFAULT_FPS',['../class_screens_1_1_screen_manager.html#a6da521711465c437249ce03bbb940163',1,'Screens::ScreenManager']]],
+  ['default_5fheight_9',['DEFAULT_HEIGHT',['../class_components_1_1_image.html#a4976ee6f44b7c9cce96a9dcc5cb62144',1,'Components::Image']]],
+  ['default_5finitial_5fposition_10',['DEFAULT_INITIAL_POSITION',['../class_components_1_1_component.html#a113ac841f7d0dd2b516953849acfb099',1,'Components::Component']]],
+  ['default_5fwhite_11',['DEFAULT_WHITE',['../_colors_8hpp.html#a350e1f502574b1c5e121e1a40c06bcb4',1,'Colors.hpp']]],
+  ['default_5fwidth_12',['DEFAULT_WIDTH',['../class_components_1_1_image.html#ac465cb0a4a7ce1e5e3fa4ca33cd577dc',1,'Components::Image']]],
+  ['defaut_5finitial_5fheight_13',['DEFAUT_INITIAL_HEIGHT',['../class_components_1_1_component.html#abc3214c3b90394afa78a8b62287e0549',1,'Components::Component']]],
+  ['defaut_5finitial_5fwidth_14',['DEFAUT_INITIAL_WIDTH',['../class_components_1_1_component.html#abc678fa15db51cfe24de74f6fb139536',1,'Components::Component']]],
+  ['depth_15',['depth',['../struct_render_texture.html#a320d3a52083a1cbba054b5125626d2a8',1,'RenderTexture']]],
+  ['direction_16',['direction',['../struct_ray.html#ac502377212f9b63774baf8a3f984d639',1,'Ray']]],
+  ['distance_17',['distance',['../struct_ray_collision.html#a637f3d21f2012edf6efd4f2426b7617b',1,'RayCollision']]],
+  ['duration_18',['duration',['../structdoctest_1_1_context_options.html#a0fc3e0c1cf669cffd1f826c005fc4223',1,'doctest::ContextOptions']]]
+];

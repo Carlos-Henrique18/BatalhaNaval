@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Batalha Naval - Documentação: Código-Fonte de Faculdade/2023-1/Prog2/BatalhaNaval/include/logic/match/MatchResults.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Batalha Naval - Documentação<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bb75f6ccd9c841ccbcc87ee631ee1cf8.html">Faculdade</a></li><li class="navelem"><a class="el" href="dir_34921b01d83bfae507fa016aa2696f18.html">2023-1</a></li><li class="navelem"><a class="el" href="dir_66a3f915e7756a6ded3a5ab53105a1fe.html">Prog2</a></li><li class="navelem"><a class="el" href="dir_ef9cc14589066c222358a81ffd580e27.html">BatalhaNaval</a></li><li class="navelem"><a class="el" href="dir_8649854c9289a8d6819dfd27e24ff103.html">include</a></li><li class="navelem"><a class="el" href="dir_e7bbe0579d8873d7f0f7724ca58a3d98.html">logic</a></li><li class="navelem"><a class="el" href="dir_864d2fb218d729b62f1402666084ee46.html">match</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">MatchResults.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_match_results_8hpp.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef MATCH_RESULTS_HPP</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define MATCH_RESULTS_HPP</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="_score_8hpp.html">Score.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_match_results.html">    8</a></span><span class="keyword">class </span><a class="code hl_class" href="class_match_results.html">MatchResults</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        std::string <span class="keywordtype">id</span> = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        std::string player1Name = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        std::string player2Name = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <a class="code hl_class" href="class_score.html">Score</a> player1Score;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <a class="code hl_class" href="class_score.html">Score</a> player2Score;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <a class="code hl_function" href="class_match_results.html#afdbad950f7877b063758460c58419d8c">MatchResults</a>();</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <a class="code hl_function" href="class_match_results.html#afdbad950f7877b063758460c58419d8c">MatchResults</a>(<span class="keyword">const</span> std::string player1Name, <span class="keyword">const</span> <a class="code hl_class" href="class_score.html">Score</a> player1Score, <span class="keyword">const</span> std::string player2Name, <span class="keyword">const</span> <a class="code hl_class" href="class_score.html">Score</a> player2Score, <span class="keyword">const</span> std::string <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keyword">virtual</span> <a class="code hl_function" href="class_match_results.html#af1a78ae908586ddd8f01876a04d0c79f">~MatchResults</a>();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_match_results.html#a5da555d2308507aec6a73b454a886054">setPlayer1Name</a>(<span class="keyword">const</span> std::string name);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        std::string <a class="code hl_function" href="class_match_results.html#aa624f82831773a07674e8fce34f0a593">getPlayer1Name</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_match_results.html#a80e551c90ed0d3371edfee197a04dd3e">setPlayer1Score</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_score.html">Score</a> score);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <a class="code hl_class" href="class_score.html">Score</a> <a class="code hl_function" href="class_match_results.html#a3008a3cd3fff997ada58d463c1c6cc14">getPlayer1Score</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_match_results.html#a8ded217cd105ccf929f4419a34c2f5ed">setPlayer2Name</a>(<span class="keyword">const</span> std::string name);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        std::string <a class="code hl_function" href="class_match_results.html#a7f376adfffffd6aba9ec7dc0aebd39de">getPlayer2Name</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_match_results.html#a34c8bb6b2f96ace77ce4bc447ef65e85">setPlayer2Score</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_score.html">Score</a> score);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <a class="code hl_class" href="class_score.html">Score</a> <a class="code hl_function" href="class_match_results.html#a602875630a7d1d871fe25e85b70f4c90">getPlayer2Score</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_match_results.html#a3f56bc5e5e638eb035d94246fa79bfff">setId</a>(<span class="keyword">const</span> std::string <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        std::string <a class="code hl_function" href="class_match_results.html#aa651a4ef0fd307a4c2c4c2c1d05ec5eb">getId</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>};</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_score_8hpp_html"><div class="ttname"><a href="_score_8hpp.html">Score.hpp</a></div></div>
+<div class="ttc" id="aclass_match_results_html"><div class="ttname"><a href="class_match_results.html">MatchResults</a></div><div class="ttdef"><b>Definição</b> MatchResults.hpp:8</div></div>
+<div class="ttc" id="aclass_match_results_html_a3008a3cd3fff997ada58d463c1c6cc14"><div class="ttname"><a href="class_match_results.html#a3008a3cd3fff997ada58d463c1c6cc14">MatchResults::getPlayer1Score</a></div><div class="ttdeci">Score getPlayer1Score() const</div><div class="ttdoc">Get the score associated to the first player.</div><div class="ttdef"><b>Definição</b> MatchResults.cpp:38</div></div>
+<div class="ttc" id="aclass_match_results_html_a34c8bb6b2f96ace77ce4bc447ef65e85"><div class="ttname"><a href="class_match_results.html#a34c8bb6b2f96ace77ce4bc447ef65e85">MatchResults::setPlayer2Score</a></div><div class="ttdeci">void setPlayer2Score(const Score score)</div><div class="ttdoc">Set the score associated to the 2nd player.</div><div class="ttdef"><b>Definição</b> MatchResults.cpp:51</div></div>
+<div class="ttc" id="aclass_match_results_html_a3f56bc5e5e638eb035d94246fa79bfff"><div class="ttname"><a href="class_match_results.html#a3f56bc5e5e638eb035d94246fa79bfff">MatchResults::setId</a></div><div class="ttdeci">void setId(const std::string id)</div><div class="ttdoc">Set a new id of a match.</div><div class="ttdef"><b>Definição</b> MatchResults.cpp:60</div></div>
+<div class="ttc" id="aclass_match_results_html_a5da555d2308507aec6a73b454a886054"><div class="ttname"><a href="class_match_results.html#a5da555d2308507aec6a73b454a886054">MatchResults::setPlayer1Name</a></div><div class="ttdeci">void setPlayer1Name(const std::string name)</div><div class="ttdoc">Set the 1st player name.</div><div class="ttdef"><b>Definição</b> MatchResults.cpp:24</div></div>
+<div class="ttc" id="aclass_match_results_html_a602875630a7d1d871fe25e85b70f4c90"><div class="ttname"><a href="class_match_results.html#a602875630a7d1d871fe25e85b70f4c90">MatchResults::getPlayer2Score</a></div><div class="ttdeci">Score getPlayer2Score() const</div><div class="ttdoc">Get the score associated to the second player.</div><div class="ttdef"><b>Definição</b> MatchResults.cpp:56</div></div>
+<div class="ttc" id="aclass_match_results_html_a7f376adfffffd6aba9ec7dc0aebd39de"><div class="ttname"><a href="class_match_results.html#a7f376adfffffd6aba9ec7dc0aebd39de">MatchResults::getPlayer2Name</a></div><div class="ttdeci">std::string getPlayer2Name() const</div><div class="ttdoc">Get the 2nd player name.</div><div class="ttdef"><b>Definição</b> MatchResults.cpp:47</div></div>
+<div class="ttc" id="aclass_match_results_html_a80e551c90ed0d3371edfee197a04dd3e"><div class="ttname"><a href="class_match_results.html#a80e551c90ed0d3371edfee197a04dd3e">MatchResults::setPlayer1Score</a></div><div class="ttdeci">void setPlayer1Score(const Score score)</div><div class="ttdoc">Set the score associated to the 1st player.</div><div class="ttdef"><b>Definição</b> MatchResults.cpp:33</div></div>
+<div class="ttc" id="aclass_match_results_html_a8ded217cd105ccf929f4419a34c2f5ed"><div class="ttname"><a href="class_match_results.html#a8ded217cd105ccf929f4419a34c2f5ed">MatchResults::setPlayer2Name</a></div><div class="ttdeci">void setPlayer2Name(const std::string name)</div><div class="ttdoc">Set the 2nd player name.</div><div class="ttdef"><b>Definição</b> MatchResults.cpp:42</div></div>
+<div class="ttc" id="aclass_match_results_html_aa624f82831773a07674e8fce34f0a593"><div class="ttname"><a href="class_match_results.html#aa624f82831773a07674e8fce34f0a593">MatchResults::getPlayer1Name</a></div><div class="ttdeci">std::string getPlayer1Name() const</div><div class="ttdoc">Get the 1st player name.</div><div class="ttdef"><b>Definição</b> MatchResults.cpp:29</div></div>
+<div class="ttc" id="aclass_match_results_html_aa651a4ef0fd307a4c2c4c2c1d05ec5eb"><div class="ttname"><a href="class_match_results.html#aa651a4ef0fd307a4c2c4c2c1d05ec5eb">MatchResults::getId</a></div><div class="ttdeci">std::string getId() const</div><div class="ttdoc">Get the id of the matchResult.</div><div class="ttdef"><b>Definição</b> MatchResults.cpp:67</div></div>
+<div class="ttc" id="aclass_match_results_html_af1a78ae908586ddd8f01876a04d0c79f"><div class="ttname"><a href="class_match_results.html#af1a78ae908586ddd8f01876a04d0c79f">MatchResults::~MatchResults</a></div><div class="ttdeci">virtual ~MatchResults()</div><div class="ttdoc">Destroy the Match Results object.</div><div class="ttdef"><b>Definição</b> MatchResults.cpp:20</div></div>
+<div class="ttc" id="aclass_match_results_html_afdbad950f7877b063758460c58419d8c"><div class="ttname"><a href="class_match_results.html#afdbad950f7877b063758460c58419d8c">MatchResults::MatchResults</a></div><div class="ttdeci">MatchResults()</div><div class="ttdoc">Standard constructor.</div><div class="ttdef"><b>Definição</b> MatchResults.cpp:8</div></div>
+<div class="ttc" id="aclass_score_html"><div class="ttname"><a href="class_score.html">Score</a></div><div class="ttdef"><b>Definição</b> Score.hpp:4</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

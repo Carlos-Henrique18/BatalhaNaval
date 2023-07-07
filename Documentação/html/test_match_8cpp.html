@@ -1,0 +1,442 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Batalha Naval - Documentação: Referência do Arquivo Faculdade/2023-1/Prog2/BatalhaNaval/tests/match/testMatch.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Batalha Naval - Documentação<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bb75f6ccd9c841ccbcc87ee631ee1cf8.html">Faculdade</a></li><li class="navelem"><a class="el" href="dir_34921b01d83bfae507fa016aa2696f18.html">2023-1</a></li><li class="navelem"><a class="el" href="dir_66a3f915e7756a6ded3a5ab53105a1fe.html">Prog2</a></li><li class="navelem"><a class="el" href="dir_ef9cc14589066c222358a81ffd580e27.html">BatalhaNaval</a></li><li class="navelem"><a class="el" href="dir_9492adb588cd489348c612c28e907b68.html">tests</a></li><li class="navelem"><a class="el" href="dir_0aaacac3a4e9b0f3e91865167d4d2a85.html">match</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência do Arquivo testMatch.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="doctest_8hpp_source.html">doctest.hpp</a>&quot;</code><br />
+<code>#include &lt;stdexcept&gt;</code><br />
+<code>#include &lt;regex&gt;</code><br />
+<code>#include &quot;<a class="el" href="_match_8hpp_source.html">Match.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ac2fea7e222ea8c72a2f0fe1a22a3f332"><td class="memItemLeft" align="right" valign="top"><a class="el" href="raylib_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_match_8cpp.html#ac2fea7e222ea8c72a2f0fe1a22a3f332">compareScores</a> (<a class="el" href="class_score.html">Score</a> a, <a class="el" href="class_score.html">Score</a> b)</td></tr>
+<tr class="separator:ac2fea7e222ea8c72a2f0fe1a22a3f332"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1a4d953862b3eaaeff714b5bf573fc6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_match_8cpp.html#aa1a4d953862b3eaaeff714b5bf573fc6">TEST_CASE</a> (&quot;Initialize a match and check default values&quot;)</td></tr>
+<tr class="separator:aa1a4d953862b3eaaeff714b5bf573fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae183341f8c0aa1a7198cb02306fc5468"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_match_8cpp.html#ae183341f8c0aa1a7198cb02306fc5468">TEST_CASE</a> (&quot;Check turns, and passing turns without &quot;)</td></tr>
+<tr class="separator:ae183341f8c0aa1a7198cb02306fc5468"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64921cb8446e5cc22d8ee6f82ac7a8d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_match_8cpp.html#a64921cb8446e5cc22d8ee6f82ac7a8d3">TEST_CASE</a> (&quot;Check for a finished game by player 1 and 2, and both&quot;)</td></tr>
+<tr class="separator:a64921cb8446e5cc22d8ee6f82ac7a8d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9de506dca483ce3ed02f9c49a5bceb6b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_match_8cpp.html#a9de506dca483ce3ed02f9c49a5bceb6b">TEST_CASE</a> (&quot;Increment both players score without a troop being destroyed&quot;)</td></tr>
+<tr class="separator:a9de506dca483ce3ed02f9c49a5bceb6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5776372764fee2f94acca85c03c46641"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_match_8cpp.html#a5776372764fee2f94acca85c03c46641">TEST_CASE</a> (&quot;Increment both players score with a troop being destroyed&quot;)</td></tr>
+<tr class="separator:a5776372764fee2f94acca85c03c46641"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24b624c812031ee5487e13453f1d8254"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_match_8cpp.html#a24b624c812031ee5487e13453f1d8254">TEST_CASE</a> (&quot;Increment player 1 and 2 amount of shots&quot;)</td></tr>
+<tr class="separator:a24b624c812031ee5487e13453f1d8254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d96f528723c192d83696ce6f46c8af4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_match_8cpp.html#a7d96f528723c192d83696ce6f46c8af4">TEST_CASE</a> (&quot;Trying to get <a class="el" href="class_match_results.html">MatchResults</a> out of match&quot;)</td></tr>
+<tr class="separator:a7d96f528723c192d83696ce6f46c8af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Funções</h2>
+<a id="ac2fea7e222ea8c72a2f0fe1a22a3f332" name="ac2fea7e222ea8c72a2f0fe1a22a3f332"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2fea7e222ea8c72a2f0fe1a22a3f332">&#9670;&#160;</a></span>compareScores()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="raylib_8h.html#af6a258d8f3ee5206d682d799316314b1">bool</a> compareScores </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_score.html">Score</a>&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_score.html">Score</a>&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">    8</span>                                    {</div>
+<div class="line"><span class="lineno">    9</span>    <span class="keywordflow">if</span> (a.<a class="code hl_function" href="class_score.html#a11983b3d59a0cf0d93a66f74e009dc9e">getDestroyedTroops</a>() != b.<a class="code hl_function" href="class_score.html#a11983b3d59a0cf0d93a66f74e009dc9e">getDestroyedTroops</a>()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   10</span>    <span class="keywordflow">if</span> (a.<a class="code hl_function" href="class_score.html#aa2feeeeee139e274e70714e59163476c">getHitShoots</a>() != b.<a class="code hl_function" href="class_score.html#aa2feeeeee139e274e70714e59163476c">getHitShoots</a>()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   11</span>    <span class="keywordflow">if</span> (a.<a class="code hl_function" href="class_score.html#a8a2333e4bfaf357fc2be42ad89af95d5">getLostTroops</a>() != b.<a class="code hl_function" href="class_score.html#a8a2333e4bfaf357fc2be42ad89af95d5">getLostTroops</a>()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   12</span>    <span class="keywordflow">if</span> (a.<a class="code hl_function" href="class_score.html#a570d8d942f12d6d145a597baa5c5ea83">getRemainingTroops</a>() != b.<a class="code hl_function" href="class_score.html#a570d8d942f12d6d145a597baa5c5ea83">getRemainingTroops</a>()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   13</span>    <span class="keywordflow">if</span> (a.<a class="code hl_function" href="class_score.html#ad76e954a0da5765449dfcd2a159cebc1">getTotalAmountShoots</a>() != b.<a class="code hl_function" href="class_score.html#ad76e954a0da5765449dfcd2a159cebc1">getTotalAmountShoots</a>()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   14</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   15</span>}</div>
+<div class="ttc" id="aclass_score_html_a11983b3d59a0cf0d93a66f74e009dc9e"><div class="ttname"><a href="class_score.html#a11983b3d59a0cf0d93a66f74e009dc9e">Score::getDestroyedTroops</a></div><div class="ttdeci">int getDestroyedTroops() const</div><div class="ttdoc">Get the number of destroyedTroops.</div><div class="ttdef"><b>Definição</b> Score.cpp:34</div></div>
+<div class="ttc" id="aclass_score_html_a570d8d942f12d6d145a597baa5c5ea83"><div class="ttname"><a href="class_score.html#a570d8d942f12d6d145a597baa5c5ea83">Score::getRemainingTroops</a></div><div class="ttdeci">int getRemainingTroops() const</div><div class="ttdoc">Get the number of remainingTroops.</div><div class="ttdef"><b>Definição</b> Score.cpp:49</div></div>
+<div class="ttc" id="aclass_score_html_a8a2333e4bfaf357fc2be42ad89af95d5"><div class="ttname"><a href="class_score.html#a8a2333e4bfaf357fc2be42ad89af95d5">Score::getLostTroops</a></div><div class="ttdeci">int getLostTroops() const</div><div class="ttdoc">Get the number of lostTroops.</div><div class="ttdef"><b>Definição</b> Score.cpp:64</div></div>
+<div class="ttc" id="aclass_score_html_aa2feeeeee139e274e70714e59163476c"><div class="ttname"><a href="class_score.html#aa2feeeeee139e274e70714e59163476c">Score::getHitShoots</a></div><div class="ttdeci">int getHitShoots() const</div><div class="ttdoc">Get the amount of shots that hit an troop done by the player.</div><div class="ttdef"><b>Definição</b> Score.cpp:96</div></div>
+<div class="ttc" id="aclass_score_html_ad76e954a0da5765449dfcd2a159cebc1"><div class="ttname"><a href="class_score.html#ad76e954a0da5765449dfcd2a159cebc1">Score::getTotalAmountShoots</a></div><div class="ttdeci">int getTotalAmountShoots() const</div><div class="ttdoc">Get the number of totalAmountShoots.</div><div class="ttdef"><b>Definição</b> Score.cpp:80</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a64921cb8446e5cc22d8ee6f82ac7a8d3" name="a64921cb8446e5cc22d8ee6f82ac7a8d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64921cb8446e5cc22d8ee6f82ac7a8d3">&#9670;&#160;</a></span>TEST_CASE() <span class="overload">[1/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Check for a finished game by player 1 and&#160;</td>
+          <td class="paramname"><em>2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">and both&quot;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   37</span>                                                                   {</div>
+<div class="line"><span class="lineno">   38</span>    <a class="code hl_class" href="class_match.html">Match</a> a;</div>
+<div class="line"><span class="lineno">   39</span>    a.<a class="code hl_function" href="class_match.html#a3b6e90eb2154c46a5514a9495c1b837c">getPlayer1</a>()-&gt;getScore()-&gt;setRemainingTroops(1);</div>
+<div class="line"><span class="lineno">   40</span>    a.<a class="code hl_function" href="class_match.html#af529ee4e9870664ad25ece77a174ffcf">getPlayer2</a>()-&gt;getScore()-&gt;setRemainingTroops(1);</div>
+<div class="line"><span class="lineno">   41</span> </div>
+<div class="line"><span class="lineno">   42</span>    <a class="code hl_define" href="doctest_8hpp.html#a7bf095d8512cb180f8ff3a2258a6eaac">CHECK_FALSE</a>(a.<a class="code hl_function" href="class_match.html#a2c1b68e973cac066c1ac3ebce1f8f992">hasGameFinished</a>());</div>
+<div class="line"><span class="lineno">   43</span> </div>
+<div class="line"><span class="lineno">   44</span>    a.<a class="code hl_function" href="class_match.html#a3b6e90eb2154c46a5514a9495c1b837c">getPlayer1</a>()-&gt;getScore()-&gt;decrementRemainingTroops();</div>
+<div class="line"><span class="lineno">   45</span> </div>
+<div class="line"><span class="lineno">   46</span>    <a class="code hl_define" href="doctest_8hpp.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(a.<a class="code hl_function" href="class_match.html#a2c1b68e973cac066c1ac3ebce1f8f992">hasGameFinished</a>());</div>
+<div class="line"><span class="lineno">   47</span>    </div>
+<div class="line"><span class="lineno">   48</span>    a.<a class="code hl_function" href="class_match.html#a3b6e90eb2154c46a5514a9495c1b837c">getPlayer1</a>()-&gt;getScore()-&gt;setRemainingTroops(1);</div>
+<div class="line"><span class="lineno">   49</span>    a.<a class="code hl_function" href="class_match.html#af529ee4e9870664ad25ece77a174ffcf">getPlayer2</a>()-&gt;getScore()-&gt;decrementRemainingTroops();</div>
+<div class="line"><span class="lineno">   50</span> </div>
+<div class="line"><span class="lineno">   51</span>    <a class="code hl_define" href="doctest_8hpp.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(a.<a class="code hl_function" href="class_match.html#a2c1b68e973cac066c1ac3ebce1f8f992">hasGameFinished</a>());</div>
+<div class="line"><span class="lineno">   52</span> </div>
+<div class="line"><span class="lineno">   53</span>    a.<a class="code hl_function" href="class_match.html#a3b6e90eb2154c46a5514a9495c1b837c">getPlayer1</a>()-&gt;getScore()-&gt;decrementRemainingTroops();</div>
+<div class="line"><span class="lineno">   54</span> </div>
+<div class="line"><span class="lineno">   55</span>    <a class="code hl_define" href="doctest_8hpp.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(a.<a class="code hl_function" href="class_match.html#a2c1b68e973cac066c1ac3ebce1f8f992">hasGameFinished</a>());</div>
+<div class="line"><span class="lineno">   56</span>}</div>
+<div class="ttc" id="aclass_match_html"><div class="ttname"><a href="class_match.html">Match</a></div><div class="ttdef"><b>Definição</b> Match.hpp:10</div></div>
+<div class="ttc" id="aclass_match_html_a2c1b68e973cac066c1ac3ebce1f8f992"><div class="ttname"><a href="class_match.html#a2c1b68e973cac066c1ac3ebce1f8f992">Match::hasGameFinished</a></div><div class="ttdeci">bool hasGameFinished() const</div><div class="ttdoc">Verify if the game has reach it's end.</div><div class="ttdef"><b>Definição</b> Match.cpp:37</div></div>
+<div class="ttc" id="aclass_match_html_a3b6e90eb2154c46a5514a9495c1b837c"><div class="ttname"><a href="class_match.html#a3b6e90eb2154c46a5514a9495c1b837c">Match::getPlayer1</a></div><div class="ttdeci">std::shared_ptr&lt; Player &gt; getPlayer1() const</div><div class="ttdoc">Gets the player1 attribute by reference.</div><div class="ttdef"><b>Definição</b> Match.cpp:96</div></div>
+<div class="ttc" id="aclass_match_html_af529ee4e9870664ad25ece77a174ffcf"><div class="ttname"><a href="class_match.html#af529ee4e9870664ad25ece77a174ffcf">Match::getPlayer2</a></div><div class="ttdeci">std::shared_ptr&lt; Player &gt; getPlayer2() const</div><div class="ttdoc">Gets the player2 attribute by reference.</div><div class="ttdef"><b>Definição</b> Match.cpp:100</div></div>
+<div class="ttc" id="adoctest_8hpp_html_a7bf095d8512cb180f8ff3a2258a6eaac"><div class="ttname"><a href="doctest_8hpp.html#a7bf095d8512cb180f8ff3a2258a6eaac">CHECK_FALSE</a></div><div class="ttdeci">#define CHECK_FALSE(...)</div><div class="ttdef"><b>Definição</b> doctest.hpp:2764</div></div>
+<div class="ttc" id="adoctest_8hpp_html_a836cca6b6ed3a1706353f6d1bca0935f"><div class="ttname"><a href="doctest_8hpp.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a></div><div class="ttdeci">#define CHECK(...)</div><div class="ttdef"><b>Definição</b> doctest.hpp:2763</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae183341f8c0aa1a7198cb02306fc5468" name="ae183341f8c0aa1a7198cb02306fc5468"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae183341f8c0aa1a7198cb02306fc5468">&#9670;&#160;</a></span>TEST_CASE() <span class="overload">[2/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Check&#160;</td>
+          <td class="paramname"><em>turns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">and passing turns without &quot;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   23</span>                                                    {</div>
+<div class="line"><span class="lineno">   24</span>    <a class="code hl_class" href="class_match.html">Match</a> a;</div>
+<div class="line"><span class="lineno">   25</span>    <a class="code hl_define" href="doctest_8hpp.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(a.<a class="code hl_function" href="class_match.html#aae6691f6f59dd602d0bf1db7b32ec293">isPlayer1Turn</a>());</div>
+<div class="line"><span class="lineno">   26</span>    <a class="code hl_define" href="doctest_8hpp.html#a7bf095d8512cb180f8ff3a2258a6eaac">CHECK_FALSE</a>(a.<a class="code hl_function" href="class_match.html#ac67cf3e3974239b16ffdb2c276592915">isPlayer2Turn</a>());</div>
+<div class="line"><span class="lineno">   27</span> </div>
+<div class="line"><span class="lineno">   28</span>    a.<a class="code hl_function" href="class_match.html#a3b6e90eb2154c46a5514a9495c1b837c">getPlayer1</a>()-&gt;getScore()-&gt;setRemainingTroops(1);</div>
+<div class="line"><span class="lineno">   29</span>    a.<a class="code hl_function" href="class_match.html#af529ee4e9870664ad25ece77a174ffcf">getPlayer2</a>()-&gt;getScore()-&gt;setRemainingTroops(1);</div>
+<div class="line"><span class="lineno">   30</span> </div>
+<div class="line"><span class="lineno">   31</span>    a.<a class="code hl_function" href="class_match.html#adf2632daec5c23763273e931d6ff4748">passTurn</a>();</div>
+<div class="line"><span class="lineno">   32</span> </div>
+<div class="line"><span class="lineno">   33</span>    <a class="code hl_define" href="doctest_8hpp.html#a7bf095d8512cb180f8ff3a2258a6eaac">CHECK_FALSE</a>(a.<a class="code hl_function" href="class_match.html#aae6691f6f59dd602d0bf1db7b32ec293">isPlayer1Turn</a>());</div>
+<div class="line"><span class="lineno">   34</span>    <a class="code hl_define" href="doctest_8hpp.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(a.<a class="code hl_function" href="class_match.html#ac67cf3e3974239b16ffdb2c276592915">isPlayer2Turn</a>());</div>
+<div class="line"><span class="lineno">   35</span>}</div>
+<div class="ttc" id="aclass_match_html_aae6691f6f59dd602d0bf1db7b32ec293"><div class="ttname"><a href="class_match.html#aae6691f6f59dd602d0bf1db7b32ec293">Match::isPlayer1Turn</a></div><div class="ttdeci">bool isPlayer1Turn() const</div><div class="ttdoc">Checks if it's the player 1 turn.</div><div class="ttdef"><b>Definição</b> Match.cpp:29</div></div>
+<div class="ttc" id="aclass_match_html_ac67cf3e3974239b16ffdb2c276592915"><div class="ttname"><a href="class_match.html#ac67cf3e3974239b16ffdb2c276592915">Match::isPlayer2Turn</a></div><div class="ttdeci">bool isPlayer2Turn() const</div><div class="ttdoc">Checks if it's the player 2 turn.</div><div class="ttdef"><b>Definição</b> Match.cpp:33</div></div>
+<div class="ttc" id="aclass_match_html_adf2632daec5c23763273e931d6ff4748"><div class="ttname"><a href="class_match.html#adf2632daec5c23763273e931d6ff4748">Match::passTurn</a></div><div class="ttdeci">void passTurn()</div><div class="ttdoc">Finish the actual turn and start the next one.</div><div class="ttdef"><b>Definição</b> Match.cpp:19</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5776372764fee2f94acca85c03c46641" name="a5776372764fee2f94acca85c03c46641"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5776372764fee2f94acca85c03c46641">&#9670;&#160;</a></span>TEST_CASE() <span class="overload">[3/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Increment both players score with a troop being destroyed&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   79</span>                                                                       {</div>
+<div class="line"><span class="lineno">   80</span>    <a class="code hl_class" href="class_match.html">Match</a> a;</div>
+<div class="line"><span class="lineno">   81</span>    <span class="comment">//Preventing exceptions by setting artificial initial state</span></div>
+<div class="line"><span class="lineno">   82</span>    a.<a class="code hl_function" href="class_match.html#a3bbd00b73a48adb0bdecaac71f8091ca">incrementPlayer1AmountShots</a>();</div>
+<div class="line"><span class="lineno">   83</span>    a.<a class="code hl_function" href="class_match.html#a18a11b6ac387765c697c28a9d2be2dca">incrementPlayer2AmountShots</a>();</div>
+<div class="line"><span class="lineno">   84</span>    a.<a class="code hl_function" href="class_match.html#a3b6e90eb2154c46a5514a9495c1b837c">getPlayer1</a>()-&gt;getScore()-&gt;setRemainingTroops(10);</div>
+<div class="line"><span class="lineno">   85</span>    a.<a class="code hl_function" href="class_match.html#af529ee4e9870664ad25ece77a174ffcf">getPlayer2</a>()-&gt;getScore()-&gt;setRemainingTroops(10);</div>
+<div class="line"><span class="lineno">   86</span> </div>
+<div class="line"><span class="lineno">   87</span>    <a class="code hl_define" href="doctest_8hpp.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(a.<a class="code hl_function" href="class_match.html#a3b6e90eb2154c46a5514a9495c1b837c">getPlayer1</a>()-&gt;getScore()-&gt;getDestroyedTroops() == 0);</div>
+<div class="line"><span class="lineno">   88</span>    <a class="code hl_define" href="doctest_8hpp.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(a.<a class="code hl_function" href="class_match.html#a3b6e90eb2154c46a5514a9495c1b837c">getPlayer1</a>()-&gt;getScore()-&gt;getRemainingTroops() == 10);</div>
+<div class="line"><span class="lineno">   89</span>    <a class="code hl_define" href="doctest_8hpp.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(a.<a class="code hl_function" href="class_match.html#a3b6e90eb2154c46a5514a9495c1b837c">getPlayer1</a>()-&gt;getScore()-&gt;getLostTroops() == 0);</div>
+<div class="line"><span class="lineno">   90</span> </div>
+<div class="line"><span class="lineno">   91</span>    <a class="code hl_define" href="doctest_8hpp.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(a.<a class="code hl_function" href="class_match.html#af529ee4e9870664ad25ece77a174ffcf">getPlayer2</a>()-&gt;getScore()-&gt;getDestroyedTroops() == 0);</div>
+<div class="line"><span class="lineno">   92</span>    <a class="code hl_define" href="doctest_8hpp.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(a.<a class="code hl_function" href="class_match.html#af529ee4e9870664ad25ece77a174ffcf">getPlayer2</a>()-&gt;getScore()-&gt;getRemainingTroops() == 10);</div>
+<div class="line"><span class="lineno">   93</span>    <a class="code hl_define" href="doctest_8hpp.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(a.<a class="code hl_function" href="class_match.html#af529ee4e9870664ad25ece77a174ffcf">getPlayer2</a>()-&gt;getScore()-&gt;getLostTroops() == 0);</div>
+<div class="line"><span class="lineno">   94</span> </div>
+<div class="line"><span class="lineno">   95</span>    a.<a class="code hl_function" href="class_match.html#a9f91acf686462c2201b0fca3711390c8">incrementPlayer1Score</a>(<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">   96</span>    a.<a class="code hl_function" href="class_match.html#afcf3c8fa2c76ea0085ab19b9b899fc55">incrementPlayer2Score</a>(<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">   97</span> </div>
+<div class="line"><span class="lineno">   98</span>    <a class="code hl_define" href="doctest_8hpp.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(a.<a class="code hl_function" href="class_match.html#a3b6e90eb2154c46a5514a9495c1b837c">getPlayer1</a>()-&gt;getScore()-&gt;getDestroyedTroops() == 1);</div>
+<div class="line"><span class="lineno">   99</span>    <a class="code hl_define" href="doctest_8hpp.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(a.<a class="code hl_function" href="class_match.html#a3b6e90eb2154c46a5514a9495c1b837c">getPlayer1</a>()-&gt;getScore()-&gt;getRemainingTroops() == 9);</div>
+<div class="line"><span class="lineno">  100</span>    <a class="code hl_define" href="doctest_8hpp.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(a.<a class="code hl_function" href="class_match.html#a3b6e90eb2154c46a5514a9495c1b837c">getPlayer1</a>()-&gt;getScore()-&gt;getLostTroops() == 1);</div>
+<div class="line"><span class="lineno">  101</span> </div>
+<div class="line"><span class="lineno">  102</span>    <a class="code hl_define" href="doctest_8hpp.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(a.<a class="code hl_function" href="class_match.html#af529ee4e9870664ad25ece77a174ffcf">getPlayer2</a>()-&gt;getScore()-&gt;getDestroyedTroops() == 1);</div>
+<div class="line"><span class="lineno">  103</span>    <a class="code hl_define" href="doctest_8hpp.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(a.<a class="code hl_function" href="class_match.html#af529ee4e9870664ad25ece77a174ffcf">getPlayer2</a>()-&gt;getScore()-&gt;getRemainingTroops() == 9);</div>
+<div class="line"><span class="lineno">  104</span>    <a class="code hl_define" href="doctest_8hpp.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(a.<a class="code hl_function" href="class_match.html#af529ee4e9870664ad25ece77a174ffcf">getPlayer2</a>()-&gt;getScore()-&gt;getLostTroops() == 1);</div>
+<div class="line"><span class="lineno">  105</span>}</div>
+<div class="ttc" id="aclass_match_html_a18a11b6ac387765c697c28a9d2be2dca"><div class="ttname"><a href="class_match.html#a18a11b6ac387765c697c28a9d2be2dca">Match::incrementPlayer2AmountShots</a></div><div class="ttdeci">void incrementPlayer2AmountShots()</div><div class="ttdoc">Increment the total amount of shots the player 2 has done.</div><div class="ttdef"><b>Definição</b> Match.cpp:72</div></div>
+<div class="ttc" id="aclass_match_html_a3bbd00b73a48adb0bdecaac71f8091ca"><div class="ttname"><a href="class_match.html#a3bbd00b73a48adb0bdecaac71f8091ca">Match::incrementPlayer1AmountShots</a></div><div class="ttdeci">void incrementPlayer1AmountShots()</div><div class="ttdoc">Increment the total amount of shots the player 1 has done.</div><div class="ttdef"><b>Definição</b> Match.cpp:54</div></div>
+<div class="ttc" id="aclass_match_html_a9f91acf686462c2201b0fca3711390c8"><div class="ttname"><a href="class_match.html#a9f91acf686462c2201b0fca3711390c8">Match::incrementPlayer1Score</a></div><div class="ttdeci">void incrementPlayer1Score(const bool wasTroopDestroyed)</div><div class="ttdoc">Update the player 1 score when making an play.</div><div class="ttdef"><b>Definição</b> Match.cpp:41</div></div>
+<div class="ttc" id="aclass_match_html_afcf3c8fa2c76ea0085ab19b9b899fc55"><div class="ttname"><a href="class_match.html#afcf3c8fa2c76ea0085ab19b9b899fc55">Match::incrementPlayer2Score</a></div><div class="ttdeci">void incrementPlayer2Score(const bool wasTroopDestroyed)</div><div class="ttdoc">Update the player 2 score when making an play.</div><div class="ttdef"><b>Definição</b> Match.cpp:59</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9de506dca483ce3ed02f9c49a5bceb6b" name="a9de506dca483ce3ed02f9c49a5bceb6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9de506dca483ce3ed02f9c49a5bceb6b">&#9670;&#160;</a></span>TEST_CASE() <span class="overload">[4/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Increment both players score without a troop being destroyed&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   58</span>                                                                          {</div>
+<div class="line"><span class="lineno">   59</span>    <a class="code hl_class" href="class_match.html">Match</a> a;</div>
+<div class="line"><span class="lineno">   60</span>    <span class="comment">//Preventing exceptions by setting artificial initial state</span></div>
+<div class="line"><span class="lineno">   61</span>    a.<a class="code hl_function" href="class_match.html#a3bbd00b73a48adb0bdecaac71f8091ca">incrementPlayer1AmountShots</a>();</div>
+<div class="line"><span class="lineno">   62</span>    a.<a class="code hl_function" href="class_match.html#a18a11b6ac387765c697c28a9d2be2dca">incrementPlayer2AmountShots</a>();</div>
+<div class="line"><span class="lineno">   63</span>    </div>
+<div class="line"><span class="lineno">   64</span>    <a class="code hl_define" href="doctest_8hpp.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(a.<a class="code hl_function" href="class_match.html#a3b6e90eb2154c46a5514a9495c1b837c">getPlayer1</a>()-&gt;getScore()-&gt;getHitShoots() == 0);</div>
+<div class="line"><span class="lineno">   65</span>    <a class="code hl_define" href="doctest_8hpp.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(a.<a class="code hl_function" href="class_match.html#af529ee4e9870664ad25ece77a174ffcf">getPlayer2</a>()-&gt;getScore()-&gt;getHitShoots() == 0);</div>
+<div class="line"><span class="lineno">   66</span> </div>
+<div class="line"><span class="lineno">   67</span>    a.<a class="code hl_function" href="class_match.html#a9f91acf686462c2201b0fca3711390c8">incrementPlayer1Score</a>(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">   68</span>    </div>
+<div class="line"><span class="lineno">   69</span>    <a class="code hl_define" href="doctest_8hpp.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(a.<a class="code hl_function" href="class_match.html#a3b6e90eb2154c46a5514a9495c1b837c">getPlayer1</a>()-&gt;getScore()-&gt;getHitShoots() == 1);</div>
+<div class="line"><span class="lineno">   70</span>    <a class="code hl_define" href="doctest_8hpp.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(a.<a class="code hl_function" href="class_match.html#af529ee4e9870664ad25ece77a174ffcf">getPlayer2</a>()-&gt;getScore()-&gt;getHitShoots() == 0);</div>
+<div class="line"><span class="lineno">   71</span> </div>
+<div class="line"><span class="lineno">   72</span>    a.<a class="code hl_function" href="class_match.html#afcf3c8fa2c76ea0085ab19b9b899fc55">incrementPlayer2Score</a>(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">   73</span> </div>
+<div class="line"><span class="lineno">   74</span>    <a class="code hl_define" href="doctest_8hpp.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(a.<a class="code hl_function" href="class_match.html#a3b6e90eb2154c46a5514a9495c1b837c">getPlayer1</a>()-&gt;getScore()-&gt;getHitShoots() == 1);</div>
+<div class="line"><span class="lineno">   75</span>    <a class="code hl_define" href="doctest_8hpp.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(a.<a class="code hl_function" href="class_match.html#af529ee4e9870664ad25ece77a174ffcf">getPlayer2</a>()-&gt;getScore()-&gt;getHitShoots() == 1);</div>
+<div class="line"><span class="lineno">   76</span> </div>
+<div class="line"><span class="lineno">   77</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a24b624c812031ee5487e13453f1d8254" name="a24b624c812031ee5487e13453f1d8254"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24b624c812031ee5487e13453f1d8254">&#9670;&#160;</a></span>TEST_CASE() <span class="overload">[5/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Increment player 1 and 2 amount of shots&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  107</span>                                                      {</div>
+<div class="line"><span class="lineno">  108</span>    <a class="code hl_class" href="class_match.html">Match</a> a;</div>
+<div class="line"><span class="lineno">  109</span> </div>
+<div class="line"><span class="lineno">  110</span>    <a class="code hl_define" href="doctest_8hpp.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(a.<a class="code hl_function" href="class_match.html#a3b6e90eb2154c46a5514a9495c1b837c">getPlayer1</a>()-&gt;getScore()-&gt;getTotalAmountShoots() == 0);</div>
+<div class="line"><span class="lineno">  111</span>    <a class="code hl_define" href="doctest_8hpp.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(a.<a class="code hl_function" href="class_match.html#af529ee4e9870664ad25ece77a174ffcf">getPlayer2</a>()-&gt;getScore()-&gt;getTotalAmountShoots() == 0);</div>
+<div class="line"><span class="lineno">  112</span> </div>
+<div class="line"><span class="lineno">  113</span>    a.<a class="code hl_function" href="class_match.html#a3bbd00b73a48adb0bdecaac71f8091ca">incrementPlayer1AmountShots</a>();</div>
+<div class="line"><span class="lineno">  114</span>    a.<a class="code hl_function" href="class_match.html#a18a11b6ac387765c697c28a9d2be2dca">incrementPlayer2AmountShots</a>();</div>
+<div class="line"><span class="lineno">  115</span> </div>
+<div class="line"><span class="lineno">  116</span>    <a class="code hl_define" href="doctest_8hpp.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(a.<a class="code hl_function" href="class_match.html#a3b6e90eb2154c46a5514a9495c1b837c">getPlayer1</a>()-&gt;getScore()-&gt;getTotalAmountShoots() == 1);</div>
+<div class="line"><span class="lineno">  117</span>    <a class="code hl_define" href="doctest_8hpp.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(a.<a class="code hl_function" href="class_match.html#af529ee4e9870664ad25ece77a174ffcf">getPlayer2</a>()-&gt;getScore()-&gt;getTotalAmountShoots() == 1);</div>
+<div class="line"><span class="lineno">  118</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa1a4d953862b3eaaeff714b5bf573fc6" name="aa1a4d953862b3eaaeff714b5bf573fc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1a4d953862b3eaaeff714b5bf573fc6">&#9670;&#160;</a></span>TEST_CASE() <span class="overload">[6/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Initialize a match and check default values&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   17</span>                                                        {</div>
+<div class="line"><span class="lineno">   18</span>    <a class="code hl_class" href="class_match.html">Match</a> a;</div>
+<div class="line"><span class="lineno">   19</span>    <a class="code hl_define" href="doctest_8hpp.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(a.<a class="code hl_function" href="class_match.html#a3b6e90eb2154c46a5514a9495c1b837c">getPlayer1</a>()-&gt;getName() == <span class="stringliteral">&quot;Jogador1&quot;</span>);</div>
+<div class="line"><span class="lineno">   20</span>    <a class="code hl_define" href="doctest_8hpp.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(a.<a class="code hl_function" href="class_match.html#af529ee4e9870664ad25ece77a174ffcf">getPlayer2</a>()-&gt;getName() == <span class="stringliteral">&quot;Jogador2&quot;</span>);</div>
+<div class="line"><span class="lineno">   21</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7d96f528723c192d83696ce6f46c8af4" name="a7d96f528723c192d83696ce6f46c8af4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d96f528723c192d83696ce6f46c8af4">&#9670;&#160;</a></span>TEST_CASE() <span class="overload">[7/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Trying to get <a class="el" href="class_match_results.html">MatchResults</a> out of match&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  120</span>                                                     {</div>
+<div class="line"><span class="lineno">  121</span>    <a class="code hl_class" href="class_match.html">Match</a> a;</div>
+<div class="line"><span class="lineno">  122</span>    std::shared_ptr&lt;Score&gt; score1 = a.<a class="code hl_function" href="class_match.html#a3b6e90eb2154c46a5514a9495c1b837c">getPlayer1</a>()-&gt;getScore(), score2 = a.<a class="code hl_function" href="class_match.html#af529ee4e9870664ad25ece77a174ffcf">getPlayer2</a>()-&gt;getScore();</div>
+<div class="line"><span class="lineno">  123</span>    score1-&gt;setDestroyedTroops(1);</div>
+<div class="line"><span class="lineno">  124</span>    score1-&gt;setRemainingTroops(2);</div>
+<div class="line"><span class="lineno">  125</span>    score1-&gt;setLostTroops(3);</div>
+<div class="line"><span class="lineno">  126</span>    score1-&gt;setTotalAmountShoots(5);</div>
+<div class="line"><span class="lineno">  127</span>    score1-&gt;setHitShoots(4);</div>
+<div class="line"><span class="lineno">  128</span> </div>
+<div class="line"><span class="lineno">  129</span>    score2-&gt;setDestroyedTroops(6);</div>
+<div class="line"><span class="lineno">  130</span>    score2-&gt;setRemainingTroops(7);</div>
+<div class="line"><span class="lineno">  131</span>    score2-&gt;setLostTroops(8);</div>
+<div class="line"><span class="lineno">  132</span>    score2-&gt;setTotalAmountShoots(10);</div>
+<div class="line"><span class="lineno">  133</span>    score2-&gt;setHitShoots(9);</div>
+<div class="line"><span class="lineno">  134</span> </div>
+<div class="line"><span class="lineno">  135</span>    <a class="code hl_class" href="class_match_results.html">MatchResults</a> b = a.<a class="code hl_function" href="class_match.html#a5c5c2dd1469db93e088d1049b0da6388">getResults</a>();</div>
+<div class="line"><span class="lineno">  136</span> </div>
+<div class="line"><span class="lineno">  137</span>    <a class="code hl_define" href="doctest_8hpp.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(a.<a class="code hl_function" href="class_match.html#a3b6e90eb2154c46a5514a9495c1b837c">getPlayer1</a>()-&gt;getName() == b.<a class="code hl_function" href="class_match_results.html#aa624f82831773a07674e8fce34f0a593">getPlayer1Name</a>());</div>
+<div class="line"><span class="lineno">  138</span>    <a class="code hl_define" href="doctest_8hpp.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(a.<a class="code hl_function" href="class_match.html#af529ee4e9870664ad25ece77a174ffcf">getPlayer2</a>()-&gt;getName() == b.<a class="code hl_function" href="class_match_results.html#a7f376adfffffd6aba9ec7dc0aebd39de">getPlayer2Name</a>());</div>
+<div class="line"><span class="lineno">  139</span> </div>
+<div class="line"><span class="lineno">  140</span>    <a class="code hl_define" href="doctest_8hpp.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(<a class="code hl_function" href="test_match_8cpp.html#ac2fea7e222ea8c72a2f0fe1a22a3f332">compareScores</a>(*score1, b.<a class="code hl_function" href="class_match_results.html#a3008a3cd3fff997ada58d463c1c6cc14">getPlayer1Score</a>()));</div>
+<div class="line"><span class="lineno">  141</span>    <a class="code hl_define" href="doctest_8hpp.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(<a class="code hl_function" href="test_match_8cpp.html#ac2fea7e222ea8c72a2f0fe1a22a3f332">compareScores</a>(*score2, b.<a class="code hl_function" href="class_match_results.html#a602875630a7d1d871fe25e85b70f4c90">getPlayer2Score</a>()));</div>
+<div class="line"><span class="lineno">  142</span> </div>
+<div class="line"><span class="lineno">  143</span>    <a class="code hl_define" href="doctest_8hpp.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(std::regex_match(b.<a class="code hl_function" href="class_match_results.html#aa651a4ef0fd307a4c2c4c2c1d05ec5eb">getId</a>(), std::regex(<span class="stringliteral">&quot;.{4}/.{2}/.{2}-.{2}:.{2}:.{2}&quot;</span>)));</div>
+<div class="line"><span class="lineno">  144</span>}</div>
+<div class="ttc" id="aclass_match_html_a5c5c2dd1469db93e088d1049b0da6388"><div class="ttname"><a href="class_match.html#a5c5c2dd1469db93e088d1049b0da6388">Match::getResults</a></div><div class="ttdeci">MatchResults getResults() const</div><div class="ttdoc">Get the matchResults affiliated to the current match.</div><div class="ttdef"><b>Definição</b> Match.cpp:104</div></div>
+<div class="ttc" id="aclass_match_results_html"><div class="ttname"><a href="class_match_results.html">MatchResults</a></div><div class="ttdef"><b>Definição</b> MatchResults.hpp:8</div></div>
+<div class="ttc" id="aclass_match_results_html_a3008a3cd3fff997ada58d463c1c6cc14"><div class="ttname"><a href="class_match_results.html#a3008a3cd3fff997ada58d463c1c6cc14">MatchResults::getPlayer1Score</a></div><div class="ttdeci">Score getPlayer1Score() const</div><div class="ttdoc">Get the score associated to the first player.</div><div class="ttdef"><b>Definição</b> MatchResults.cpp:38</div></div>
+<div class="ttc" id="aclass_match_results_html_a602875630a7d1d871fe25e85b70f4c90"><div class="ttname"><a href="class_match_results.html#a602875630a7d1d871fe25e85b70f4c90">MatchResults::getPlayer2Score</a></div><div class="ttdeci">Score getPlayer2Score() const</div><div class="ttdoc">Get the score associated to the second player.</div><div class="ttdef"><b>Definição</b> MatchResults.cpp:56</div></div>
+<div class="ttc" id="aclass_match_results_html_a7f376adfffffd6aba9ec7dc0aebd39de"><div class="ttname"><a href="class_match_results.html#a7f376adfffffd6aba9ec7dc0aebd39de">MatchResults::getPlayer2Name</a></div><div class="ttdeci">std::string getPlayer2Name() const</div><div class="ttdoc">Get the 2nd player name.</div><div class="ttdef"><b>Definição</b> MatchResults.cpp:47</div></div>
+<div class="ttc" id="aclass_match_results_html_aa624f82831773a07674e8fce34f0a593"><div class="ttname"><a href="class_match_results.html#aa624f82831773a07674e8fce34f0a593">MatchResults::getPlayer1Name</a></div><div class="ttdeci">std::string getPlayer1Name() const</div><div class="ttdoc">Get the 1st player name.</div><div class="ttdef"><b>Definição</b> MatchResults.cpp:29</div></div>
+<div class="ttc" id="aclass_match_results_html_aa651a4ef0fd307a4c2c4c2c1d05ec5eb"><div class="ttname"><a href="class_match_results.html#aa651a4ef0fd307a4c2c4c2c1d05ec5eb">MatchResults::getId</a></div><div class="ttdeci">std::string getId() const</div><div class="ttdoc">Get the id of the matchResult.</div><div class="ttdef"><b>Definição</b> MatchResults.cpp:67</div></div>
+<div class="ttc" id="atest_match_8cpp_html_ac2fea7e222ea8c72a2f0fe1a22a3f332"><div class="ttname"><a href="test_match_8cpp.html#ac2fea7e222ea8c72a2f0fe1a22a3f332">compareScores</a></div><div class="ttdeci">bool compareScores(Score a, Score b)</div><div class="ttdef"><b>Definição</b> testMatch.cpp:8</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Batalha Naval - Documentação: Código-Fonte de Faculdade/2023-1/Prog2/BatalhaNaval/include/logic/board/Battleship.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Batalha Naval - Documentação<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bb75f6ccd9c841ccbcc87ee631ee1cf8.html">Faculdade</a></li><li class="navelem"><a class="el" href="dir_34921b01d83bfae507fa016aa2696f18.html">2023-1</a></li><li class="navelem"><a class="el" href="dir_66a3f915e7756a6ded3a5ab53105a1fe.html">Prog2</a></li><li class="navelem"><a class="el" href="dir_ef9cc14589066c222358a81ffd580e27.html">BatalhaNaval</a></li><li class="navelem"><a class="el" href="dir_8649854c9289a8d6819dfd27e24ff103.html">include</a></li><li class="navelem"><a class="el" href="dir_e7bbe0579d8873d7f0f7724ca58a3d98.html">logic</a></li><li class="navelem"><a class="el" href="dir_4d79f95e95ca2b5b43c6aee16c842787.html">board</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Battleship.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_battleship_8hpp.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef BATTLESHIP_HPP</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define BATTLESHIP_HPP</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="_troop_8hpp.html">Troop.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="_point_8hpp.html">Point.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_battleship.html">    9</a></span><span class="keyword">class </span><a class="code hl_class" href="class_battleship.html">Battleship</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_troop.html">Troop</a> {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_battleship.html#ade1bae17c0347db695fbdc3fe1f0311c">   15</a></span>        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_battleship.html#ade1bae17c0347db695fbdc3fe1f0311c">INITIAL_HEALTH</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keyword">static</span> std::string <a class="code hl_function" href="class_battleship.html#a633770fe4b99cc7d3c48cc0ef4bad150">getTroopName</a>();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <a class="code hl_function" href="class_battleship.html#a57a0db9eadfe53049035b3b0e5ec5367">Battleship</a>();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keyword">virtual</span> <a class="code hl_function" href="class_battleship.html#a89425138ec38aec5ea9da7889445dc27">~Battleship</a>();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keyword">virtual</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_battleship.html#abe44937fa6d79955466854f9c0bb6c8a">getInitialHealth</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_battleship.html#a8dd5fd9b86bfea8059c3bd31a2e1e246">positionHorizontally</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_point.html">Point</a> initialPosition) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_battleship.html#a070717058894bdbc695758fa954e5d8f">positionVertically</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_point.html">Point</a> initialPosition) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>};</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_point_8hpp_html"><div class="ttname"><a href="_point_8hpp.html">Point.hpp</a></div></div>
+<div class="ttc" id="a_troop_8hpp_html"><div class="ttname"><a href="_troop_8hpp.html">Troop.hpp</a></div></div>
+<div class="ttc" id="aclass_battleship_html"><div class="ttname"><a href="class_battleship.html">Battleship</a></div><div class="ttdef"><b>Definição</b> Battleship.hpp:9</div></div>
+<div class="ttc" id="aclass_battleship_html_a070717058894bdbc695758fa954e5d8f"><div class="ttname"><a href="class_battleship.html#a070717058894bdbc695758fa954e5d8f">Battleship::positionVertically</a></div><div class="ttdeci">virtual void positionVertically(const Point initialPosition) override</div><div class="ttdoc">Positions the battleship vertically.</div><div class="ttdef"><b>Definição</b> Battleship.cpp:26</div></div>
+<div class="ttc" id="aclass_battleship_html_a57a0db9eadfe53049035b3b0e5ec5367"><div class="ttname"><a href="class_battleship.html#a57a0db9eadfe53049035b3b0e5ec5367">Battleship::Battleship</a></div><div class="ttdeci">Battleship()</div><div class="ttdoc">Default constructor.</div><div class="ttdef"><b>Definição</b> Battleship.cpp:16</div></div>
+<div class="ttc" id="aclass_battleship_html_a633770fe4b99cc7d3c48cc0ef4bad150"><div class="ttname"><a href="class_battleship.html#a633770fe4b99cc7d3c48cc0ef4bad150">Battleship::getTroopName</a></div><div class="ttdeci">static std::string getTroopName()</div><div class="ttdoc">Get the standard battleship name.</div><div class="ttdef"><b>Definição</b> Battleship.cpp:12</div></div>
+<div class="ttc" id="aclass_battleship_html_a89425138ec38aec5ea9da7889445dc27"><div class="ttname"><a href="class_battleship.html#a89425138ec38aec5ea9da7889445dc27">Battleship::~Battleship</a></div><div class="ttdeci">virtual ~Battleship()</div><div class="ttdoc">Destroy the Battleship object.</div><div class="ttdef"><b>Definição</b> Battleship.cpp:17</div></div>
+<div class="ttc" id="aclass_battleship_html_a8dd5fd9b86bfea8059c3bd31a2e1e246"><div class="ttname"><a href="class_battleship.html#a8dd5fd9b86bfea8059c3bd31a2e1e246">Battleship::positionHorizontally</a></div><div class="ttdeci">virtual void positionHorizontally(const Point initialPosition) override</div><div class="ttdoc">Positions the battleship horizontally.</div><div class="ttdef"><b>Definição</b> Battleship.cpp:19</div></div>
+<div class="ttc" id="aclass_battleship_html_abe44937fa6d79955466854f9c0bb6c8a"><div class="ttname"><a href="class_battleship.html#abe44937fa6d79955466854f9c0bb6c8a">Battleship::getInitialHealth</a></div><div class="ttdeci">virtual unsigned int getInitialHealth() const override</div><div class="ttdoc">Get the initial health attribute.</div><div class="ttdef"><b>Definição</b> Battleship.cpp:33</div></div>
+<div class="ttc" id="aclass_battleship_html_ade1bae17c0347db695fbdc3fe1f0311c"><div class="ttname"><a href="class_battleship.html#ade1bae17c0347db695fbdc3fe1f0311c">Battleship::INITIAL_HEALTH</a></div><div class="ttdeci">static const unsigned int INITIAL_HEALTH</div><div class="ttdef"><b>Definição</b> Battleship.hpp:15</div></div>
+<div class="ttc" id="aclass_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Point class used for positioning and board manipulations.</div><div class="ttdef"><b>Definição</b> Point.hpp:7</div></div>
+<div class="ttc" id="aclass_troop_html"><div class="ttname"><a href="class_troop.html">Troop</a></div><div class="ttdef"><b>Definição</b> Troop.hpp:12</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

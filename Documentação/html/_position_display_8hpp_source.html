@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Batalha Naval - Documentação: Código-Fonte de Faculdade/2023-1/Prog2/BatalhaNaval/include/screen/shared/PositionDisplay.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Batalha Naval - Documentação<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bb75f6ccd9c841ccbcc87ee631ee1cf8.html">Faculdade</a></li><li class="navelem"><a class="el" href="dir_34921b01d83bfae507fa016aa2696f18.html">2023-1</a></li><li class="navelem"><a class="el" href="dir_66a3f915e7756a6ded3a5ab53105a1fe.html">Prog2</a></li><li class="navelem"><a class="el" href="dir_ef9cc14589066c222358a81ffd580e27.html">BatalhaNaval</a></li><li class="navelem"><a class="el" href="dir_8649854c9289a8d6819dfd27e24ff103.html">include</a></li><li class="navelem"><a class="el" href="dir_a36fc79ae3405311521cb057c3350e44.html">screen</a></li><li class="navelem"><a class="el" href="dir_69a102f92bb704ed4d34483240dfbd81.html">shared</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">PositionDisplay.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_position_display_8hpp.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef POSITION_DISPLAY_HPP</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define POSITION_DISPLAY_HPP</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="raylib_8h.html">raylib.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="_view_8hpp.html">View.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="_image_8hpp.html">Image.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_i_clickable_8hpp.html">IClickable.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_position_8hpp.html">Position.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_point_8hpp.html">Point.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="_colors_8hpp.html">Colors.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_views.html">Views</a> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_views_1_1_position_display.html">   17</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_views_1_1_position_display.html">PositionDisplay</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_views_1_1_view.html">View</a>, <span class="keyword">public</span> <a class="code hl_class" href="class_components_1_1_i_clickable.html">Components::IClickable</a> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_views_1_1_position_display.html#adb3066b2091f10b599ef4e9833a1fab4">   19</a></span>            std::unique_ptr&lt;Components::Image&gt; <a class="code hl_variable" href="class_views_1_1_position_display.html#adb3066b2091f10b599ef4e9833a1fab4">troopImage</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_views_1_1_position_display.html#aec0671894b2a7e178bc3acef5b648b60">   21</a></span>            <a class="code hl_struct" href="struct_rectangle.html">Rectangle</a> <a class="code hl_variable" href="class_views_1_1_position_display.html#aec0671894b2a7e178bc3acef5b648b60">background</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_views_1_1_position_display.html#a74ef655f7882679ec62d8d92a3b94a1a">   22</a></span>            <a class="code hl_struct" href="struct_color.html">Color</a> <a class="code hl_variable" href="class_views_1_1_position_display.html#a74ef655f7882679ec62d8d92a3b94a1a">backgroundColor</a> = <a class="code hl_variable" href="_colors_8hpp.html#a8b035c1d91c8954091f11af19e8ed669">DEFAULT_BALCK</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_views_1_1_position_display.html#ad311be050d4983de8bd90cfc711f7a1c">   23</a></span>            <a class="code hl_struct" href="struct_color.html">Color</a> <a class="code hl_variable" href="class_views_1_1_position_display.html#ad311be050d4983de8bd90cfc711f7a1c">hoveredBackgroundColor</a> = <a class="code hl_variable" href="_colors_8hpp.html#a8b035c1d91c8954091f11af19e8ed669">DEFAULT_BALCK</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_views_1_1_position_display.html#a6231d81138932d63220f4a92c4d2f1eb">   25</a></span>            std::shared_ptr&lt;Position&gt; <a class="code hl_variable" href="class_views_1_1_position_display.html#a6231d81138932d63220f4a92c4d2f1eb">position</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <a class="code hl_class" href="class_views_1_1_position_display.html">PositionDisplay</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_point.html">Point</a> boardCoordinates);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <a class="code hl_class" href="class_views_1_1_position_display.html">PositionDisplay</a>(std::shared_ptr&lt;Position&gt; <a class="code hl_variable" href="class_views_1_1_position_display.html#a6231d81138932d63220f4a92c4d2f1eb">position</a>);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="keyword">virtual</span> <a class="code hl_function" href="class_views_1_1_position_display.html#a108490d897b512b8396db14dfd11433b">~PositionDisplay</a>();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_views_1_1_position_display.html#a0d97488fa89cde40964a51088a68db57">   48</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_views_1_1_position_display.html#a0d97488fa89cde40964a51088a68db57">render</a>() = 0;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_views_1_1_position_display.html#affe386964aeb67fb8f478b7e35b94376">checkClick</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_views_1_1_position_display.html#a67d9715a638538ac382973f829e94d2d">checkMouseOver</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <a class="code hl_class" href="class_point.html">Point</a> <a class="code hl_function" href="class_views_1_1_position_display.html#a2c8d66fb386845e478c94e5f11db95d1">getCoordinates</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="class_views_1_1_position_display.html#a12195acc30c54d741e2d51a63e78784b">setTroop</a>(<span class="keyword">const</span> std::shared_ptr&lt;Troop&gt; troop);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            std::shared_ptr&lt;Troop&gt; <a class="code hl_function" href="class_views_1_1_position_display.html#a02f9441753bdec0a2b64e7e9f063f8bf">getTroop</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="class_views_1_1_position_display.html#a723d6becd76322441a6dbfa310760b99">setTroopImage</a>(<span class="keyword">const</span> std::string path);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="class_views_1_1_position_display.html#a723d6becd76322441a6dbfa310760b99">setTroopImage</a>(<span class="keyword">const</span> std::shared_ptr&lt;Troop&gt; troop);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <span class="keywordtype">bool</span> <a class="code hl_function" href="class_views_1_1_position_display.html#a4ecefd92d85a257b3660c73ff95f7ccd">containsTroop</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_views_1_1_position_display.html#af2d6757e3631b823e295db970a68fe92">updateInnerComponentsPositions</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_views_1_1_position_display.html#a271a0cb37b634e69ece9a4ce7570262a">findWidth</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_views_1_1_position_display.html#a4d1af9e353c147bcd5f67c731067d5d1">findHeight</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            <span class="keywordtype">void</span> buildComponent();</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            <span class="keywordtype">void</span> buildBackground();</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            <span class="keywordtype">void</span> positionBackground();</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>            <span class="keywordtype">void</span> buildTroopImage();</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            <span class="keywordtype">void</span> positionTroopImage();</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>            <span class="keywordtype">float</span> <a class="code hl_function" href="class_views_1_1_position_display.html#a8ef6a6515f7bf661633996b923d9dc85">getDefaultImageSize</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    };</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>}</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_colors_8hpp_html"><div class="ttname"><a href="_colors_8hpp.html">Colors.hpp</a></div></div>
+<div class="ttc" id="a_colors_8hpp_html_a8b035c1d91c8954091f11af19e8ed669"><div class="ttname"><a href="_colors_8hpp.html#a8b035c1d91c8954091f11af19e8ed669">DEFAULT_BALCK</a></div><div class="ttdeci">const Color DEFAULT_BALCK</div><div class="ttdef"><b>Definição</b> Colors.hpp:7</div></div>
+<div class="ttc" id="a_i_clickable_8hpp_html"><div class="ttname"><a href="_i_clickable_8hpp.html">IClickable.hpp</a></div></div>
+<div class="ttc" id="a_image_8hpp_html"><div class="ttname"><a href="_image_8hpp.html">Image.hpp</a></div></div>
+<div class="ttc" id="a_point_8hpp_html"><div class="ttname"><a href="_point_8hpp.html">Point.hpp</a></div></div>
+<div class="ttc" id="a_position_8hpp_html"><div class="ttname"><a href="_position_8hpp.html">Position.hpp</a></div></div>
+<div class="ttc" id="a_view_8hpp_html"><div class="ttname"><a href="_view_8hpp.html">View.hpp</a></div></div>
+<div class="ttc" id="aclass_components_1_1_i_clickable_html"><div class="ttname"><a href="class_components_1_1_i_clickable.html">Components::IClickable</a></div><div class="ttdef"><b>Definição</b> IClickable.hpp:5</div></div>
+<div class="ttc" id="aclass_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Point class used for positioning and board manipulations.</div><div class="ttdef"><b>Definição</b> Point.hpp:7</div></div>
+<div class="ttc" id="aclass_views_1_1_position_display_html"><div class="ttname"><a href="class_views_1_1_position_display.html">Views::PositionDisplay</a></div><div class="ttdef"><b>Definição</b> PositionDisplay.hpp:17</div></div>
+<div class="ttc" id="aclass_views_1_1_position_display_html_a02f9441753bdec0a2b64e7e9f063f8bf"><div class="ttname"><a href="class_views_1_1_position_display.html#a02f9441753bdec0a2b64e7e9f063f8bf">Views::PositionDisplay::getTroop</a></div><div class="ttdeci">std::shared_ptr&lt; Troop &gt; getTroop() const</div><div class="ttdoc">Get the troop in the position.</div><div class="ttdef"><b>Definição</b> PositionDisplay.cpp:117</div></div>
+<div class="ttc" id="aclass_views_1_1_position_display_html_a0d97488fa89cde40964a51088a68db57"><div class="ttname"><a href="class_views_1_1_position_display.html#a0d97488fa89cde40964a51088a68db57">Views::PositionDisplay::render</a></div><div class="ttdeci">virtual void render()=0</div><div class="ttdoc">Render the view in the interface.</div></div>
+<div class="ttc" id="aclass_views_1_1_position_display_html_a108490d897b512b8396db14dfd11433b"><div class="ttname"><a href="class_views_1_1_position_display.html#a108490d897b512b8396db14dfd11433b">Views::PositionDisplay::~PositionDisplay</a></div><div class="ttdeci">virtual ~PositionDisplay()</div><div class="ttdoc">Destroy the Position Display view.</div><div class="ttdef"><b>Definição</b> PositionDisplay.cpp:36</div></div>
+<div class="ttc" id="aclass_views_1_1_position_display_html_a12195acc30c54d741e2d51a63e78784b"><div class="ttname"><a href="class_views_1_1_position_display.html#a12195acc30c54d741e2d51a63e78784b">Views::PositionDisplay::setTroop</a></div><div class="ttdeci">void setTroop(const std::shared_ptr&lt; Troop &gt; troop)</div><div class="ttdoc">Set the troop that is in the position.</div><div class="ttdef"><b>Definição</b> PositionDisplay.cpp:112</div></div>
+<div class="ttc" id="aclass_views_1_1_position_display_html_a271a0cb37b634e69ece9a4ce7570262a"><div class="ttname"><a href="class_views_1_1_position_display.html#a271a0cb37b634e69ece9a4ce7570262a">Views::PositionDisplay::findWidth</a></div><div class="ttdeci">virtual void findWidth() override</div><div class="ttdoc">Define the width of the view.</div><div class="ttdef"><b>Definição</b> PositionDisplay.cpp:55</div></div>
+<div class="ttc" id="aclass_views_1_1_position_display_html_a2c8d66fb386845e478c94e5f11db95d1"><div class="ttname"><a href="class_views_1_1_position_display.html#a2c8d66fb386845e478c94e5f11db95d1">Views::PositionDisplay::getCoordinates</a></div><div class="ttdeci">Point getCoordinates() const</div><div class="ttdoc">Get the coodinates the position is place.</div><div class="ttdef"><b>Definição</b> PositionDisplay.cpp:108</div></div>
+<div class="ttc" id="aclass_views_1_1_position_display_html_a4d1af9e353c147bcd5f67c731067d5d1"><div class="ttname"><a href="class_views_1_1_position_display.html#a4d1af9e353c147bcd5f67c731067d5d1">Views::PositionDisplay::findHeight</a></div><div class="ttdeci">virtual void findHeight() override</div><div class="ttdoc">Define the height of the view.</div><div class="ttdef"><b>Definição</b> PositionDisplay.cpp:60</div></div>
+<div class="ttc" id="aclass_views_1_1_position_display_html_a4ecefd92d85a257b3660c73ff95f7ccd"><div class="ttname"><a href="class_views_1_1_position_display.html#a4ecefd92d85a257b3660c73ff95f7ccd">Views::PositionDisplay::containsTroop</a></div><div class="ttdeci">bool containsTroop() const</div><div class="ttdoc">Check if the position contains a troop.</div><div class="ttdef"><b>Definição</b> PositionDisplay.cpp:133</div></div>
+<div class="ttc" id="aclass_views_1_1_position_display_html_a6231d81138932d63220f4a92c4d2f1eb"><div class="ttname"><a href="class_views_1_1_position_display.html#a6231d81138932d63220f4a92c4d2f1eb">Views::PositionDisplay::position</a></div><div class="ttdeci">std::shared_ptr&lt; Position &gt; position</div><div class="ttdef"><b>Definição</b> PositionDisplay.hpp:25</div></div>
+<div class="ttc" id="aclass_views_1_1_position_display_html_a67d9715a638538ac382973f829e94d2d"><div class="ttname"><a href="class_views_1_1_position_display.html#a67d9715a638538ac382973f829e94d2d">Views::PositionDisplay::checkMouseOver</a></div><div class="ttdeci">virtual bool checkMouseOver() override</div><div class="ttdoc">Check if the mouse is over the position display.</div><div class="ttdef"><b>Definição</b> PositionDisplay.cpp:42</div></div>
+<div class="ttc" id="aclass_views_1_1_position_display_html_a723d6becd76322441a6dbfa310760b99"><div class="ttname"><a href="class_views_1_1_position_display.html#a723d6becd76322441a6dbfa310760b99">Views::PositionDisplay::setTroopImage</a></div><div class="ttdeci">void setTroopImage(const std::string path)</div><div class="ttdoc">Set the troop image that will be displayed on this position.</div><div class="ttdef"><b>Definição</b> PositionDisplay.cpp:128</div></div>
+<div class="ttc" id="aclass_views_1_1_position_display_html_a74ef655f7882679ec62d8d92a3b94a1a"><div class="ttname"><a href="class_views_1_1_position_display.html#a74ef655f7882679ec62d8d92a3b94a1a">Views::PositionDisplay::backgroundColor</a></div><div class="ttdeci">Color backgroundColor</div><div class="ttdef"><b>Definição</b> PositionDisplay.hpp:22</div></div>
+<div class="ttc" id="aclass_views_1_1_position_display_html_a8ef6a6515f7bf661633996b923d9dc85"><div class="ttname"><a href="class_views_1_1_position_display.html#a8ef6a6515f7bf661633996b923d9dc85">Views::PositionDisplay::getDefaultImageSize</a></div><div class="ttdeci">float getDefaultImageSize() const</div><div class="ttdoc">Get image within the position size value.</div><div class="ttdef"><b>Definição</b> PositionDisplay.cpp:100</div></div>
+<div class="ttc" id="aclass_views_1_1_position_display_html_ad311be050d4983de8bd90cfc711f7a1c"><div class="ttname"><a href="class_views_1_1_position_display.html#ad311be050d4983de8bd90cfc711f7a1c">Views::PositionDisplay::hoveredBackgroundColor</a></div><div class="ttdeci">Color hoveredBackgroundColor</div><div class="ttdef"><b>Definição</b> PositionDisplay.hpp:23</div></div>
+<div class="ttc" id="aclass_views_1_1_position_display_html_adb3066b2091f10b599ef4e9833a1fab4"><div class="ttname"><a href="class_views_1_1_position_display.html#adb3066b2091f10b599ef4e9833a1fab4">Views::PositionDisplay::troopImage</a></div><div class="ttdeci">std::unique_ptr&lt; Components::Image &gt; troopImage</div><div class="ttdef"><b>Definição</b> PositionDisplay.hpp:19</div></div>
+<div class="ttc" id="aclass_views_1_1_position_display_html_aec0671894b2a7e178bc3acef5b648b60"><div class="ttname"><a href="class_views_1_1_position_display.html#aec0671894b2a7e178bc3acef5b648b60">Views::PositionDisplay::background</a></div><div class="ttdeci">Rectangle background</div><div class="ttdef"><b>Definição</b> PositionDisplay.hpp:21</div></div>
+<div class="ttc" id="aclass_views_1_1_position_display_html_af2d6757e3631b823e295db970a68fe92"><div class="ttname"><a href="class_views_1_1_position_display.html#af2d6757e3631b823e295db970a68fe92">Views::PositionDisplay::updateInnerComponentsPositions</a></div><div class="ttdeci">virtual void updateInnerComponentsPositions() override</div><div class="ttdoc">Update all inner components positions.</div><div class="ttdef"><b>Definição</b> PositionDisplay.cpp:48</div></div>
+<div class="ttc" id="aclass_views_1_1_position_display_html_affe386964aeb67fb8f478b7e35b94376"><div class="ttname"><a href="class_views_1_1_position_display.html#affe386964aeb67fb8f478b7e35b94376">Views::PositionDisplay::checkClick</a></div><div class="ttdeci">virtual bool checkClick() override</div><div class="ttdoc">Check if the position was clicked.</div><div class="ttdef"><b>Definição</b> PositionDisplay.cpp:38</div></div>
+<div class="ttc" id="aclass_views_1_1_view_html"><div class="ttname"><a href="class_views_1_1_view.html">Views::View</a></div><div class="ttdef"><b>Definição</b> View.hpp:9</div></div>
+<div class="ttc" id="anamespace_views_html"><div class="ttname"><a href="namespace_views.html">Views</a></div><div class="ttdef"><b>Definição</b> View.hpp:8</div></div>
+<div class="ttc" id="araylib_8h_html"><div class="ttname"><a href="raylib_8h.html">raylib.h</a></div></div>
+<div class="ttc" id="astruct_color_html"><div class="ttname"><a href="struct_color.html">Color</a></div><div class="ttdef"><b>Definição</b> raylib.h:220</div></div>
+<div class="ttc" id="astruct_rectangle_html"><div class="ttname"><a href="struct_rectangle.html">Rectangle</a></div><div class="ttdef"><b>Definição</b> raylib.h:228</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

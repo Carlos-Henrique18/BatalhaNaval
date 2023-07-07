@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['handleevents_0',['handleEvents',['../class_screens_1_1_end_game_screen.html#a9da7003abb1c4f235601b18c1239e9c5',1,'Screens::EndGameScreen::handleEvents()'],['../class_screens_1_1_game_screen.html#a070cd7e7d9329bb5e09f3efdf660ca66',1,'Screens::GameScreen::handleEvents()'],['../class_screens_1_1_positioning_screen.html#a09b80b572f380fbdefb6fd491b4a46e5',1,'Screens::PositioningScreen::handleEvents()'],['../class_screens_1_1_score_screen.html#ace4ba7031d7e9ec82dadf756fa2a9ad1',1,'Screens::ScoreScreen::handleEvents()'],['../class_screens_1_1_screen.html#a9ade2116051e831f5f87cede52b09f86',1,'Screens::Screen::handleEvents()'],['../class_screens_1_1_title_screen.html#a6a557aa0f8d90470f86a0830efdd5438',1,'Screens::TitleScreen::handleEvents()']]],
+  ['has_5finsertion_5foperator_1',['has_insertion_operator',['../namespacedoctest_1_1detail.html#ae01cabd4651c7f2b08620ac01cc5a7fb',1,'doctest::detail']]],
+  ['hasgamefinished_2',['hasGameFinished',['../class_match.html#a2c1b68e973cac066c1ac3ebce1f8f992',1,'Match']]],
+  ['haspositionedalltroops_3',['hasPositionedAllTroops',['../class_views_1_1_troop_positioning_option.html#a7e991e193c111b17d543113cb36d0da0',1,'Views::TroopPositioningOption']]],
+  ['hastroop_4',['hasTroop',['../class_position.html#ae6ee01dec96542ce28e6e79849e50e41',1,'Position']]],
+  ['health_5',['health',['../class_troop.html#a473ecce3df8ee83529d66759be9e8838',1,'Troop']]],
+  ['heart_6',['HEART',['../namespace_icons.html#a1436ffd36c4e1435b7e762ac9c8b0842',1,'Icons']]],
+  ['height_7',['height',['../struct_rectangle.html#a080c1530eb46073e9880b01d14c341fd',1,'Rectangle::height'],['../struct_image.html#a51df43db420c9c0b57536cb2dd36de5c',1,'Image::height'],['../struct_texture.html#ad37c395c65ff8bde86230908027a6fcd',1,'Texture::height'],['../class_components_1_1_component.html#acb116d54ce2251bd7e49eebd106c7158',1,'Components::Component::height']]],
+  ['help_8',['help',['../structdoctest_1_1_context_options.html#a9d542a95ee03f61c233fff51e7461400',1,'doctest::ContextOptions']]],
+  ['hidecursor_9',['HideCursor',['../raylib_8h.html#ade78453778eeb19fe060af2628c547f8',1,'raylib.h']]],
+  ['hidetroops_10',['hideTroops',['../class_views_1_1_game_board_display.html#a8b223b4f8a5491e319536c70584bf5c8',1,'Views::GameBoardDisplay']]],
+  ['hit_11',['hit',['../struct_ray_collision.html#ab39830dcdb9adde43eb7ce3e165a88d2',1,'RayCollision']]],
+  ['horizontal_12',['HORIZONTAL',['../_orientation_8hpp.html#a871118a09520247c78a71ecd7b0abd58a4dd51ad73508d6fc83a502966779e48e',1,'Orientation.hpp']]],
+  ['hoveredbackgroundcolor_13',['hoveredBackgroundColor',['../class_views_1_1_position_display.html#ad311be050d4983de8bd90cfc711f7a1c',1,'Views::PositionDisplay']]],
+  ['hresolution_14',['hResolution',['../struct_vr_device_info.html#afe48a28818ebc1a4664dfb05f80b97d4',1,'VrDeviceInfo']]],
+  ['hscreensize_15',['hScreenSize',['../struct_vr_device_info.html#aa06be8c9ae7bf24be73e400bcddcdd63',1,'VrDeviceInfo']]],
+  ['huebar_5fpadding_16',['HUEBAR_PADDING',['../raygui_8h.html#a419b300f893da84c6f72fc58fa2947baa3e4ae5039399af2439fad9b692af2bc3',1,'HUEBAR_PADDING:&#160;raygui.h'],['../raygui_8c.html#a419b300f893da84c6f72fc58fa2947baa3e4ae5039399af2439fad9b692af2bc3',1,'HUEBAR_PADDING:&#160;raygui.c']]],
+  ['huebar_5fselector_5fheight_17',['HUEBAR_SELECTOR_HEIGHT',['../raygui_8h.html#a419b300f893da84c6f72fc58fa2947baa4899705418c6f5dcb577ff77839f6309',1,'HUEBAR_SELECTOR_HEIGHT:&#160;raygui.h'],['../raygui_8c.html#a419b300f893da84c6f72fc58fa2947baa4899705418c6f5dcb577ff77839f6309',1,'HUEBAR_SELECTOR_HEIGHT:&#160;raygui.c']]],
+  ['huebar_5fselector_5foverflow_18',['HUEBAR_SELECTOR_OVERFLOW',['../raygui_8h.html#a419b300f893da84c6f72fc58fa2947baa357c7f2aa6aaa1fdcb64358ae8d01d04',1,'HUEBAR_SELECTOR_OVERFLOW:&#160;raygui.h'],['../raygui_8c.html#a419b300f893da84c6f72fc58fa2947baa357c7f2aa6aaa1fdcb64358ae8d01d04',1,'HUEBAR_SELECTOR_OVERFLOW:&#160;raygui.c']]],
+  ['huebar_5fwidth_19',['HUEBAR_WIDTH',['../raygui_8h.html#a419b300f893da84c6f72fc58fa2947baa3e119c83c812ffbe4c25b0b7d37a10aa',1,'HUEBAR_WIDTH:&#160;raygui.h'],['../raygui_8c.html#a419b300f893da84c6f72fc58fa2947baa3e119c83c812ffbe4c25b0b7d37a10aa',1,'HUEBAR_WIDTH:&#160;raygui.c']]]
+];

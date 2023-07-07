@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['b_0',['b',['../struct_color.html#a9f00605f7024dcb79342e97fae52c1bd',1,'Color']]],
+  ['background_1',['background',['../class_components_1_1_button.html#af229a47633b7e7414652d98e38eac7ef',1,'Components::Button::background'],['../class_views_1_1_board_display.html#a3165db58605c87dd845f273f273d0994',1,'Views::BoardDisplay::background'],['../class_views_1_1_position_display.html#aec0671894b2a7e178bc3acef5b648b60',1,'Views::PositionDisplay::background']]],
+  ['background_5fblue_2',['BACKGROUND_BLUE',['../_colors_8hpp.html#a77724a92409d29bf192869ecf210e6d2',1,'Colors.hpp']]],
+  ['backgroundcolor_3',['backgroundColor',['../class_components_1_1_button.html#a86be62c5f5f5a3430904a8adba9d4731',1,'Components::Button::backgroundColor'],['../class_views_1_1_position_display.html#a74ef655f7882679ec62d8d92a3b94a1a',1,'Views::PositionDisplay::backgroundColor']]],
+  ['basesize_4',['baseSize',['../struct_font.html#aeda47afc931fb229470e01806565b19d',1,'Font']]],
+  ['battleship_5fhorizontal_5ffull_5fsprite_5',['BATTLESHIP_HORIZONTAL_FULL_SPRITE',['../_assets_paths_8hpp.html#aa3ec95905f210aa259bc70a72500e58c',1,'AssetsPaths.hpp']]],
+  ['battleship_5fhorizontal_5fsprite_5fpath_5fwith_5fprefix_6',['BATTLESHIP_HORIZONTAL_SPRITE_PATH_WITH_PREFIX',['../_assets_paths_8hpp.html#af9f3674512a6e183d85545daeb830998',1,'AssetsPaths.hpp']]],
+  ['battleship_5fvertical_5ffull_5fsprite_7',['BATTLESHIP_VERTICAL_FULL_SPRITE',['../_assets_paths_8hpp.html#a70dd787c3a0abac1a7e876a502efd258',1,'AssetsPaths.hpp']]],
+  ['battleship_5fvertical_5fsprite_5fpath_5fwith_5fprefix_8',['BATTLESHIP_VERTICAL_SPRITE_PATH_WITH_PREFIX',['../_assets_paths_8hpp.html#a71cc55ca1eefe840e00d1cc3408ef7f2',1,'AssetsPaths.hpp']]],
+  ['binary_5fname_9',['binary_name',['../structdoctest_1_1_context_options.html#a0590006b4d10296c9a697e32ff886f74',1,'doctest::ContextOptions']]],
+  ['bindpose_10',['bindPose',['../struct_model.html#af1ea4cff4a87bff14b1f28dcdcb346ac',1,'Model']]],
+  ['board_11',['BOARD',['../namespace_backgrounds.html#a9208f6aa0526fad5f362d2e46168af61',1,'Backgrounds']]],
+  ['bonecount_12',['boneCount',['../struct_model.html#ab23e10b83dee2edc509afcc720e8fbfa',1,'Model::boneCount'],['../struct_model_animation.html#a447fdb1beb21b25d6be00f064cb76dd4',1,'ModelAnimation::boneCount']]],
+  ['boneids_13',['boneIds',['../struct_mesh.html#a21ee2596316ad87635868d6c07781e1e',1,'Mesh']]],
+  ['bones_14',['bones',['../struct_model.html#ad6f8bb62ceed341444f6bdc91e9393d3',1,'Model::bones'],['../struct_model_animation.html#add169a1540b6fb1fdfe7a99738902352',1,'ModelAnimation::bones']]],
+  ['boneweights_15',['boneWeights',['../struct_mesh.html#a5ef85165a180ef6a112dece93d4f7f7a',1,'Mesh']]],
+  ['bottom_16',['bottom',['../struct_n_patch_info.html#af28dad173f4f17b42ccc4cb6e4285d20',1,'NPatchInfo']]],
+  ['bright_5fgold_17',['BRIGHT_GOLD',['../_colors_8hpp.html#ae4cf2f99ab2c3db22e1f90c21c3059d0',1,'Colors.hpp']]],
+  ['bright_5fgreen_18',['BRIGHT_GREEN',['../_colors_8hpp.html#a107417f6b37c0aa79e993ee88b03723e',1,'Colors.hpp']]],
+  ['bright_5fred_19',['BRIGHT_RED',['../_colors_8hpp.html#a9d350b0899caca210e251204740806b7',1,'Colors.hpp']]],
+  ['buf_20',['buf',['../classdoctest_1_1_string.html#a7e031ced488588936a540eba26facf67',1,'doctest::String']]],
+  ['buffer_21',['buffer',['../struct_audio_stream.html#a12080c0e45ce3fb10513e4083b31b43f',1,'AudioStream']]],
+  ['button_5ftext_5ficon_5flabel_22',['BUTTON_TEXT_ICON_LABEL',['../_game_screen_8cpp.html#ac1383530e1503933a3bc9c5683b7c985',1,'GameScreen.cpp']]]
+];

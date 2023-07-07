@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Batalha Naval - Documentação: Código-Fonte de Faculdade/2023-1/Prog2/BatalhaNaval/include/logic/board/Crusier.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Batalha Naval - Documentação<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bb75f6ccd9c841ccbcc87ee631ee1cf8.html">Faculdade</a></li><li class="navelem"><a class="el" href="dir_34921b01d83bfae507fa016aa2696f18.html">2023-1</a></li><li class="navelem"><a class="el" href="dir_66a3f915e7756a6ded3a5ab53105a1fe.html">Prog2</a></li><li class="navelem"><a class="el" href="dir_ef9cc14589066c222358a81ffd580e27.html">BatalhaNaval</a></li><li class="navelem"><a class="el" href="dir_8649854c9289a8d6819dfd27e24ff103.html">include</a></li><li class="navelem"><a class="el" href="dir_e7bbe0579d8873d7f0f7724ca58a3d98.html">logic</a></li><li class="navelem"><a class="el" href="dir_4d79f95e95ca2b5b43c6aee16c842787.html">board</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Crusier.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_crusier_8hpp.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef CRUSIER_HPP</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define CRUSIER_HPP</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="_troop_8hpp.html">Troop.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="_point_8hpp.html">Point.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_crusier.html">    9</a></span><span class="keyword">class </span><a class="code hl_class" href="class_crusier.html">Crusier</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_troop.html">Troop</a> {    </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_crusier.html#a633eef579c4c7193d5869701d8162871">   15</a></span>        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_crusier.html#a633eef579c4c7193d5869701d8162871">INITIAL_HEALTH</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keyword">static</span> std::string <a class="code hl_function" href="class_crusier.html#a8ae24182f4aebac0832a50292efbfd0d">getTroopName</a>();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <a class="code hl_function" href="class_crusier.html#afdc151590c4a25bbdbfad41d53b9f272">Crusier</a>();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keyword">virtual</span> <a class="code hl_function" href="class_crusier.html#a2221ad479986f2bce29d8e4fc473e693">~Crusier</a>();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keyword">virtual</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_crusier.html#ae06d59ac15563c8a19a26bc2177fce4e">getInitialHealth</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_crusier.html#ada07904db3e351b01f9040b3cd48e806">positionHorizontally</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_point.html">Point</a> initialPosition) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_crusier.html#ab4e795f5ade0f868758dd9c09c613a5f">positionVertically</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_point.html">Point</a> initialPosition) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>};</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_point_8hpp_html"><div class="ttname"><a href="_point_8hpp.html">Point.hpp</a></div></div>
+<div class="ttc" id="a_troop_8hpp_html"><div class="ttname"><a href="_troop_8hpp.html">Troop.hpp</a></div></div>
+<div class="ttc" id="aclass_crusier_html"><div class="ttname"><a href="class_crusier.html">Crusier</a></div><div class="ttdef"><b>Definição</b> Crusier.hpp:9</div></div>
+<div class="ttc" id="aclass_crusier_html_a2221ad479986f2bce29d8e4fc473e693"><div class="ttname"><a href="class_crusier.html#a2221ad479986f2bce29d8e4fc473e693">Crusier::~Crusier</a></div><div class="ttdeci">virtual ~Crusier()</div><div class="ttdoc">Destroy the Crusier object.</div><div class="ttdef"><b>Definição</b> Crusier.cpp:17</div></div>
+<div class="ttc" id="aclass_crusier_html_a633eef579c4c7193d5869701d8162871"><div class="ttname"><a href="class_crusier.html#a633eef579c4c7193d5869701d8162871">Crusier::INITIAL_HEALTH</a></div><div class="ttdeci">static const unsigned int INITIAL_HEALTH</div><div class="ttdef"><b>Definição</b> Crusier.hpp:15</div></div>
+<div class="ttc" id="aclass_crusier_html_a8ae24182f4aebac0832a50292efbfd0d"><div class="ttname"><a href="class_crusier.html#a8ae24182f4aebac0832a50292efbfd0d">Crusier::getTroopName</a></div><div class="ttdeci">static std::string getTroopName()</div><div class="ttdoc">Get the standard crusier name.</div><div class="ttdef"><b>Definição</b> Crusier.cpp:12</div></div>
+<div class="ttc" id="aclass_crusier_html_ab4e795f5ade0f868758dd9c09c613a5f"><div class="ttname"><a href="class_crusier.html#ab4e795f5ade0f868758dd9c09c613a5f">Crusier::positionVertically</a></div><div class="ttdeci">virtual void positionVertically(const Point initialPosition) override</div><div class="ttdoc">Positions the crusier vertically.</div><div class="ttdef"><b>Definição</b> Crusier.cpp:26</div></div>
+<div class="ttc" id="aclass_crusier_html_ada07904db3e351b01f9040b3cd48e806"><div class="ttname"><a href="class_crusier.html#ada07904db3e351b01f9040b3cd48e806">Crusier::positionHorizontally</a></div><div class="ttdeci">virtual void positionHorizontally(const Point initialPosition) override</div><div class="ttdoc">Positions the crusier horizontally.</div><div class="ttdef"><b>Definição</b> Crusier.cpp:19</div></div>
+<div class="ttc" id="aclass_crusier_html_ae06d59ac15563c8a19a26bc2177fce4e"><div class="ttname"><a href="class_crusier.html#ae06d59ac15563c8a19a26bc2177fce4e">Crusier::getInitialHealth</a></div><div class="ttdeci">virtual unsigned int getInitialHealth() const override</div><div class="ttdoc">Get the initial health attribute.</div><div class="ttdef"><b>Definição</b> Crusier.cpp:33</div></div>
+<div class="ttc" id="aclass_crusier_html_afdc151590c4a25bbdbfad41d53b9f272"><div class="ttname"><a href="class_crusier.html#afdc151590c4a25bbdbfad41d53b9f272">Crusier::Crusier</a></div><div class="ttdeci">Crusier()</div><div class="ttdoc">Default constructor.</div><div class="ttdef"><b>Definição</b> Crusier.cpp:16</div></div>
+<div class="ttc" id="aclass_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Point class used for positioning and board manipulations.</div><div class="ttdef"><b>Definição</b> Point.hpp:7</div></div>
+<div class="ttc" id="aclass_troop_html"><div class="ttname"><a href="class_troop.html">Troop</a></div><div class="ttdef"><b>Definição</b> Troop.hpp:12</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

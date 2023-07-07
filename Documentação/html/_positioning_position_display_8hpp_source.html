@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Batalha Naval - Documentação: Código-Fonte de Faculdade/2023-1/Prog2/BatalhaNaval/include/screen/positioning/PositioningPositionDisplay.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Batalha Naval - Documentação<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bb75f6ccd9c841ccbcc87ee631ee1cf8.html">Faculdade</a></li><li class="navelem"><a class="el" href="dir_34921b01d83bfae507fa016aa2696f18.html">2023-1</a></li><li class="navelem"><a class="el" href="dir_66a3f915e7756a6ded3a5ab53105a1fe.html">Prog2</a></li><li class="navelem"><a class="el" href="dir_ef9cc14589066c222358a81ffd580e27.html">BatalhaNaval</a></li><li class="navelem"><a class="el" href="dir_8649854c9289a8d6819dfd27e24ff103.html">include</a></li><li class="navelem"><a class="el" href="dir_a36fc79ae3405311521cb057c3350e44.html">screen</a></li><li class="navelem"><a class="el" href="dir_6a4ef60047058b7cfd4768e8bc97fd19.html">positioning</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">PositioningPositionDisplay.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_positioning_position_display_8hpp.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef POSITIONING_POSITION_DISPLAY_HPP</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define POSITIONING_POSITION_DISPLAY_HPP</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="raylib_8h.html">raylib.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="_position_display_8hpp.html">PositionDisplay.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="_point_8hpp.html">Point.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_position_8hpp.html">Position.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_colors_8hpp.html">Colors.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_views.html">Views</a> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_views_1_1_positioning_position_display.html">   14</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_views_1_1_positioning_position_display.html">PositioningPositionDisplay</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_views_1_1_position_display.html">PositionDisplay</a> {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            <span class="keywordtype">bool</span> marked = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            <a class="code hl_struct" href="struct_color.html">Color</a> markedColor = <a class="code hl_variable" href="_colors_8hpp.html#a8b035c1d91c8954091f11af19e8ed669">DEFAULT_BALCK</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            <span class="keywordtype">bool</span> mouseHasEntered = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <a class="code hl_class" href="class_views_1_1_positioning_position_display.html">PositioningPositionDisplay</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_point.html">Point</a> boardCoordinates);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <a class="code hl_class" href="class_views_1_1_positioning_position_display.html">PositioningPositionDisplay</a>(std::shared_ptr&lt;Position&gt; <a class="code hl_variable" href="class_views_1_1_position_display.html#a6231d81138932d63220f4a92c4d2f1eb">position</a>);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <span class="keyword">virtual</span> <a class="code hl_function" href="class_views_1_1_positioning_position_display.html#a49dc41b9ece79fdb002410ff73bbe206">~PositioningPositionDisplay</a>();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_views_1_1_positioning_position_display.html#af35ea49a072943f8b505cfb7859ce8be">render</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="keywordtype">bool</span> <a class="code hl_function" href="class_views_1_1_positioning_position_display.html#a8afea57cddbfde40495be5868e3c3100">checkMouseEnter</a>();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keywordtype">bool</span> <a class="code hl_function" href="class_views_1_1_positioning_position_display.html#a12fd4e3c0616446690ef66442c371daf">checkMouseExit</a>();</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="keywordtype">bool</span> <a class="code hl_function" href="class_views_1_1_positioning_position_display.html#aca01bd1f9fe0421b06729909b4807f10">checkMouseRightClick</a>();</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="class_views_1_1_positioning_position_display.html#a869b6ee8543dddafb5c1b0a934c15539">setMarked</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> marked);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            <span class="keywordtype">bool</span> <a class="code hl_function" href="class_views_1_1_positioning_position_display.html#a958d53a68d8859716acfbc143fba33cd">isMarked</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="class_views_1_1_positioning_position_display.html#aeac64d672e18391205cf3474e2ba8066">setMarkedColor</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_color.html">Color</a> color);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            <a class="code hl_struct" href="struct_color.html">Color</a> <a class="code hl_function" href="class_views_1_1_positioning_position_display.html#ae6ac7ce038bf07b6bad6bff64b0005d9">getMarkedColor</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    };</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>}</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_colors_8hpp_html"><div class="ttname"><a href="_colors_8hpp.html">Colors.hpp</a></div></div>
+<div class="ttc" id="a_colors_8hpp_html_a8b035c1d91c8954091f11af19e8ed669"><div class="ttname"><a href="_colors_8hpp.html#a8b035c1d91c8954091f11af19e8ed669">DEFAULT_BALCK</a></div><div class="ttdeci">const Color DEFAULT_BALCK</div><div class="ttdef"><b>Definição</b> Colors.hpp:7</div></div>
+<div class="ttc" id="a_point_8hpp_html"><div class="ttname"><a href="_point_8hpp.html">Point.hpp</a></div></div>
+<div class="ttc" id="a_position_8hpp_html"><div class="ttname"><a href="_position_8hpp.html">Position.hpp</a></div></div>
+<div class="ttc" id="a_position_display_8hpp_html"><div class="ttname"><a href="_position_display_8hpp.html">PositionDisplay.hpp</a></div></div>
+<div class="ttc" id="aclass_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Point class used for positioning and board manipulations.</div><div class="ttdef"><b>Definição</b> Point.hpp:7</div></div>
+<div class="ttc" id="aclass_views_1_1_position_display_html"><div class="ttname"><a href="class_views_1_1_position_display.html">Views::PositionDisplay</a></div><div class="ttdef"><b>Definição</b> PositionDisplay.hpp:17</div></div>
+<div class="ttc" id="aclass_views_1_1_position_display_html_a6231d81138932d63220f4a92c4d2f1eb"><div class="ttname"><a href="class_views_1_1_position_display.html#a6231d81138932d63220f4a92c4d2f1eb">Views::PositionDisplay::position</a></div><div class="ttdeci">std::shared_ptr&lt; Position &gt; position</div><div class="ttdef"><b>Definição</b> PositionDisplay.hpp:25</div></div>
+<div class="ttc" id="aclass_views_1_1_positioning_position_display_html"><div class="ttname"><a href="class_views_1_1_positioning_position_display.html">Views::PositioningPositionDisplay</a></div><div class="ttdef"><b>Definição</b> PositioningPositionDisplay.hpp:14</div></div>
+<div class="ttc" id="aclass_views_1_1_positioning_position_display_html_a12fd4e3c0616446690ef66442c371daf"><div class="ttname"><a href="class_views_1_1_positioning_position_display.html#a12fd4e3c0616446690ef66442c371daf">Views::PositioningPositionDisplay::checkMouseExit</a></div><div class="ttdeci">bool checkMouseExit()</div><div class="ttdoc">Check if the mouse has leave the positioning position view.</div><div class="ttdef"><b>Definição</b> PositioningPositionDisplay.cpp:53</div></div>
+<div class="ttc" id="aclass_views_1_1_positioning_position_display_html_a49dc41b9ece79fdb002410ff73bbe206"><div class="ttname"><a href="class_views_1_1_positioning_position_display.html#a49dc41b9ece79fdb002410ff73bbe206">Views::PositioningPositionDisplay::~PositioningPositionDisplay</a></div><div class="ttdeci">virtual ~PositioningPositionDisplay()</div><div class="ttdoc">Destroy the Positioning Position view.</div><div class="ttdef"><b>Definição</b> PositioningPositionDisplay.cpp:18</div></div>
+<div class="ttc" id="aclass_views_1_1_positioning_position_display_html_a869b6ee8543dddafb5c1b0a934c15539"><div class="ttname"><a href="class_views_1_1_positioning_position_display.html#a869b6ee8543dddafb5c1b0a934c15539">Views::PositioningPositionDisplay::setMarked</a></div><div class="ttdeci">void setMarked(const bool marked)</div><div class="ttdoc">Set if the position is marked in a different color.</div><div class="ttdef"><b>Definição</b> PositioningPositionDisplay.cpp:68</div></div>
+<div class="ttc" id="aclass_views_1_1_positioning_position_display_html_a8afea57cddbfde40495be5868e3c3100"><div class="ttname"><a href="class_views_1_1_positioning_position_display.html#a8afea57cddbfde40495be5868e3c3100">Views::PositioningPositionDisplay::checkMouseEnter</a></div><div class="ttdeci">bool checkMouseEnter()</div><div class="ttdoc">Check if the mouse has entered in the positioning position view.</div><div class="ttdef"><b>Definição</b> PositioningPositionDisplay.cpp:44</div></div>
+<div class="ttc" id="aclass_views_1_1_positioning_position_display_html_a958d53a68d8859716acfbc143fba33cd"><div class="ttname"><a href="class_views_1_1_positioning_position_display.html#a958d53a68d8859716acfbc143fba33cd">Views::PositioningPositionDisplay::isMarked</a></div><div class="ttdeci">bool isMarked() const</div><div class="ttdoc">Check if a position is marked.</div><div class="ttdef"><b>Definição</b> PositioningPositionDisplay.cpp:73</div></div>
+<div class="ttc" id="aclass_views_1_1_positioning_position_display_html_aca01bd1f9fe0421b06729909b4807f10"><div class="ttname"><a href="class_views_1_1_positioning_position_display.html#aca01bd1f9fe0421b06729909b4807f10">Views::PositioningPositionDisplay::checkMouseRightClick</a></div><div class="ttdeci">bool checkMouseRightClick()</div><div class="ttdoc">Check if the right mouse button was clicked over the positioning position view.</div><div class="ttdef"><b>Definição</b> PositioningPositionDisplay.cpp:62</div></div>
+<div class="ttc" id="aclass_views_1_1_positioning_position_display_html_ae6ac7ce038bf07b6bad6bff64b0005d9"><div class="ttname"><a href="class_views_1_1_positioning_position_display.html#ae6ac7ce038bf07b6bad6bff64b0005d9">Views::PositioningPositionDisplay::getMarkedColor</a></div><div class="ttdeci">Color getMarkedColor() const</div><div class="ttdoc">Get the marked color attribute.</div><div class="ttdef"><b>Definição</b> PositioningPositionDisplay.cpp:82</div></div>
+<div class="ttc" id="aclass_views_1_1_positioning_position_display_html_aeac64d672e18391205cf3474e2ba8066"><div class="ttname"><a href="class_views_1_1_positioning_position_display.html#aeac64d672e18391205cf3474e2ba8066">Views::PositioningPositionDisplay::setMarkedColor</a></div><div class="ttdeci">void setMarkedColor(const Color color)</div><div class="ttdoc">Set the color that the position will be marked.</div><div class="ttdef"><b>Definição</b> PositioningPositionDisplay.cpp:77</div></div>
+<div class="ttc" id="aclass_views_1_1_positioning_position_display_html_af35ea49a072943f8b505cfb7859ce8be"><div class="ttname"><a href="class_views_1_1_positioning_position_display.html#af35ea49a072943f8b505cfb7859ce8be">Views::PositioningPositionDisplay::render</a></div><div class="ttdeci">virtual void render() override</div><div class="ttdoc">Render the view in the interface.</div><div class="ttdef"><b>Definição</b> PositioningPositionDisplay.cpp:20</div></div>
+<div class="ttc" id="anamespace_views_html"><div class="ttname"><a href="namespace_views.html">Views</a></div><div class="ttdef"><b>Definição</b> View.hpp:8</div></div>
+<div class="ttc" id="araylib_8h_html"><div class="ttname"><a href="raylib_8h.html">raylib.h</a></div></div>
+<div class="ttc" id="astruct_color_html"><div class="ttname"><a href="struct_color.html">Color</a></div><div class="ttdef"><b>Definição</b> raylib.h:220</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

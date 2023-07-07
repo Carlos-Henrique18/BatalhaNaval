@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Batalha Naval - Documentação: Código-Fonte de Faculdade/2023-1/Prog2/BatalhaNaval/include/screen/positioning/PositioningBoardDisplay.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Batalha Naval - Documentação<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bb75f6ccd9c841ccbcc87ee631ee1cf8.html">Faculdade</a></li><li class="navelem"><a class="el" href="dir_34921b01d83bfae507fa016aa2696f18.html">2023-1</a></li><li class="navelem"><a class="el" href="dir_66a3f915e7756a6ded3a5ab53105a1fe.html">Prog2</a></li><li class="navelem"><a class="el" href="dir_ef9cc14589066c222358a81ffd580e27.html">BatalhaNaval</a></li><li class="navelem"><a class="el" href="dir_8649854c9289a8d6819dfd27e24ff103.html">include</a></li><li class="navelem"><a class="el" href="dir_a36fc79ae3405311521cb057c3350e44.html">screen</a></li><li class="navelem"><a class="el" href="dir_6a4ef60047058b7cfd4768e8bc97fd19.html">positioning</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">PositioningBoardDisplay.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_positioning_board_display_8hpp.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef POSITIONING_BOARD_DISPLAY_HPP</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define POSITIONING_BOARD_DISPLAY_HPP</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="raylib_8h.html">raylib.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="_board_display_8hpp.html">BoardDisplay.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_positioning_position_display_8hpp.html">PositioningPositionDisplay.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_board_8hpp.html">Board.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_point_8hpp.html">Point.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="_troop_8hpp.html">Troop.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_views.html">Views</a> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_views_1_1_positioning_board_display.html">   16</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_views_1_1_positioning_board_display.html">PositioningBoardDisplay</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_views_1_1_board_display.html">BoardDisplay</a> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <a class="code hl_class" href="class_views_1_1_positioning_board_display.html">PositioningBoardDisplay</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_views_1_1_board_display.html#a5482bbcd9cb02e774774910f8292d77b">amountHorizontalCells</a>, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_views_1_1_board_display.html#ace0b8e9de0f548b045648e971fbbe638">amountVerticalCells</a>);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <a class="code hl_class" href="class_views_1_1_positioning_board_display.html">PositioningBoardDisplay</a>(std::shared_ptr&lt;Board&gt; <a class="code hl_variable" href="class_views_1_1_board_display.html#adc5835899de99ab910c0165be0fbc566">logicBoard</a>);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <span class="keyword">virtual</span> <a class="code hl_function" href="class_views_1_1_positioning_board_display.html#ac2c3fb166f7a423c34497a2891c77b16">~PositioningBoardDisplay</a>();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="class_views_1_1_positioning_board_display.html#a4e160f8a2f3b1d3b0579638dfef2b88c">positionTroop</a>(<span class="keyword">const</span> std::shared_ptr&lt;Troop&gt; troop);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="class_views_1_1_positioning_board_display.html#a6af749bf16a9566519f850c1a338b419">removeTroop</a>(<span class="keyword">const</span> std::shared_ptr&lt;Troop&gt; troop);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="class_views_1_1_positioning_board_display.html#a91a10a9dbd00edf2ee57457aeb9083cc">markPositions</a>(<span class="keyword">const</span> std::vector&lt;Point&gt;&amp; points);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="class_views_1_1_positioning_board_display.html#a0f289dd8a56de77a60609bc3e6b9ba0e">unmarkPositions</a>(<span class="keyword">const</span> std::vector&lt;Point&gt;&amp; points);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="class_views_1_1_positioning_board_display.html#a090b55d39e6b7f653690e6c367fb71af">unmarkPosition</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_point.html">Point</a> point);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            std::vector&lt;std::vector&lt;std::shared_ptr&lt;PositioningPositionDisplay&gt;&gt;&gt; <a class="code hl_function" href="class_views_1_1_positioning_board_display.html#a7f9f822c7205f884ebea769cfc89159a">getCellsAsPositioningCells</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_views_1_1_positioning_board_display.html#aeb3d739a9f81a4650454273efd63f7c8">initializeCells</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <span class="keywordtype">void</span> buildComponent();</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    };</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>}</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_board_8hpp_html"><div class="ttname"><a href="_board_8hpp.html">Board.hpp</a></div></div>
+<div class="ttc" id="a_board_display_8hpp_html"><div class="ttname"><a href="_board_display_8hpp.html">BoardDisplay.hpp</a></div></div>
+<div class="ttc" id="a_point_8hpp_html"><div class="ttname"><a href="_point_8hpp.html">Point.hpp</a></div></div>
+<div class="ttc" id="a_positioning_position_display_8hpp_html"><div class="ttname"><a href="_positioning_position_display_8hpp.html">PositioningPositionDisplay.hpp</a></div></div>
+<div class="ttc" id="a_troop_8hpp_html"><div class="ttname"><a href="_troop_8hpp.html">Troop.hpp</a></div></div>
+<div class="ttc" id="aclass_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Point class used for positioning and board manipulations.</div><div class="ttdef"><b>Definição</b> Point.hpp:7</div></div>
+<div class="ttc" id="aclass_views_1_1_board_display_html"><div class="ttname"><a href="class_views_1_1_board_display.html">Views::BoardDisplay</a></div><div class="ttdef"><b>Definição</b> BoardDisplay.hpp:15</div></div>
+<div class="ttc" id="aclass_views_1_1_board_display_html_a5482bbcd9cb02e774774910f8292d77b"><div class="ttname"><a href="class_views_1_1_board_display.html#a5482bbcd9cb02e774774910f8292d77b">Views::BoardDisplay::amountHorizontalCells</a></div><div class="ttdeci">unsigned int amountHorizontalCells</div><div class="ttdef"><b>Definição</b> BoardDisplay.hpp:20</div></div>
+<div class="ttc" id="aclass_views_1_1_board_display_html_ace0b8e9de0f548b045648e971fbbe638"><div class="ttname"><a href="class_views_1_1_board_display.html#ace0b8e9de0f548b045648e971fbbe638">Views::BoardDisplay::amountVerticalCells</a></div><div class="ttdeci">unsigned int amountVerticalCells</div><div class="ttdef"><b>Definição</b> BoardDisplay.hpp:21</div></div>
+<div class="ttc" id="aclass_views_1_1_board_display_html_adc5835899de99ab910c0165be0fbc566"><div class="ttname"><a href="class_views_1_1_board_display.html#adc5835899de99ab910c0165be0fbc566">Views::BoardDisplay::logicBoard</a></div><div class="ttdeci">std::shared_ptr&lt; Board &gt; logicBoard</div><div class="ttdef"><b>Definição</b> BoardDisplay.hpp:23</div></div>
+<div class="ttc" id="aclass_views_1_1_positioning_board_display_html"><div class="ttname"><a href="class_views_1_1_positioning_board_display.html">Views::PositioningBoardDisplay</a></div><div class="ttdef"><b>Definição</b> PositioningBoardDisplay.hpp:16</div></div>
+<div class="ttc" id="aclass_views_1_1_positioning_board_display_html_a090b55d39e6b7f653690e6c367fb71af"><div class="ttname"><a href="class_views_1_1_positioning_board_display.html#a090b55d39e6b7f653690e6c367fb71af">Views::PositioningBoardDisplay::unmarkPosition</a></div><div class="ttdeci">void unmarkPosition(const Point point)</div><div class="ttdoc">Unmark a specific position.</div><div class="ttdef"><b>Definição</b> PositioningBoardDisplay.cpp:95</div></div>
+<div class="ttc" id="aclass_views_1_1_positioning_board_display_html_a0f289dd8a56de77a60609bc3e6b9ba0e"><div class="ttname"><a href="class_views_1_1_positioning_board_display.html#a0f289dd8a56de77a60609bc3e6b9ba0e">Views::PositioningBoardDisplay::unmarkPositions</a></div><div class="ttdeci">void unmarkPositions(const std::vector&lt; Point &gt; &amp;points)</div><div class="ttdoc">Unmark a group of positions.</div><div class="ttdef"><b>Definição</b> PositioningBoardDisplay.cpp:85</div></div>
+<div class="ttc" id="aclass_views_1_1_positioning_board_display_html_a4e160f8a2f3b1d3b0579638dfef2b88c"><div class="ttname"><a href="class_views_1_1_positioning_board_display.html#a4e160f8a2f3b1d3b0579638dfef2b88c">Views::PositioningBoardDisplay::positionTroop</a></div><div class="ttdeci">void positionTroop(const std::shared_ptr&lt; Troop &gt; troop)</div><div class="ttdoc">Position a troop in some board positions based on it's shape.</div><div class="ttdef"><b>Definição</b> PositioningBoardDisplay.cpp:53</div></div>
+<div class="ttc" id="aclass_views_1_1_positioning_board_display_html_a6af749bf16a9566519f850c1a338b419"><div class="ttname"><a href="class_views_1_1_positioning_board_display.html#a6af749bf16a9566519f850c1a338b419">Views::PositioningBoardDisplay::removeTroop</a></div><div class="ttdeci">void removeTroop(const std::shared_ptr&lt; Troop &gt; troop)</div><div class="ttdoc">Remove the troop from this position.</div><div class="ttdef"><b>Definição</b> PositioningBoardDisplay.cpp:66</div></div>
+<div class="ttc" id="aclass_views_1_1_positioning_board_display_html_a7f9f822c7205f884ebea769cfc89159a"><div class="ttname"><a href="class_views_1_1_positioning_board_display.html#a7f9f822c7205f884ebea769cfc89159a">Views::PositioningBoardDisplay::getCellsAsPositioningCells</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; std::shared_ptr&lt; PositioningPositionDisplay &gt; &gt; &gt; getCellsAsPositioningCells() const</div><div class="ttdoc">Get the board cells as positioning cells objects.</div><div class="ttdef"><b>Definição</b> PositioningBoardDisplay.cpp:104</div></div>
+<div class="ttc" id="aclass_views_1_1_positioning_board_display_html_a91a10a9dbd00edf2ee57457aeb9083cc"><div class="ttname"><a href="class_views_1_1_positioning_board_display.html#a91a10a9dbd00edf2ee57457aeb9083cc">Views::PositioningBoardDisplay::markPositions</a></div><div class="ttdeci">void markPositions(const std::vector&lt; Point &gt; &amp;points)</div><div class="ttdoc">Set a group of position as marked.</div><div class="ttdef"><b>Definição</b> PositioningBoardDisplay.cpp:71</div></div>
+<div class="ttc" id="aclass_views_1_1_positioning_board_display_html_ac2c3fb166f7a423c34497a2891c77b16"><div class="ttname"><a href="class_views_1_1_positioning_board_display.html#ac2c3fb166f7a423c34497a2891c77b16">Views::PositioningBoardDisplay::~PositioningBoardDisplay</a></div><div class="ttdeci">virtual ~PositioningBoardDisplay()</div><div class="ttdoc">Destroy the Positioning Board view.</div><div class="ttdef"><b>Definição</b> PositioningBoardDisplay.cpp:39</div></div>
+<div class="ttc" id="aclass_views_1_1_positioning_board_display_html_aeb3d739a9f81a4650454273efd63f7c8"><div class="ttname"><a href="class_views_1_1_positioning_board_display.html#aeb3d739a9f81a4650454273efd63f7c8">Views::PositioningBoardDisplay::initializeCells</a></div><div class="ttdeci">virtual void initializeCells() override</div><div class="ttdoc">Instantiate the board cells components.</div><div class="ttdef"><b>Definição</b> PositioningBoardDisplay.cpp:41</div></div>
+<div class="ttc" id="anamespace_views_html"><div class="ttname"><a href="namespace_views.html">Views</a></div><div class="ttdef"><b>Definição</b> View.hpp:8</div></div>
+<div class="ttc" id="araylib_8h_html"><div class="ttname"><a href="raylib_8h.html">raylib.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

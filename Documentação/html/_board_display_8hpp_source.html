@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Batalha Naval - Documentação: Código-Fonte de Faculdade/2023-1/Prog2/BatalhaNaval/include/screen/shared/BoardDisplay.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Batalha Naval - Documentação<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bb75f6ccd9c841ccbcc87ee631ee1cf8.html">Faculdade</a></li><li class="navelem"><a class="el" href="dir_34921b01d83bfae507fa016aa2696f18.html">2023-1</a></li><li class="navelem"><a class="el" href="dir_66a3f915e7756a6ded3a5ab53105a1fe.html">Prog2</a></li><li class="navelem"><a class="el" href="dir_ef9cc14589066c222358a81ffd580e27.html">BatalhaNaval</a></li><li class="navelem"><a class="el" href="dir_8649854c9289a8d6819dfd27e24ff103.html">include</a></li><li class="navelem"><a class="el" href="dir_a36fc79ae3405311521cb057c3350e44.html">screen</a></li><li class="navelem"><a class="el" href="dir_69a102f92bb704ed4d34483240dfbd81.html">shared</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">BoardDisplay.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_board_display_8hpp.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef BOARD_DISPLAY_HPP</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define BOARD_DISPLAY_HPP</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="raylib_8h.html">raylib.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="_view_8hpp.html">View.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_image_8hpp.html">Image.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="_position_display_8hpp.html">PositionDisplay.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_board_8hpp.html">Board.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_views.html">Views</a> {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_views_1_1_board_display.html">   15</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_views_1_1_board_display.html">BoardDisplay</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_views_1_1_view.html">View</a> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_views_1_1_board_display.html#a3165db58605c87dd845f273f273d0994">   17</a></span>            std::unique_ptr&lt;Components::Image&gt; <a class="code hl_variable" href="class_views_1_1_board_display.html#a3165db58605c87dd845f273f273d0994">background</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_views_1_1_board_display.html#acf746ead0058e8d4db11d8bb649e7998">   18</a></span>            std::vector&lt;std::vector&lt;std::shared_ptr&lt;PositionDisplay&gt;&gt;&gt; <a class="code hl_variable" href="class_views_1_1_board_display.html#acf746ead0058e8d4db11d8bb649e7998">cells</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_views_1_1_board_display.html#a5482bbcd9cb02e774774910f8292d77b">   20</a></span>            <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_views_1_1_board_display.html#a5482bbcd9cb02e774774910f8292d77b">amountHorizontalCells</a> = 0;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_views_1_1_board_display.html#ace0b8e9de0f548b045648e971fbbe638">   21</a></span>            <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_views_1_1_board_display.html#ace0b8e9de0f548b045648e971fbbe638">amountVerticalCells</a> = 0;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_views_1_1_board_display.html#adc5835899de99ab910c0165be0fbc566">   23</a></span>            std::shared_ptr&lt;Board&gt; <a class="code hl_variable" href="class_views_1_1_board_display.html#adc5835899de99ab910c0165be0fbc566">logicBoard</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <a class="code hl_class" href="class_views_1_1_board_display.html">BoardDisplay</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_views_1_1_board_display.html#a5482bbcd9cb02e774774910f8292d77b">amountHorizontalCells</a>, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_views_1_1_board_display.html#ace0b8e9de0f548b045648e971fbbe638">amountVerticalCells</a>);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <a class="code hl_class" href="class_views_1_1_board_display.html">BoardDisplay</a>(std::shared_ptr&lt;Board&gt; <a class="code hl_variable" href="class_views_1_1_board_display.html#adc5835899de99ab910c0165be0fbc566">logicBoard</a>);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keyword">virtual</span> <a class="code hl_function" href="class_views_1_1_board_display.html#ad935823099e3751692d12095e319086e">~BoardDisplay</a>();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_views_1_1_board_display.html#a577651c9682ce36ccf540a81b9805080">render</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_views_1_1_board_display.html#a3c951df9fbab7c2b788f38ea424a16f5">getAmountHorizontalCells</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_function" href="class_views_1_1_board_display.html#a9b0be530b63209103bee16568a8cca44">getAmountVerticalCells</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            std::vector&lt;std::vector&lt;std::shared_ptr&lt;PositionDisplay&gt;&gt;&gt; <a class="code hl_function" href="class_views_1_1_board_display.html#aa3637f80fba0332667b0dca5c89fedf7">getCells</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_views_1_1_board_display.html#a4d78f24e0bd958f3b666bc4277a6763a">updateInnerComponentsPositions</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_views_1_1_board_display.html#ae368b8191fed849c3389c099bb93719d">findWidth</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_views_1_1_board_display.html#ad1167039b76d0b67f9e48986dac70d68">findHeight</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="class_views_1_1_board_display.html#a48f6efe6743ef0d40422b2590e76e1b5">   89</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_views_1_1_board_display.html#a48f6efe6743ef0d40422b2590e76e1b5">initializeCells</a>() = 0;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="class_views_1_1_board_display.html#a1870dcea15e86cb8269145071fdc1f1a">buildBackground</a>();</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            <span class="keywordtype">void</span> positionBackground();</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            <span class="keywordtype">void</span> positionCells();</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            <span class="keywordtype">float</span> getBoardPadding() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            <span class="keywordtype">float</span> getCellsSpacing() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            <span class="keywordtype">float</span> getCellsMatrixHeight() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            <span class="keywordtype">float</span> getCellsMatrixWidth() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            <span class="keywordtype">void</span> setAmountHorizontalCells(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_views_1_1_board_display.html#a5482bbcd9cb02e774774910f8292d77b">amountHorizontalCells</a>);</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            <span class="keywordtype">void</span> setAmountVerticalCells(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_views_1_1_board_display.html#ace0b8e9de0f548b045648e971fbbe638">amountVerticalCells</a>);</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    };</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>}</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_board_8hpp_html"><div class="ttname"><a href="_board_8hpp.html">Board.hpp</a></div></div>
+<div class="ttc" id="a_image_8hpp_html"><div class="ttname"><a href="_image_8hpp.html">Image.hpp</a></div></div>
+<div class="ttc" id="a_position_display_8hpp_html"><div class="ttname"><a href="_position_display_8hpp.html">PositionDisplay.hpp</a></div></div>
+<div class="ttc" id="a_view_8hpp_html"><div class="ttname"><a href="_view_8hpp.html">View.hpp</a></div></div>
+<div class="ttc" id="aclass_views_1_1_board_display_html"><div class="ttname"><a href="class_views_1_1_board_display.html">Views::BoardDisplay</a></div><div class="ttdef"><b>Definição</b> BoardDisplay.hpp:15</div></div>
+<div class="ttc" id="aclass_views_1_1_board_display_html_a1870dcea15e86cb8269145071fdc1f1a"><div class="ttname"><a href="class_views_1_1_board_display.html#a1870dcea15e86cb8269145071fdc1f1a">Views::BoardDisplay::buildBackground</a></div><div class="ttdeci">void buildBackground()</div><div class="ttdoc">Build background style.</div><div class="ttdef"><b>Definição</b> BoardDisplay.cpp:67</div></div>
+<div class="ttc" id="aclass_views_1_1_board_display_html_a3165db58605c87dd845f273f273d0994"><div class="ttname"><a href="class_views_1_1_board_display.html#a3165db58605c87dd845f273f273d0994">Views::BoardDisplay::background</a></div><div class="ttdeci">std::unique_ptr&lt; Components::Image &gt; background</div><div class="ttdef"><b>Definição</b> BoardDisplay.hpp:17</div></div>
+<div class="ttc" id="aclass_views_1_1_board_display_html_a3c951df9fbab7c2b788f38ea424a16f5"><div class="ttname"><a href="class_views_1_1_board_display.html#a3c951df9fbab7c2b788f38ea424a16f5">Views::BoardDisplay::getAmountHorizontalCells</a></div><div class="ttdeci">unsigned int getAmountHorizontalCells() const</div><div class="ttdoc">Get the amount of horizontal cells the board has.</div><div class="ttdef"><b>Definição</b> BoardDisplay.cpp:129</div></div>
+<div class="ttc" id="aclass_views_1_1_board_display_html_a48f6efe6743ef0d40422b2590e76e1b5"><div class="ttname"><a href="class_views_1_1_board_display.html#a48f6efe6743ef0d40422b2590e76e1b5">Views::BoardDisplay::initializeCells</a></div><div class="ttdeci">virtual void initializeCells()=0</div><div class="ttdoc">Instantiate the board cells components.</div></div>
+<div class="ttc" id="aclass_views_1_1_board_display_html_a4d78f24e0bd958f3b666bc4277a6763a"><div class="ttname"><a href="class_views_1_1_board_display.html#a4d78f24e0bd958f3b666bc4277a6763a">Views::BoardDisplay::updateInnerComponentsPositions</a></div><div class="ttdeci">virtual void updateInnerComponentsPositions() override</div><div class="ttdoc">Update all inner components positions.</div><div class="ttdef"><b>Definição</b> BoardDisplay.cpp:50</div></div>
+<div class="ttc" id="aclass_views_1_1_board_display_html_a5482bbcd9cb02e774774910f8292d77b"><div class="ttname"><a href="class_views_1_1_board_display.html#a5482bbcd9cb02e774774910f8292d77b">Views::BoardDisplay::amountHorizontalCells</a></div><div class="ttdeci">unsigned int amountHorizontalCells</div><div class="ttdef"><b>Definição</b> BoardDisplay.hpp:20</div></div>
+<div class="ttc" id="aclass_views_1_1_board_display_html_a577651c9682ce36ccf540a81b9805080"><div class="ttname"><a href="class_views_1_1_board_display.html#a577651c9682ce36ccf540a81b9805080">Views::BoardDisplay::render</a></div><div class="ttdeci">virtual void render() override</div><div class="ttdoc">Render the view in the interface.</div><div class="ttdef"><b>Definição</b> BoardDisplay.cpp:36</div></div>
+<div class="ttc" id="aclass_views_1_1_board_display_html_a9b0be530b63209103bee16568a8cca44"><div class="ttname"><a href="class_views_1_1_board_display.html#a9b0be530b63209103bee16568a8cca44">Views::BoardDisplay::getAmountVerticalCells</a></div><div class="ttdeci">unsigned int getAmountVerticalCells() const</div><div class="ttdoc">Get the amount of vertical cells the board has.</div><div class="ttdef"><b>Definição</b> BoardDisplay.cpp:138</div></div>
+<div class="ttc" id="aclass_views_1_1_board_display_html_aa3637f80fba0332667b0dca5c89fedf7"><div class="ttname"><a href="class_views_1_1_board_display.html#aa3637f80fba0332667b0dca5c89fedf7">Views::BoardDisplay::getCells</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; std::shared_ptr&lt; PositionDisplay &gt; &gt; &gt; getCells() const</div><div class="ttdoc">Get the board cells objects.</div><div class="ttdef"><b>Definição</b> BoardDisplay.cpp:142</div></div>
+<div class="ttc" id="aclass_views_1_1_board_display_html_ace0b8e9de0f548b045648e971fbbe638"><div class="ttname"><a href="class_views_1_1_board_display.html#ace0b8e9de0f548b045648e971fbbe638">Views::BoardDisplay::amountVerticalCells</a></div><div class="ttdeci">unsigned int amountVerticalCells</div><div class="ttdef"><b>Definição</b> BoardDisplay.hpp:21</div></div>
+<div class="ttc" id="aclass_views_1_1_board_display_html_acf746ead0058e8d4db11d8bb649e7998"><div class="ttname"><a href="class_views_1_1_board_display.html#acf746ead0058e8d4db11d8bb649e7998">Views::BoardDisplay::cells</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; std::shared_ptr&lt; PositionDisplay &gt; &gt; &gt; cells</div><div class="ttdef"><b>Definição</b> BoardDisplay.hpp:18</div></div>
+<div class="ttc" id="aclass_views_1_1_board_display_html_ad1167039b76d0b67f9e48986dac70d68"><div class="ttname"><a href="class_views_1_1_board_display.html#ad1167039b76d0b67f9e48986dac70d68">Views::BoardDisplay::findHeight</a></div><div class="ttdeci">virtual void findHeight() override</div><div class="ttdoc">Define the height of the view.</div><div class="ttdef"><b>Definição</b> BoardDisplay.cpp:62</div></div>
+<div class="ttc" id="aclass_views_1_1_board_display_html_ad935823099e3751692d12095e319086e"><div class="ttname"><a href="class_views_1_1_board_display.html#ad935823099e3751692d12095e319086e">Views::BoardDisplay::~BoardDisplay</a></div><div class="ttdeci">virtual ~BoardDisplay()</div><div class="ttdoc">Destroy the Board Display view.</div><div class="ttdef"><b>Definição</b> BoardDisplay.cpp:34</div></div>
+<div class="ttc" id="aclass_views_1_1_board_display_html_adc5835899de99ab910c0165be0fbc566"><div class="ttname"><a href="class_views_1_1_board_display.html#adc5835899de99ab910c0165be0fbc566">Views::BoardDisplay::logicBoard</a></div><div class="ttdeci">std::shared_ptr&lt; Board &gt; logicBoard</div><div class="ttdef"><b>Definição</b> BoardDisplay.hpp:23</div></div>
+<div class="ttc" id="aclass_views_1_1_board_display_html_ae368b8191fed849c3389c099bb93719d"><div class="ttname"><a href="class_views_1_1_board_display.html#ae368b8191fed849c3389c099bb93719d">Views::BoardDisplay::findWidth</a></div><div class="ttdeci">virtual void findWidth() override</div><div class="ttdoc">Define the width of the view.</div><div class="ttdef"><b>Definição</b> BoardDisplay.cpp:57</div></div>
+<div class="ttc" id="aclass_views_1_1_view_html"><div class="ttname"><a href="class_views_1_1_view.html">Views::View</a></div><div class="ttdef"><b>Definição</b> View.hpp:9</div></div>
+<div class="ttc" id="anamespace_views_html"><div class="ttname"><a href="namespace_views.html">Views</a></div><div class="ttdef"><b>Definição</b> View.hpp:8</div></div>
+<div class="ttc" id="araylib_8h_html"><div class="ttname"><a href="raylib_8h.html">raylib.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

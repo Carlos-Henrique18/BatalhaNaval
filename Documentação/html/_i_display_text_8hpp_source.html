@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Batalha Naval - Documentação: Código-Fonte de Faculdade/2023-1/Prog2/BatalhaNaval/include/screen/components/component/IDisplayText.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Batalha Naval - Documentação<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bb75f6ccd9c841ccbcc87ee631ee1cf8.html">Faculdade</a></li><li class="navelem"><a class="el" href="dir_34921b01d83bfae507fa016aa2696f18.html">2023-1</a></li><li class="navelem"><a class="el" href="dir_66a3f915e7756a6ded3a5ab53105a1fe.html">Prog2</a></li><li class="navelem"><a class="el" href="dir_ef9cc14589066c222358a81ffd580e27.html">BatalhaNaval</a></li><li class="navelem"><a class="el" href="dir_8649854c9289a8d6819dfd27e24ff103.html">include</a></li><li class="navelem"><a class="el" href="dir_a36fc79ae3405311521cb057c3350e44.html">screen</a></li><li class="navelem"><a class="el" href="dir_eb957a9e080c555900b692d8faa726f8.html">components</a></li><li class="navelem"><a class="el" href="dir_8825c33232523250ac65dac5bad78874.html">component</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">IDisplayText.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_i_display_text_8hpp.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef IDISPLAY_TEXT_HPP</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define IDISPLAY_TEXT_HPP</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="raylib_8h.html">raylib.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_components.html">Components</a> {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_components_1_1_i_display_text.html">    8</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_components_1_1_i_display_text.html">IDisplayText</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_components_1_1_i_display_text.html#a4c0025a3da4445575714df2fc4436528">   15</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_components_1_1_i_display_text.html#a4c0025a3da4445575714df2fc4436528">setText</a>(<span class="keyword">const</span> std::string content) = 0;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_components_1_1_i_display_text.html#a8b0706cb9981e1e23d674e856b4c3d72">   22</a></span>            <span class="keyword">virtual</span> std::string <a class="code hl_function" href="class_components_1_1_i_display_text.html#a8b0706cb9981e1e23d674e856b4c3d72">getText</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_components_1_1_i_display_text.html#aad006832b63d2505fbd184bec3a81a46">   29</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_components_1_1_i_display_text.html#aad006832b63d2505fbd184bec3a81a46">setFontSize</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> fontSize) = 0;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_components_1_1_i_display_text.html#a8a9e74d9c821b732910da079f8768fb9">   36</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">float</span> <a class="code hl_function" href="class_components_1_1_i_display_text.html#a8a9e74d9c821b732910da079f8768fb9">getFontSize</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_components_1_1_i_display_text.html#ad6176a42798faa83e5aedec958b79dcb">   43</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_components_1_1_i_display_text.html#ad6176a42798faa83e5aedec958b79dcb">setFontFamily</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_font.html">Font</a> font) = 0;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_components_1_1_i_display_text.html#ac362e287ce07641e16593d330276de60">   50</a></span>            <span class="keyword">virtual</span> <a class="code hl_struct" href="struct_font.html">Font</a> <a class="code hl_function" href="class_components_1_1_i_display_text.html#ac362e287ce07641e16593d330276de60">getFontFamily</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_components_1_1_i_display_text.html#a1ee654d4e1a5bca1afa0b2c6b47de923">   57</a></span>            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_components_1_1_i_display_text.html#a1ee654d4e1a5bca1afa0b2c6b47de923">setTextColor</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_color.html">Color</a> color) = 0;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="class_components_1_1_i_display_text.html#a297ab23acb3d9c1e15ba44a67109d71f">   64</a></span>            <span class="keyword">virtual</span> <a class="code hl_struct" href="struct_color.html">Color</a> <a class="code hl_function" href="class_components_1_1_i_display_text.html#a297ab23acb3d9c1e15ba44a67109d71f">getTextColor</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    };</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_components_1_1_i_display_text_html"><div class="ttname"><a href="class_components_1_1_i_display_text.html">Components::IDisplayText</a></div><div class="ttdef"><b>Definição</b> IDisplayText.hpp:8</div></div>
+<div class="ttc" id="aclass_components_1_1_i_display_text_html_a1ee654d4e1a5bca1afa0b2c6b47de923"><div class="ttname"><a href="class_components_1_1_i_display_text.html#a1ee654d4e1a5bca1afa0b2c6b47de923">Components::IDisplayText::setTextColor</a></div><div class="ttdeci">virtual void setTextColor(const Color color)=0</div><div class="ttdoc">Set the color attribute.</div></div>
+<div class="ttc" id="aclass_components_1_1_i_display_text_html_a297ab23acb3d9c1e15ba44a67109d71f"><div class="ttname"><a href="class_components_1_1_i_display_text.html#a297ab23acb3d9c1e15ba44a67109d71f">Components::IDisplayText::getTextColor</a></div><div class="ttdeci">virtual Color getTextColor() const =0</div><div class="ttdoc">Get the text color attribute.</div></div>
+<div class="ttc" id="aclass_components_1_1_i_display_text_html_a4c0025a3da4445575714df2fc4436528"><div class="ttname"><a href="class_components_1_1_i_display_text.html#a4c0025a3da4445575714df2fc4436528">Components::IDisplayText::setText</a></div><div class="ttdeci">virtual void setText(const std::string content)=0</div><div class="ttdoc">Set the text content.</div></div>
+<div class="ttc" id="aclass_components_1_1_i_display_text_html_a8a9e74d9c821b732910da079f8768fb9"><div class="ttname"><a href="class_components_1_1_i_display_text.html#a8a9e74d9c821b732910da079f8768fb9">Components::IDisplayText::getFontSize</a></div><div class="ttdeci">virtual float getFontSize() const =0</div><div class="ttdoc">Get the font size attribute.</div></div>
+<div class="ttc" id="aclass_components_1_1_i_display_text_html_a8b0706cb9981e1e23d674e856b4c3d72"><div class="ttname"><a href="class_components_1_1_i_display_text.html#a8b0706cb9981e1e23d674e856b4c3d72">Components::IDisplayText::getText</a></div><div class="ttdeci">virtual std::string getText() const =0</div><div class="ttdoc">Get the text that the button display.</div></div>
+<div class="ttc" id="aclass_components_1_1_i_display_text_html_aad006832b63d2505fbd184bec3a81a46"><div class="ttname"><a href="class_components_1_1_i_display_text.html#aad006832b63d2505fbd184bec3a81a46">Components::IDisplayText::setFontSize</a></div><div class="ttdeci">virtual void setFontSize(const float fontSize)=0</div><div class="ttdoc">Set the font size attribute.</div></div>
+<div class="ttc" id="aclass_components_1_1_i_display_text_html_ac362e287ce07641e16593d330276de60"><div class="ttname"><a href="class_components_1_1_i_display_text.html#ac362e287ce07641e16593d330276de60">Components::IDisplayText::getFontFamily</a></div><div class="ttdeci">virtual Font getFontFamily() const =0</div><div class="ttdoc">Get the font family attribute.</div></div>
+<div class="ttc" id="aclass_components_1_1_i_display_text_html_ad6176a42798faa83e5aedec958b79dcb"><div class="ttname"><a href="class_components_1_1_i_display_text.html#ad6176a42798faa83e5aedec958b79dcb">Components::IDisplayText::setFontFamily</a></div><div class="ttdeci">virtual void setFontFamily(const Font font)=0</div><div class="ttdoc">Set the font family attribute.</div></div>
+<div class="ttc" id="anamespace_components_html"><div class="ttname"><a href="namespace_components.html">Components</a></div><div class="ttdef"><b>Definição</b> Button.hpp:10</div></div>
+<div class="ttc" id="araylib_8h_html"><div class="ttname"><a href="raylib_8h.html">raylib.h</a></div></div>
+<div class="ttc" id="astruct_color_html"><div class="ttname"><a href="struct_color.html">Color</a></div><div class="ttdef"><b>Definição</b> raylib.h:220</div></div>
+<div class="ttc" id="astruct_font_html"><div class="ttname"><a href="struct_font.html">Font</a></div><div class="ttdef"><b>Definição</b> raylib.h:289</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

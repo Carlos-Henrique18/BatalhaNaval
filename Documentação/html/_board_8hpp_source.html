@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Batalha Naval - Documentação: Código-Fonte de Faculdade/2023-1/Prog2/BatalhaNaval/include/logic/board/Board.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Batalha Naval - Documentação<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bb75f6ccd9c841ccbcc87ee631ee1cf8.html">Faculdade</a></li><li class="navelem"><a class="el" href="dir_34921b01d83bfae507fa016aa2696f18.html">2023-1</a></li><li class="navelem"><a class="el" href="dir_66a3f915e7756a6ded3a5ab53105a1fe.html">Prog2</a></li><li class="navelem"><a class="el" href="dir_ef9cc14589066c222358a81ffd580e27.html">BatalhaNaval</a></li><li class="navelem"><a class="el" href="dir_8649854c9289a8d6819dfd27e24ff103.html">include</a></li><li class="navelem"><a class="el" href="dir_e7bbe0579d8873d7f0f7724ca58a3d98.html">logic</a></li><li class="navelem"><a class="el" href="dir_4d79f95e95ca2b5b43c6aee16c842787.html">board</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Board.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_board_8hpp.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef BOARD_HPP</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define BOARD_HPP</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="_position_8hpp.html">Position.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="_troop_8hpp.html">Troop.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_board.html">   10</a></span><span class="keyword">class </span><a class="code hl_class" href="class_board.html">Board</a> { </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keywordtype">int</span> height = 0;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keywordtype">int</span> width = 0;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        std::vector&lt;std::vector&lt;std::shared_ptr&lt;Position&gt;&gt;&gt; board;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        std::vector&lt;std::shared_ptr&lt;Troop&gt;&gt; troops;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <a class="code hl_function" href="class_board.html#a9ee491d4fea680cf69b033374a9fdfcb">Board</a>();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <a class="code hl_function" href="class_board.html#a9ee491d4fea680cf69b033374a9fdfcb">Board</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> width, <span class="keyword">const</span> <span class="keywordtype">int</span> height);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keyword">virtual</span> <a class="code hl_function" href="class_board.html#af73f45730119a1fd8f6670f53f959e68">~Board</a>();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_board.html#a0d71f12d5dab871dde6c5829afb26f31">positionTroop</a>(<span class="keyword">const</span> std::shared_ptr&lt;Troop&gt; troop);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_board.html#a6936d4f6863dcb0e427cbb9dc2ad9fbd">removeTroop</a>(<span class="keyword">const</span> std::shared_ptr&lt;Troop&gt; troop);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_board.html#afc026730f7dfc6da8eaa766e17cbbd86">isPositionValid</a>(<span class="keyword">const</span> std::vector&lt;Point&gt;&amp; positionCoordinates) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_board.html#abf31498868710ee5d70168283903d6ae">doesPositionContainsTroop</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_point.html">Point</a> coodinate) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_board.html#a912a08e38d4fd2cc615aabdacb8490a2">isPointWithinBoundaries</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_point.html">Point</a> point) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordtype">int</span> <a class="code hl_function" href="class_board.html#a888725ae3b1177a60a8f77299c1c939a">getHeight</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keywordtype">int</span> <a class="code hl_function" href="class_board.html#a31bdad2985e3b4857a383dd2da8e8e27">getWidth</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        std::vector&lt;std::shared_ptr&lt;Troop&gt;&gt; <a class="code hl_function" href="class_board.html#ae4a2393f4c17c607bae708dd1f7a0e5c">getTroops</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        std::shared_ptr&lt;Position&gt; <a class="code hl_function" href="class_board.html#ad10567692fc742ea64381683cfe911ba">getPosition</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> x, <span class="keyword">const</span> <span class="keywordtype">int</span> y) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        <span class="keywordtype">void</span> initializeBoardPositions();</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <span class="keywordtype">void</span> setHeight(<span class="keyword">const</span> <span class="keywordtype">int</span> height);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        <span class="keywordtype">void</span> setWidth(<span class="keyword">const</span> <span class="keywordtype">int</span> width);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>};</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_position_8hpp_html"><div class="ttname"><a href="_position_8hpp.html">Position.hpp</a></div></div>
+<div class="ttc" id="a_troop_8hpp_html"><div class="ttname"><a href="_troop_8hpp.html">Troop.hpp</a></div></div>
+<div class="ttc" id="aclass_board_html"><div class="ttname"><a href="class_board.html">Board</a></div><div class="ttdef"><b>Definição</b> Board.hpp:10</div></div>
+<div class="ttc" id="aclass_board_html_a0d71f12d5dab871dde6c5829afb26f31"><div class="ttname"><a href="class_board.html#a0d71f12d5dab871dde6c5829afb26f31">Board::positionTroop</a></div><div class="ttdeci">void positionTroop(const std::shared_ptr&lt; Troop &gt; troop)</div><div class="ttdoc">Tries to position a troop with a valid positioning and initial point.</div><div class="ttdef"><b>Definição</b> Board.cpp:33</div></div>
+<div class="ttc" id="aclass_board_html_a31bdad2985e3b4857a383dd2da8e8e27"><div class="ttname"><a href="class_board.html#a31bdad2985e3b4857a383dd2da8e8e27">Board::getWidth</a></div><div class="ttdeci">int getWidth() const</div><div class="ttdoc">Get the width of the board.</div><div class="ttdef"><b>Definição</b> Board.cpp:97</div></div>
+<div class="ttc" id="aclass_board_html_a6936d4f6863dcb0e427cbb9dc2ad9fbd"><div class="ttname"><a href="class_board.html#a6936d4f6863dcb0e427cbb9dc2ad9fbd">Board::removeTroop</a></div><div class="ttdeci">void removeTroop(const std::shared_ptr&lt; Troop &gt; troop)</div><div class="ttdoc">Removes a troop from all positions in the board.</div><div class="ttdef"><b>Definição</b> Board.cpp:44</div></div>
+<div class="ttc" id="aclass_board_html_a888725ae3b1177a60a8f77299c1c939a"><div class="ttname"><a href="class_board.html#a888725ae3b1177a60a8f77299c1c939a">Board::getHeight</a></div><div class="ttdeci">int getHeight() const</div><div class="ttdoc">Get the heigth of the board.</div><div class="ttdef"><b>Definição</b> Board.cpp:87</div></div>
+<div class="ttc" id="aclass_board_html_a912a08e38d4fd2cc615aabdacb8490a2"><div class="ttname"><a href="class_board.html#a912a08e38d4fd2cc615aabdacb8490a2">Board::isPointWithinBoundaries</a></div><div class="ttdeci">bool isPointWithinBoundaries(const Point point) const</div><div class="ttdoc">Check if a point is within the board's boundaries.</div><div class="ttdef"><b>Definição</b> Board.cpp:72</div></div>
+<div class="ttc" id="aclass_board_html_a9ee491d4fea680cf69b033374a9fdfcb"><div class="ttname"><a href="class_board.html#a9ee491d4fea680cf69b033374a9fdfcb">Board::Board</a></div><div class="ttdeci">Board()</div><div class="ttdoc">Default constructor.</div><div class="ttdef"><b>Definição</b> Board.cpp:10</div></div>
+<div class="ttc" id="aclass_board_html_abf31498868710ee5d70168283903d6ae"><div class="ttname"><a href="class_board.html#abf31498868710ee5d70168283903d6ae">Board::doesPositionContainsTroop</a></div><div class="ttdeci">bool doesPositionContainsTroop(const Point coodinate) const</div><div class="ttdoc">Check if a point in the board contains a troop.</div><div class="ttdef"><b>Definição</b> Board.cpp:67</div></div>
+<div class="ttc" id="aclass_board_html_ad10567692fc742ea64381683cfe911ba"><div class="ttname"><a href="class_board.html#ad10567692fc742ea64381683cfe911ba">Board::getPosition</a></div><div class="ttdeci">std::shared_ptr&lt; Position &gt; getPosition(const int x, const int y) const</div><div class="ttdoc">Get the reference to a position in the board.</div><div class="ttdef"><b>Definição</b> Board.cpp:105</div></div>
+<div class="ttc" id="aclass_board_html_ae4a2393f4c17c607bae708dd1f7a0e5c"><div class="ttname"><a href="class_board.html#ae4a2393f4c17c607bae708dd1f7a0e5c">Board::getTroops</a></div><div class="ttdeci">std::vector&lt; std::shared_ptr&lt; Troop &gt; &gt; getTroops() const</div><div class="ttdoc">Get the troops in the board.</div><div class="ttdef"><b>Definição</b> Board.cpp:101</div></div>
+<div class="ttc" id="aclass_board_html_af73f45730119a1fd8f6670f53f959e68"><div class="ttname"><a href="class_board.html#af73f45730119a1fd8f6670f53f959e68">Board::~Board</a></div><div class="ttdeci">virtual ~Board()</div><div class="ttdoc">Destroy the Board object.</div><div class="ttdef"><b>Definição</b> Board.cpp:19</div></div>
+<div class="ttc" id="aclass_board_html_afc026730f7dfc6da8eaa766e17cbbd86"><div class="ttname"><a href="class_board.html#afc026730f7dfc6da8eaa766e17cbbd86">Board::isPositionValid</a></div><div class="ttdeci">bool isPositionValid(const std::vector&lt; Point &gt; &amp;positionCoordinates) const</div><div class="ttdoc">Checks if the position the troops intends to occupy is valid.</div><div class="ttdef"><b>Definição</b> Board.cpp:57</div></div>
+<div class="ttc" id="aclass_point_html"><div class="ttname"><a href="class_point.html">Point</a></div><div class="ttdoc">Point class used for positioning and board manipulations.</div><div class="ttdef"><b>Definição</b> Point.hpp:7</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>
